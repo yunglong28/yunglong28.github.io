@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+
+
+body {
+  background-color: rgb(250, 247, 230) !important;
+  overflow-x: hidden!important;
+}
+
+footer {
+  display: block;
+}
+
+h3
+{font-family: "Times New Roman", Times, serif; !important;}
+
+h4{font-family: "Times New Roman", Times, serif; !important;}
+h5 {
+  font-family: "Times New Roman", Times, serif; !important;
+}
+
+.container_articles {
+  background-color: rgb(250, 247, 230);
+}
+
+.article_col {
+  overflow: auto;
+  overflow-x: hidden;
+  border-style: solid;
+  border-color: #73895a;
+  border-width: thin;
+  border-radius: 25px;
+  padding: 20px !important;
+  height: 800px;
+
+}
+
+
+.row_articles {
+  column-gap: 10px;
+}
+
+.article_col::-webkit-scrollbar {
+  color: #DAECC6;
+}
+
+.article_col::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0 #DAECC6;
+}
+
+
+
+
+.img-fluid {
+    max-width: auto;
+    height: auto;
+}
+
+
+
+
+/* NAVBAR */
+.navbar {
+  font-family: 'Times New Roman', serif;
+  background-color: transparent;
+  position: fixed;
+  color:black!important;
+  text-transform: uppercase;
+  font-size: 8px;
+  margin-bottom: 20px;
+  height: 60px;
+  border-bottom: solid;
+  border-bottom-color: #73895a;
+  z-index: 100;
+}
+/* Rende la navbar orizzontale */
+.navbar ul {
+  margin: 1;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  clear: left;
+}
+
+/* Tutti gli elementi in navbar */
+.navbar li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  white-space: nowrap;
+  text-align:center !important;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  padding: 0px;
+  color:black;
+}
+
+.navbar li a {
+   color:black;
+   text-decoration: none;
+}
+
+.navbar li:hover{
+  color:  #9fa4c4 !important;
+}
+
+.navbar li a:hover{
+  color:  #9fa4c4 !important;
+  text-decoration:none;
+}
+
+
+/* Dropdown */
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  padding: 10px 0;
+  visibility: hidden;
+  background: #fff;
+    z-index: 1;
+  border-style: solid;
+  border-color: #73895a;
+  border-width: thin;
+  border-radius: 25px;
+}
+
+/* Elementi che stanno del dropdown */
+.navbar .dropdown ul li{
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+
+
+.style {
+  text-align: center;
+  display: block;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+background-color: rgb(250, 247, 230) !important;
+    overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    border-bottom: solid;
+    border-bottom-color: #73895a;
+}
+
+/* The sidebar links */
+.sidebar a, .dropdown-btn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: black;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white !important;
+  cursor: pointer;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+    background-color: transparent;
+    color:black!important;
+    text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+    text-align:center !important;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    padding: 0px;
+    color:black;
+}
+
+
+
+
+#magazine_title{
+  width:70%;
+  margin: auto;
+  text-align: center;
+  font-size: 90px;
+  font-family: "Times New Roman", Serif;
+}
+
+#main_subt{
+  font-size: 20px;
+  text-align: left;
+  line-height: 1em;
+}
+
+
+.container{
+  font-family:'Times New Roman', serif;
+}
+
+.title{
+  text-align: center;
+  font-size: 44px;
+  color: red;
+  font-family: "Times New Roman", Times, serif; !important;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif; !important;
+  color: darkgreen;
+}
+
+.author_and_date  {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif; !important;
+  color: #adadad;
+}
+.ArtBody {
+  font-family: "Times New Roman", Times, serif !important;
+  font-size: 20px !important;
+  color: black !important;
+}
+
+
+
+/*Solar Barr*/
+#solar_bar{
+  padding: 0px !important;
+ text-align: center !important;
+  font-family: "Times New Roman";
+  color: #0f5132;
+  font-size: 20px;
+
+}
+
+
+.didot_logo {
+  display: none;
+}
+
+.opening_img_illuminism {
+  display: none;
+}
+
+.paragraph_header {
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif; !important;
+  color: darkgreen;
+}
+
+.half-width {
+  display: none;
+}
+
+.blackout {
+  background:black;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  height: 200%;
+  width: 100%;
+  z-index: 20;
+  display: none;
+}
+
+.blackout-sentence {
+  z-index: 22;
+  color: white;
+  font-family: "Times New Roman", serif;
+  font-size: 100px;
+  text-align: center;
+  display: none;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+#home_icon {
+    width: 30px;
+    height: 30px;
+}
+
+.icons_nav {
+   margin-left: 75px!important;
+  margin-top: 7px!important;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: "Times New Roman";
+    border-style: solid;
+    border-color: #73895a;
+    border-width: thin;
+    background-color:#73895a;
+}
+
+
+.accordion-button {
+    background-color:#73895a !important;
+}
+
+#metadata_intro {
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.accordion-button {
+    font-size: 1rem;
+
+}
+
+.sidebar a {
+    font-size: 15px;
+    padding: 0px;
+    display: inline-block;
+}
+
+
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 55px;
+    right: 25px;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 50px;
+    color: red !important;
+}
+
+.btn-10 {
+    background-color: transparent;
+    border-style: solid;
+    border-color: #73895a;
+    color: #73895a;
+    border-width: thin;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+
+.accordion-body {
+    background-color: rgb(250, 247, 230) !important;
+
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+
+
+
+@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: -30px!important;
+    margin-top: 7px!important;
+
+  }
+}
+

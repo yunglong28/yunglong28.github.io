@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*Fonts */
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+
+@font-face {
+    font-family: 'Lynotype Didot Roman';
+    src: url('/fonts/DidotLH-Roman.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+.half-hr {
+    width: 50% !important;
+    margin: 0 auto;
+
+}
+
+body{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hubert_Robert_003.jpg/1280px-Hubert_Robert_003.jpg");
+    overflow-x: hidden!important;
+}
+
+
+p {
+    color: rgb(0, 0, 0);
+    font-family: 'GFS Didot', serif;
+    margin: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#container_belle{
+ color: rgb(0, 0, 0);
+    font-family: 'GFS Didot', serif;
+    margin: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.first_letter {
+    font-size: 50px;
+    font-family: 'GFS Didot', serif;
+    letter-spacing: 2px;
+    text-align: center;
+
+}
+h1 {
+    color: rgb(0, 0, 0) !important;
+    font-family: 'GFS Didot', serif;
+    text-align: center;
+    margin: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 80px;
+}
+h2 {
+    font-family: "Lynotype Didot Roman", serif; !important;
+    text-align: center !important;
+    margin: 40px;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+    font-size: 20px;
+}
+
+a h2 {
+    font-family: "Lynotype Didot Roman", serif; !important;
+    text-align: center !important;
+    margin: 40px;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+    font-size: 20px;
+    color: black !important;
+}
+
+
+
+h3
+{font-family: "Lynotype Didot Roman", serif; !important;
+    text-align: center;
+    margin: 40px;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+    font-size: 20px;}
+
+
+h4{font-family: "Lynotype Didot Roman", serif; !important;
+    text-align: center;
+    margin: 40px;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+    font-size: 10px;
+}
+h5 {
+    font-family: "Lynotype Didot Roman", serif; !important;
+    text-align: center;
+    margin: 40px;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+    font-size: 10px;
+}
+
+h6 {
+    font-family: "Lynotype Didot Roman", serif; !important;
+    text-align: center;
+    margin: 40px;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+    font-size: 10px;
+}
+
+aside {
+    font-family: "Lynotype Didot Roman", serif; !important;
+    text-align: center;
+    margin: 40px;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+
+
+img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+figcaption {
+    font-size: 5px !important;
+}
+
+
+
+.article_col {
+    overflow: auto;
+    border-style: inset;
+    border-width: 3px;
+    overflow-x: hidden;
+    border-color: #bcb19d;
+    padding: 10px !important;
+    height: 900px;
+}
+
+
+.row_articles {
+    column-gap: 20px;
+}
+
+.article_col::-webkit-scrollbar {
+    width: 0.5em;
+    margin: 0.5px;
+}
+
+.article_col::-webkit-scrollbar-track {
+
+}
+
+.article_col::-webkit-scrollbar-thumb {
+
+
+}
+
+
+.img-fluid {
+    max-width: auto;
+    height: auto;
+
+
+}
+/* NAVBAR */
+
+.navbar {
+  font-family: 'GFS Didot', serif;
+  position: fixed;
+  color:black!important;
+  text-transform: uppercase;
+  font-size: 8px;
+  margin-bottom: 20px;
+  height: 60px;
+  background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII');
+  z-index: 100;
+}
+/* Rende la navbar orizzontale */
+.navbar ul {
+  margin: 1;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  clear: left;
+}
+
+/* Tutti gli elementi in navbar */
+.navbar li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  white-space: nowrap;
+  text-align:center !important;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  padding: 0px;
+  color:black;
+}
+
+.navbar li a {
+   color:black;
+   text-decoration: none;
+}
+
+.navbar li:hover{
+  color:  black;
+}
+
+.navbar li a:hover{
+  color:  black;
+  text-decoration:none;
+}
+
+
+/* Dropdown */
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  padding: 10px 0;
+  visibility: hidden;
+  background: #fff;
+    z-index: 1;
+}
+
+/* Elementi che stanno del dropdown */
+.navbar .dropdown ul li{
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+/*.navbar {
+    position: relative;
+    height:80px;
+    margin: 0 auto;
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+/* Rende la navbar orizzontale */
+/*.navbar ul {
+    display: flex;
+    list-style: none;
+    clear: left;
+    font-family: 'GFS Didot', serif;
+    font-variant: all-petite-caps;
+    letter-spacing: 5px;
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
+    background-repeat: repeat-x !important;
+    width: 100% !important;
+
+}
+
+/* Tutti gli elementi linkati in navbar */
+/*.navbar a {
+    display: flex;
+    color: #000000;
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 31px;
+}
+
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    padding: 0px 0;
+    z-index: 2;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 10px 10px 30px rgba(127, 137, 161, 0.25);
+    font-size: 25px;
+}
+
+.navbar .dropdown ul li {
+    min-width: 200px;
+}
+
+/* Elementi che stanno del dropdown */
+/*.navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 14px !important;
+    color: black;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+
+.navbar .dropdown:hover > ul {
+    visibility: visible;
+}
+
+
+a:hover{
+    color: black !important;
+}
+
+
+
+
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(183,64,59);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    right:0;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+.style {
+    text-align: center;
+    display: block;
+}
+
+
+
+/* For the Homepage */
+.img_issue{
+    width:200px;
+    height: auto;
+    border-radius: 25px;
+}
+
+
+#magazine_title{
+    width:70%;
+    margin: auto;
+    text-align: center;
+    font-size: 90px;
+    font-family: "Lynotype Didot Roman", serif;
+}
+
+#main_subt{
+    font-size: 20px;
+    text-align: left;
+    line-height: 1em;
+}
+
+#spinning_vinyl{
+    width: 200px;
+    height:auto;
+}
+
+.container{
+    font-family:'Lynotype Didot Roman', serif;
+}
+
+.title{
+    text-align: center;
+    font-family: 'GFS Didot', serif;
+    color: rgb(0, 0, 0) !important;
+    margin: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-variant: all-petite-caps;
+    font-size: 50px;
+    line-height: 80px;
+}
+
+
+.title_small{
+    text-align: center;
+    font-family: 'GFS Didot', serif;
+    color: rgb(0, 0, 0) !important;
+    margin: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-variant: all-petite-caps;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.subtitle {
+    font-family: "GFS Didot", serif; !important;
+    text-align: center !important;
+    margin: 40px;
+    letter-spacing: 6px;
+    font-variant: all-petite-caps;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.publicationDate {
+    font-family: "Lynotype Didot Roman", serif; !important;
+    text-align: center;
+    letter-spacing: 6px;
+    margin: 40px;
+    font-variant: all-petite-caps;
+    font-size: 20px;
+}
+.author {
+    font-family: "Lynotype Didot Roman", serif; !important;
+    text-align: center;
+    letter-spacing: 6px;
+    margin: 40px;
+    font-variant: all-petite-caps;
+    font-size: 20px;
+}
+
+.didot_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.paragraph_header {
+    text-align: center;
+    font-family: "GFS Didot", serif; !important;
+    letter-spacing: 4px;
+    font-weight: bold !important;
+    font-variant: all-petite-caps;
+    margin: 30px;
+    line-height: 60px;
+}
+
+.footer_baroque {
+    color: rgb(255, 255, 255);
+    font-family: 'GFS Didot', serif; !important;
+    margin: 40px !important;
+    letter-spacing: 2px !important;
+    text-align: center !important;
+    font-size: 20px !important;
+
+}
+
+.container_articles{
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
+    height: 900px;
+
+}
+
+
+
+
+.article_images {
+    filter: sepia(100%) !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.cover_image {
+    filter: sepia(100%) !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+
+
+
+
+
+#solar_bar {
+    display: none;
+}
+
+.opening_img {
+
+}
+
+.opening_img_illuminism {
+
+    filter: sepia(80%) !important;
+    height: 500px !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blackout {
+    background:black;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    height: 200%;
+    width: 100%;
+    z-index: 20;
+    display: none;}
+
+.blackout-sentence {
+    z-index: 22;
+    color: white;
+    font-family: "Times New Roman", serif;
+    font-size: 100px;
+    text-align: center;
+    display: none;
+}
+
+
+.icons {
+  width: 30px;
+  height: 30px;
+    filter: sepia(100%);
+}
+.icons_nav {
+  margin-left: 75px!important;
+  margin-top: 7px!important;
+
+}
+
+.openbtn {
+    font-size: 20px;
+    background-color: transparent;
+    color:black!important;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    text-align:center !important;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    padding: 0px;
+    color:black;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: "Lynotype Didot Roman";
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII');
+;
+}
+
+.accordion-item {
+    border: 0px !important;
+    background-color: transparent;
+}
+
+.accordion-button {
+    font-size: 1rem !important;
+    font-family: Didot, serif !important;
+    background-color: transparent; !important;
+}
+
+#metadata_intro {
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Lynotype Didot Roman";
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.accordion-button {
+    font-size: 1rem;
+
+}
+
+.sidebar a {
+    font-size: 15px;
+    padding: 0px;
+    display: inline-block;
+}
+
+
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 55px;
+    right: 25px;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 50px;
+    color: black !important;
+}
+
+.btn-10 {
+    background-color: transparent;
+    border: 3px inset #bcb19d !important;
+    border-width: thin;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Lynotype Didot Roman";
+}
+
+.accordion-body {
+    background-color: transparent;!important;
+
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: transparent;!important;
+    box-shadow: none !important;
+
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: -50px!important;
+    margin-top: 7px!important;
+
+  }
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+
+<head>
+<!-- CSS + Bootstrap Stylesheet-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="scripts/sidebar.js"></script>
+<script src="scripts/changes.js"></script>
+<script src="scripts/home_script.js"></script>
+<link  id="pagestyle" href="style/home_analog.css" rel="stylesheet" type="text/css">
+
+<link href="style/bootstrap.min.css" rel="stylesheet">
+  <link href="style/bootstrap-icons.css" rel="stylesheet">
+  <link href="style/boxicons.min.css" rel="stylesheet">
+  <link href="style/glightbox.min.css" rel="stylesheet">
+  <link href="style/swiper-bundle.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="bootstrap.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+<!-- MODALS -->
+
+    <!-- disclaimer start -->
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Disclaimer</h5>
+            <button type="button" class="firstbtn" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body p-4">
+            <p>
+                The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "Information Modelling and Web Technologies" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, held by professor Fabio Vitali.
+            </p>
+
+            <p>
+                All copyrights and related rights on the content remain with their original owners.
+                <br>
+                All copyright on the typographic and layout choices are 2021 © Edoardo Dal Borgo and Alessandra Failla.
+            </p>
+            </div>
+            <div class="modal-footer">
+            <button type="button"   class="btn btn-secondary" class="close" data-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- disclaimer end -->
+
+	<!-- NAV-->
+  <nav class="navbar sticky-top navbar-light" class="navbar">
+
+          <ul>
+            <li><a href="home.html" onclick="keepstylehome('pagestyle')">The Resonance</a></li>
+
+
+
+            <li class="dropdown">Issues
+              <ul>
+                <li><a href="Streaming.html" onclick="keepstylehome('pagestyle')">Issue #1</a></li>
+                <li><a href="Decolonize.html" onclick="keepstylehome('pagestyle')">Issue #2</a></li>
+                <li><a href="Queer.html" onclick="keepstylehome('pagestyle')">Issue #3</a></li>
+              </ul>
+              </li>
+               <li class="dropdown">About
+              <ul>
+                <li><a href="documentation.html" onclick="keepstylehome('pagestyle')">Documentation</a></li>
+                <li><a href=""data-toggle="modal" data-target="#myModal" onclick="keepstylehome('pagestyle')">Disclaimer </a></li>
+                <li><a href="#aboutus">Us</a></li>
+              </ul>
+            </li>
+            <ul class="icons_nav">
+            <li id="" onclick="change('illuminist')"><img class="icons" id="cello" src="imgs/cellohome.png"></li>
+            <li id="" onclick="change('hobbyhorse')"><img class="icons" id="harp" src="imgs/harphome.png"></li>
+            <li id="belle" onclick="change('belle')"><img class="icons" id="gramophone"src="imgs/gramophonehome.png"></li>
+            <li id="" onclick="change('disco')"><img class="icons"id="disco"src="imgs/strobohome.png"></li>
+            <li id="tabloid" onclick="change('tabloid')"><img id="boombox"class="icons"src="imgs/boomboxhome.png"></li>
+            <li id="" onclick="change('tabloid')"><img class="icons" id="walkman"src="imgs/ipodhome.png"></li>
+        </ul>
+
+        </nav>
+
+
+
+<!-- primo blocco rosso-->
+
+
+  <div class="wrapper_mag">
+    <div class="coltext"><p>Music has a long relationship with writing and printing techniques: musical scores are as old as writing itself, going back to ancient Babylon, and have reached a wider diffusion after Gutenberg’s invention in the 15th century. However, it was only with the explosion of popular music from the 1930s onwards that an entire industry of music magazines, underground fanzines, and prestigious journalism was born. We at Resonance consider ourselves as contemporary heirs of this noble tradition. We are also in dialogue with coeval online magazines like Pitchfork, The Quietus, The Wire, or the Italian SentireAscoltare.
+    </p></div>
+<!--div class="colimg"> <img  src="imgs\mag.png" height='550'-->
+  <div class="colimg"> <p>
+
+  <img class="star_img"  src="imgs\star.png" ></p>
+  <p>
+   <img  class="tastiera_img" src="imgs\tastiera.png" > </p>
+
+  </div>
+
+  </div>
+
+    <!-- fine  primo blocco rosso-->
+        <!-- scritta che si muove-->
+
+    <div class="marquee-section">
+        <div class="marquee-div">
+            <div class="marquee"> &bull; Resonance &bull; Resonance &bull; Resonance &bull; Resonance &bull; Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;Resonance &bull;</div>
+        </div>
+    </div>
+  <!-- fine scritta che si muove-->
+
+
+    <!-- secondo blocco verde-->
+        <div class="wrapper_yet">
+          <div class="col_img_yet"> <img id="yet_img" src="imgs\records.jpg" height='450'>
+          <div class="col_text_yet">
+
+      Yet, with Resonance, we aim to offer a different idea of what a magazine could be, stretching the boundaries of this hundred-year-old definition. Resonance is a typographical experiment, that allows the reader to experience our articles’ selection through six different stylistic lenses. Digital technologies enable us to give a new spin to the reading experience, making it playful and creative. We are not only interested in the recreational side of things: with the Metadata Viewer, we aim to offer an enhanced reading experience, where entities, places, and other knowledge material can be easily recognized and studied by our readers!
+
+      <p>
+
+      <a href="#issue_"><button class="custom-btn btn-10" >The issues</button> </a>
+      <a href="documentation_alt.html"> <button class="custom-btn btn-10">Documentation</button></a>
+      </p>
+    </div>
+    </div>
+  </div>
+    <!-- fine secondo blocco verde-->
+    <!-- terzo blocco beige con paylist spotify-->
+    <div class="wrapper">
+      <div class="colspotify"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2OeKJLLD5jcYMgJAExURqS?utm_source=generator" width="250" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+      <div class="text"><p>
+
+    Born as the final project for the course 'Information Modeling and Web Technologies' at the University of Bologna, RESONANCE is a Maecenas nec nisl turpis. Etiam pharetra massa efficitur, mattis ex non, ullamcorper nibh. Aliquam venenatis vel elit nec scelerisque. Mauris vel enim est. Sed tincidunt metus ut urna ullamcorper mattis. Praesent ornare sapien magna, suscipit egestas diam vestibulum id. Quisque nunc massa, ornare ac neque non, fringilla varius nulla. Vestibulum fringilla dignissim mollis.<p>
+
+    </p> </div>
+
+    </div>
+    <!--  fine terzo blocco beige con paylist spotify-->
+        <!-- scritta che si muove-->
+    <div class="marquee-section"id="issue_">
+        <div class="marquee-div">
+            <div class="marquee"> &bull; The best waves resonate here &bull; The best waves resonate here &bull;The best waves resonate here &bull;The best waves resonate here &bull;The best waves resonate here &bull;The best waves resonate here &bull;The best waves resonate here &bull;The best waves resonate here &bull;The best waves resonate here &bull;The best waves resonate here &bull;The best waves resonate here &bull;vvThe best waves resonate here &bull;The best waves resonate here &bull;</div>
+        </div>
+      </div>
+          <!-- fine scritta che si muove-->
+
+        <!-- quarto blocco verde (issue)-->
+
+        <div class="wrapper_issue">
+          <div class="col_button">     <!-- buttons per cambio contenuto-->
+
+
+
+          <p >
+          <button  class="custom-btn btn-10"role="presentation" class="active" href="#Issue1" aria-controls="Issue1" role="tab" data-toggle="tab">ISSUE 1</button> </p>
+            <p>
+              <button  class="custom-btn btn-10"role="presentation"  href="#Issue2" aria-controls="Issue2" role="tab" data-toggle="tab">ISSUE 2</button></p>
+
+
+            </p><button  class="custom-btn btn-10"role="presentation" href="#Issue3" aria-controls="Issue3" role="tab" data-toggle="tab">ISSUE 3</button>
+
+          </p>
+        </div>
+
+
+
+        <br />
+        <div  class="col_issue">
+
+
+
+
+
+                <div class="tab-content" >
+
+                	<div role="tabpanel" class="tab-pane active" id="Issue1">
+                    <p class="issue_title">MUSIC STREAMING ECONOMY</p>
+                       <p class="issue">This issue is dedicated to music streaming economy and its relation to digital technologies. Andy Cush from Pitchfork introduces us to the fight between musicians and Spotify: the colossus is reducing its payments to artist, making it more difficult for independent musicians to survive. Then, we propose a great think-piece by Baldr Eldursson, written for the now dead underground-cult blog TinyMixtapes. It is a reflection on how our listening's habits changed with the advent of pervasive digital technology in the last ten years: this is an original, provocative and unique piece as in the style of TinyMixtapes. Our last article looks at the future with an optimist perspective: NFTs and similar crypto-technology will probably shock the music industry in the next future. According to Mertens, they could also offer a way for implementing a more sustainable system of revenues, beyond the power of streaming platforms.</p>
+                       <div class="edited_by">
+                       <P>
+                         Edited by Alessandro Longo
+                       </P>
+                       <p>
+                           <button  class="custom-btn btn-10" href="" > READ </button></button>
+                       </p>
+                     </div>
+
+                	</div>
+                  <div role="tabpanel" class="tab-pane" id="Issue2">
+                    <p class="issue_title">DECOLONIZING MUSIC</p>
+                       <p class="issue">Ut pellentesque diam sit amet efficitur tempor. Maecenas consectetur finibus imperdiet. Fusce in volutpat diam. Donec imperdiet nibh et tincidunt feugiat. Phasellus vulputate tincidunt purus, quis tempor nisl hendrerit eu. Quisque a nulla metus. Fusce hendrerit mollis quam sit amet elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet eros a quam faucibus ornare. Nam nec purus non mi aliquam feugiat. Proin ornare vestibulum convallis. Duis suscipit tristique rhoncus. Integer malesuada maximus leo, vel pretium dui semper non.</p>
+                       <div class="edited_by">
+                       <P>
+                         Edited by Francesca Borriello
+                       </P>
+                       <p>
+                           <button  class="custom-btn btn-10" href="" > READ </button></button>
+                       </p>
+                     </div>
+
+                  </div><!-- #Etape1 -->
+                  <div role="tabpanel" class="tab-pane" id="Issue3">
+                    <p class="issue_title">EXPLORING QUEER ARTISTS</p>
+                       <p class="issue">To recreate the style of the 15th century manuscript, we chose to take inspiration from several manuscripts decorated with illuminations at that period in Europe. The illuminations on Medieval manuscripts were used to bring emphasis on the text content and pleasant visual support, as well as enhancing the manuscript's value. It could be used to showcase the importance of the person that had commissioned the book, since highly decorated manuscripts costed more, because of the pigments, the gold and the time spent on working on the manuscript.</p>
+                       <div class="edited_by">
+                       <P>
+                         Edited by Lorenza Pierucci
+                       </P>
+                       <p>
+                           <button  class="custom-btn btn-10" href="" > READ </button></button>
+                       </p>
+                     </div>
+                  </div>
+
+
+                  </div>
+
+              </div>
+</div>
+        <!-- fine quarto blocco verde (issue)-->
+            <!-- quint0 blocco grigio (about us)-->
+<div class="wrapper_us">
+  <div class="col_button_us" id="aboutus"> <!-- vuttons per cambio contenuto-->
+
+
+  <span>About us</span>
+  <a class="slide_us" role="presentation" class="active" href="#ale" aria-controls="ale" role="tab" data-toggle="tab">&bull; </a>   <a class="slide_us" role="presentation"  href="#fra" aria-controls="fra" role="tab" data-toggle="tab">&bull;</a>
+      <a class="slide_us" role="presentation"  href="#lore" aria-controls="lore" role="tab" data-toggle="tab">&bull;</a>
+
+
+
+</div>
+
+
+
+<br/>
+
+<div class="col_us">
+
+
+  <div class="tab-content">
+
+    <div role="tabpanel" class="tab-pane active" id="ale">
+      <p class="us_title">Alessandro Y. Longo</p>
+      <p class="issue">Born in Turin in 1997, Alessandro Y. Longo is a writer and researcher based in Berlin and a master student in Digital Humanities.
+          He is
+          interested in radical technologies, music from the margins and communal luxury. You can find his indipendent
+          research work and his digital garden at reincantamento.xyz.
+      </p>
+
+
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="fra">
+      <p class="us_title">Francesca Borriello</p>
+         <p class="issue">Ut pellentesque diam sit amet efficitur tempor. Maecenas consectetur finibus imperdiet. Fusce in volutpat diam. Donec imperdiet nibh et tincidunt feugiat. Phasellus vulputate tincidunt purus, quis tempor nisl hendrerit eu. Quisque a nulla metus. Fusce hendrerit mollis quam sit amet elementum. .</p>
+
+
+
+    </div><!-- #Etape1 -->
+    <div role="tabpanel" class="tab-pane" id="lore">
+      <p class="us_title">Lorenza Pierucci</p>
+      <p class="issue">Ut pellentesque diam sit amet efficitur tempor. Maecenas consectetur finibus imperdiet. Fusce in volutpat diam. Donec imperdiet nibh et tincidunt feugiat. Phasellus vulputate tincidunt purus, quis tempor nisl hendrerit eu. Quisque a nulla metus. Fusce hendrerit mollis quam sit amet elementum.  </p>
+
+
+
+
+    </div><!-- #Etape1 -->
+
+
+    </div>
+
+
+
+
+      </div>
+</div>
+        <!-- fine quint0 blocco grigio (about us)-->
+
+              </body>
+                <footer>
+                  <div class="cont">
+                    <div class="row">
+                      <div class="col-6">
+                        <h3>The Project</h3>
+                        This project is part of the exam of Information Modeling and Web Technology for the year 2020/2021 by Professor Fabio Vitali.
+                      </div>
+                      <div class="col-6">
+                        <h3> Rights </h3>
+                        © 2022 Copyright: Alessandro Y. Longo, Francesca Borriello, Lorenza Pierucci
+                      </div>
+                    </div>
+                  </div>
+                </footer>

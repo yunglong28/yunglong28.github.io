@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&display=swap');
+
+
+@font-face {
+    font-family: 'bodoni';
+    src: url('../fonts/bodoni-webfont.woff2') format('woff2'),
+         url('../fonts/bodoni-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nimbus';
+    src: url('../fonts/freesans-webfont.woff2') format('woff2'),
+         url('../fonts/freesans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+    /* NAVBAR */
+.navbar {
+  font-family: 'nimbus';
+  background-color: #fc4434;
+  position: fixed;
+  color:black!important;
+  text-transform: uppercase;
+  font-size: 8px;
+
+}
+/* Rende la navbar orizzontale */
+.navbar ul {
+  margin: 1;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  clear: left;
+}
+
+/* Tutti gli elementi in navbar */
+.navbar li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  white-space: nowrap;
+  text-align:center !important;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  padding: 0px;
+  color:black;
+  text-align: left;
+}
+
+.navbar li a {
+   color:black;
+}
+
+.navbar li:hover{
+  color:  #9fa4c4 !important;
+}
+
+.navbar li a:hover{
+  color:  #9fa4c4 !important;
+  text-decoration:none;
+}
+
+
+/* Dropdown */
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  padding: 5px 0;
+  visibility: hidden;
+  background: #fff;
+}
+
+/* Elementi che stanno del dropdown */
+.navbar .dropdown ul li{
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+    margin: 3px;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+
+/*Fine navbar*/
+
+html {
+    font-family: 'bodoni';
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+/*Section used for centering process*/
+section {
+  width: 100%;
+  height: 150vh;
+  background-color:#0c2414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'bodoni';
+  font-size: 25px;
+  margin-top: 0px;
+}
+
+.container{
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+
+
+
+.btn-10{
+font-family: nimbus;
+  background-color: transparent;
+  border: 3px solid  #fc4434;
+  color: #fc4434;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.btn-10:hover {
+  font-family: nimbus;
+    background-color: #fc4434;
+    border: 3px solid  #fc4434;
+    color:#0c2414;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+.marquee-section {
+    position: relative;
+    min-height:   100px;
+    font-size: 80px;
+    font-family: 'bodoni', serif;
+    color:black;
+    background-color: white
+
+}
+
+.marquee-section, .marquee-section * {
+    overflow: hidden;
+}
+
+.marquee {
+    white-space: nowrap;
+}
+
+.marquee-div {
+    position: absolute;
+    animation: move-left-to-right linear 50s infinite;
+
+
+}
+
+/* use this one to move from left to right direction */
+@keyframes move-left-to-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* use this one to move from right to left direction */
+@keyframes move-right-to-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+footer{
+  color:black!important;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: nimbus;
+  text-transform: uppercase;
+  height:30vh;
+  font-size: 20px;
+}
+#magazine2{
+  background-color:
+  #e6d8a8;
+height:  420px;
+padding-top: 4%;
+padding-left: 6%;
+padding-right: 6%;
+padding-bottom: 2%;
+  color:black;
+    font-family: 'bodoni';
+    font-size: 25px;
+    text-align: justify;
+
+}
+.btn_stili {
+  background-color:
+  #white;
+height: 100px;
+background-color:#0c2414;
+
+text-align: center;
+}
+
+
+---da copiare in git---
+.container{
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+    font-family: bodoni;
+    font-size: 22px;
+}
+
+section {
+  width: 100%;
+  height: 220vh;
+background-color:#0c2414;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  color: white;
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: red;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+  margin-left: 295px;
+  margin-top: 7px;
+}
+
+#myModal {
+   font-family:'nimbus';
+
+         color:lightgrey;
+
+ }
+
+ .modal-header {
+     background-color:#0c2414;
+      color:lightgrey;
+ }
+
+ .modal-footer {
+     background-color:white;
+      color:lightgrey;
+
+
+ }
+
+
+
+.modal-footer .btn{
+   background-color: transparent;
+border: none;
+ color:black;
+ text-transform: uppercase;
+
+ }
+
+.modal-footer .btn:hover{
+   background-color:#0c2414;
+   color:lightgrey;
+
+}
+ .modal-header .firstbtn{
+    background-color: transparent;
+ border: none;
+  color:lightgrey;
+  font-size: 32px;
+
+  }
+.p-4{
+        background-color:white!important;
+        color: black;
+        font-size: 18px;
+
+
+ }
+
+.modal-title {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: 210px!important;
+    margin-top: 7px!important;
+
+  } }

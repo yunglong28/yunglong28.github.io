@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&display=swap');
+
+@font-face {
+    font-family: 'zapf_elliptical_711_regular';
+    src: url('../fonts/zapf_elliptical_711_regular-webfont.woff2') format('woff2'),
+         url('../fonts/zapf_elliptical_711_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'paraaminobenzoic';
+    src: url('../fonts/paraaminobenzoic-webfont.woff2') format('woff2'),
+         url('../fonts/paraaminobenzoic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'vcr';
+    src: url('../fonts/vcr.woff2') format('woff2'),
+         url('../fonts/vcr.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'harry_fat';
+    src: url('../fonts/harry_fat-webfont.woff2') format('woff2'),
+         url('../fonts/harry_fat-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'joystix_monospace';
+    src: url("../fonts/joystix_monospace-webfont.woff2") format('woff2'),
+         url("../fonts/joystix_monospace-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ZapfBookITCStd-Demi';
+    src: url('../fonts/ZapfBookITCStd-Demi.woff2') format('woff2'),
+         url('../fonts/ZapfBookITCStd-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'bodoni';
+    src: url('../fonts/bodoni-webfont.woff2') format('woff2'),
+         url('../fonts/bodoni-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nimbus';
+    src: url('../fonts/freesans-webfont.woff2') format('woff2'),
+         url('../fonts/freesans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+    /* NAVBAR */
+.navbar {
+  font-family: 'nimbus';
+  background-color: #fc4434;
+  position: fixed;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #feae08!important;
+    border:50px  solid #9e086b;
+    border-width: 10px  ;
+    border-radius: 2rem;
+
+      font-family: 'paraaminobenzoic';
+  font-style: bold;
+  background-color: transparent;
+      background-image: url('../imgs/backram.png');
+
+}
+/* Rende la navbar orizzontale */
+.navbar ul {
+  margin: 1px;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  clear: left;
+}
+
+/* Tutti gli elementi in navbar */
+.navbar li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  white-space: nowrap;
+  text-align:center !important;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  padding: 0;
+  color: #feae08!important;
+}
+
+.navbar li a {
+
+    color: #feae08!important;
+}
+
+.navbar li:hover{
+  color: white
+}
+
+.navbar li a:hover{
+
+  text-decoration:none;
+
+}
+
+
+/* Dropdown */
+.navbar .dropdown ul {
+  font-family: 'vcr';
+
+display: block;
+position: absolute;
+left: 14px;
+top: calc(100% + 30px);
+margin: 0;
+padding: 0px 0;
+z-index: 99;
+opacity: 5;
+visibility: hidden;
+background: rgba(0000)
+box-shadow: 10px 10px 30px rgba(127, 137, 161, 0.25);
+transition: 0.2s;
+
+  border: 7px  black;
+   border-style: double;
+  border-radius: 0rem;
+  color: black!important;
+  background-color: white;
+
+}
+
+
+
+/* Elementi che stanno del dropdown */
+.navbar .dropdown ul li{
+  padding: 0px;
+  font-size: 20px;
+  color: black!important;
+  margin: 3px;
+
+
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+
+}
+
+.navbar .dropdown ul a:hover{
+background-color: black;
+  color: white;
+}
+
+
+
+        .navbar .dropdown ul a {
+          padding: 0px 0px;
+          font-size: 14px;
+          color: white;
+          text-transform: uppercase;
+            margin: 0px;
+            color: black;
+
+        }
+        .dropdown li a {
+          color: black !important;
+        }
+
+        .dropdown li a:hover {
+          color: white !important;
+        }
+/*Fine navbar*/
+
+
+
+body{
+  background-color: white;
+  overflow-x: hidden;
+    background-image: url('../imgs/backram.png');
+}
+
+
+
+
+.text{
+  color:black;
+font-size: 15px;
+
+    z-index: 100;
+text-align: justify;
+margin-top: 80px;
+  font-family: 'joystix_monospace';
+color: white;
+width: 520px; /* e.g. */
+height: 370px; /* e.g. */
+border: 14px solid black;
+border-radius: 50% / 10%;
+background: black center no-repeat;
+text-transform: uppercase;
+margin-left: 90px;
+}
+
+html{
+  cursor: url('../imgs/cursor.cur'), auto;
+}
+
+
+
+.colspotify{
+  color:black;
+    font-family: 'bodoni';
+    font-size: 25px;
+
+    z-index: 100;
+
+    text-align: justify;
+margin-top: 80px;
+margin-left: 136px;
+}
+
+.wrapper {
+  display: grid;
+    grid-template-columns: 500px 700px ;
+    background-color: #f1e8b9;
+  height: 600px;
+  border:50px  solid #e01216;
+  border-width: 10px  ;
+  border-radius: 2rem;
+}
+
+.wrapper_mag {
+  display: grid;
+    grid-template-columns: 704px 700px ;
+    background-color:
+   #fc4434;
+  height: 600px;
+  margin-left: auto;
+    background-image: url('../imgs/backram.png');
+    border:50px  solid  #9e086b;
+    border-width: 10px  ;
+    border-radius: 2rem;
+}
+
+.coltext {
+  color:yellow;
+        font-family: 'harry_fat';
+    font-size: 25px;
+
+    z-index: 100;
+
+    text-align: justify;
+margin-top: 60px;
+margin-left: 70px;
+
+
+
+}
+
+.colimg {
+  color:black;
+    font-family: 'bodoni';
+    font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: 2px;
+    margin-left: -40px;
+    z-index: 0;
+    background-color: transparent;
+
+}
+
+.col_button {
+    color:black;
+    font-family: 'bodoni';
+    font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: 216px;
+    margin-left: 159px;
+}
+
+.col_issue {
+
+    color: lightgrey;
+  font-family: 'zapf_elliptical_711_regular';
+    font-size: 20px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: -533px;
+    margin-left: 532px;
+    margin-right: -450px;
+      color: black;
+
+}
+
+.wrapper_issue {
+  display: grid;
+    grid-template-columns: 704px 700px ;
+  font-family: 'vcr';
+  height: 780px;
+  margin-left: -0px;
+
+   border: 10px solid black;
+  border-radius: 2rem;
+  color: black;
+  background-color: #f1e8b9;
+}
+
+
+.col_button_us {
+  color:  #black;
+    font-family: 'joystix_monospace';
+    text-transform: uppercase;
+    font-size: 60px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: -19px;
+    margin-left: 41px;}
+
+.col_us {
+
+    color:  black;
+    font-family: 'vcr';
+    font-size: 22px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: -110px;
+    margin-left: 532px;
+    margin-right: -437px;
+}
+
+.wrapper_us{
+  display: grid;
+    grid-template-columns: 704px 700px ;
+  background-color: lightgrey;
+  height: 580px;
+border-radius: 2rem;
+  border: 10px solid black;
+
+}
+
+
+
+.col_img_yet {
+  color:black;
+    font-family: 'bodoni';
+    font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: 110px;
+    margin-left: 90px;
+    z-index: 0;
+}
+
+.col_text_yet {
+
+  color: black;
+font-family: 'zapf_elliptical_711_regular';
+  font-size: 20px;
+  z-index: 100;
+  text-align: justify;
+  margin-top: -470px;
+  margin-left: 453px;
+  margin-right: -422px;
+
+}
+
+.wrapper_yet{
+  display: grid;
+    grid-template-columns: 704px 700px ;
+  background-color: #f1e8b9;
+  height: 700px;
+  margin-left: auto;
+  border:50px  solid #323e56;
+  border-width: 10px  ;
+  border-radius: 2rem;
+
+}
+
+#us {
+  font-family: 'bodoni';
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.us_title {
+
+      color:  #black;
+      font-family: 'vcr';
+      font-weight: bold;
+}
+
+
+.marquee-section {
+    position: relative;
+    min-height:   100px;
+    font-size: 80px;
+    font-family: 'joystix_monospace';
+      text-transform: uppercase;
+    color:black;
+    background-color: white
+
+}
+
+.marquee-section, .marquee-section * {
+    overflow: hidden;
+}
+
+.marquee {
+    white-space: nowrap;
+}
+
+.marquee-div {
+    position: absolute;
+    animation: move-left-to-right linear 50s infinite;
+
+
+}
+
+/* use this one to move from left to right direction */
+@keyframes move-left-to-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* use this one to move from right to left direction */
+@keyframes move-right-to-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+{
+  box-sizing: border-box;
+}
+
+
+
+
+.cont {
+
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 14px;
+  margin-top: -27px;
+  margin-bottom: 14px;
+
+
+}
+
+
+
+footer{
+  color:black!important;
+  background-color: white;
+  margin-top: 90px;
+    font-family: 'vcr'!important;
+  text-transform: uppercase;
+}
+
+
+
+.btn-10{
+font-family: 'vcr';
+  background-color: transparent;
+  border: 5px double black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.btn-10:hover {
+  font-family: 'vcr';
+    background-color: black;
+    border: 5px double  black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+
+
+
+  *,
+   *:before,
+   *:after {
+     box-sizing: border-box;
+   }
+
+   body {
+     background: lightgrey;
+   }
+
+
+
+
+
+   .container{
+     width: 100%;
+     max-width: 100rem;
+     margin: 0 auto;
+     padding: 0 1.5rem;
+
+       font-family: 'bodoni';
+       font-size: 25px;
+   }
+
+
+
+   section {
+     width: 100%;
+     height: 140vh;
+   background-color:#0c2414;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: 'bodoni';
+     font-size: 25px;
+     margin-top: 0px;
+     align-items: center;
+     text-align: justify;
+       color:  lightgrey;
+   }
+
+
+
+   a:link {
+     text-decoration: none;
+   }
+
+   a:visited {
+     text-decoration: none;
+   }
+
+   a:hover {
+     text-decoration: none;
+   }
+
+   a:active {
+     text-decoration: none;
+   }
+
+   .issue_title {
+     color:black;
+     font-weight: bold;
+     font-family: 'harry_fat';
+   }
+
+
+
+
+
+
+ .wrapper_us a, a:hover, a:focus, a:active {
+      text-decoration: none
+      ;
+      color: #black!important;
+ }
+
+ #myModal {
+   font-family:'joystix_monospace';
+
+         color:black;
+         text-transform: uppercase;
+         font-size: 15px;
+
+
+
+ }
+
+ .modal-header {
+     background-color:#white;
+      color:black;
+      border: 10px double black;
+ }
+
+ .modal-footer {
+     background-color:white;
+      color:lightgrey;
+      border: 10px double black;
+
+
+
+ }
+
+
+
+.modal-footer .btn{
+   background-color: transparent;
+border: 5px double black;
+ color:black;
+ text-transform: uppercase;
+
+ }
+
+.modal-footer .btn:hover{
+   background-color:black;
+   color:white;
+
+}
+ .modal-header .firstbtn{
+    background-color: transparent;
+ border: none;
+  color:lightgrey;
+  font-size: 32px;
+
+  }
+.p-4{
+        background-color:white!important;
+        color: black;
+        font-size: 15px;
+        border: 10px double black;
+
+
+ }
+
+.modal-title {
+  font-size: 32px;
+  text-transform: uppercase;
+
+}
+
+.modal-title:hover {
+  font-size: 32px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+
+}
+
+
+
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+  margin-left: 130px!important;
+  margin-top: 7px!important;
+}
+
+.star_img{
+height: 140px;
+}
+
+.tastiera_img{
+  height: 370px;
+
+}
+
+.slide_us {
+  color: black!important;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: 40px!important;
+    margin-top: 7px!important;
+
+  }
+}

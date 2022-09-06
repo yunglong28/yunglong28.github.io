@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&display=swap');
+
+@font-face {
+    font-family: 'zapf_elliptical_711_regular';
+    src: url('../fonts/zapf_elliptical_711_regular-webfont.woff2') format('woff2'),
+         url('../fonts/zapf_elliptical_711_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'paraaminobenzoic';
+    src: url('../fonts/paraaminobenzoic-webfont.woff2') format('woff2'),
+         url('../fonts/paraaminobenzoic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'vcr';
+    src: url('../fonts/vcr.woff2') format('woff2'),
+         url('../fonts/vcr.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'harry_fat';
+    src: url('../fonts/harry_fat-webfont.woff2') format('woff2'),
+         url('../fonts/harry_fat-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'joystix_monospace';
+    src: url("../fonts/joystix_monospace-webfont.woff2") format('woff2'),
+         url("../fonts/joystix_monospace-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ZapfBookITCStd-Demi';
+    src: url('../fonts/ZapfBookITCStd-Demi.woff2') format('woff2'),
+         url('../fonts/ZapfBookITCStd-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+
+@font-face {
+    font-family: 'bodoni';
+    src: url('../fonts/bodoni-webfont.woff2') format('woff2'),
+         url('../fonts/bodoni-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nimbus';
+    src: url('../fonts/freesans-webfont.woff2') format('woff2'),
+         url('../fonts/freesans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+    /* NAVBAR */
+
+        /* NAVBAR */
+        .navbar {
+          font-family: 'nimbus';
+          background-color: #fc4434;
+          position: fixed;
+          text-transform: uppercase;
+          font-size: 15px;
+          color: #feae08!important;
+            border:50px  solid #9e086b;
+            border-width: 10px  ;
+            border-radius: 2rem;
+
+              font-family: 'paraaminobenzoic';
+          font-style: bold;
+          background-color: transparent;
+              background-image: url('../imgs/backram.png');
+
+        }
+        /* Rende la navbar orizzontale */
+        .navbar ul {
+          margin: 1px;
+          padding: 0;
+          display: flex;
+          list-style: none;
+          align-items: center;
+          clear: left;
+        }
+
+        /* Tutti gli elementi in navbar */
+        .navbar li {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          font-size: 40px;
+          white-space: nowrap;
+          text-align:center !important;
+          margin-right: 20px;
+          margin-left: 30px;
+          margin-bottom: 0px;
+          padding: 0;
+          color: #feae08!important;
+          text-decoration: none;
+        }
+
+        .navbar li a {
+    text-decoration: none;
+            color: #feae08!important;
+        }
+
+        .navbar li:hover{
+          color: white
+        }
+
+        .navbar li a:hover{
+
+          text-decoration:none;
+
+        }
+
+
+        /* Dropdown */
+        .navbar .dropdown ul {
+          font-family: 'vcr';
+
+        display: block;
+        position: absolute;
+        left: 14px;
+        top: calc(100% + 30px);
+        margin: 0;
+        padding: 0px 0;
+        z-index: 99;
+        opacity: 5;
+        visibility: hidden;
+        background: rgba(0000)
+        box-shadow: 10px 10px 30px rgba(127, 137, 161, 0.25);
+        transition: 0.2s;
+
+          border: 7px  black;
+           border-style: double;
+          border-radius: 0rem;
+          color: black!important;
+          background-color: white;
+
+        }
+
+
+
+        /* Elementi che stanno del dropdown */
+        .navbar .dropdown ul li{
+          padding: 0px;
+          font-size: 20px;
+          color: black!important;
+            margin: 3px;
+
+
+        }
+
+        .navbar .dropdown:hover > ul {
+          opacity: 1;
+          top: 100%;
+          visibility: visible;
+
+        }
+
+        .navbar .dropdown ul a:hover{
+        background-color: black;
+          color: white;
+        }
+
+        .navbar .dropdown ul a {
+          padding: 0px 0px;
+          font-size: 14px;
+          color: white;
+          text-transform: uppercase;
+            margin: 0px;
+            color: black;
+
+        }
+        .dropdown li a {
+          color: black !important;
+        }
+
+        .dropdown li a:hover {
+          color: white !important;
+        }
+
+/*Fine navbar*/
+
+html {
+
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+/*Section used for centering process*/
+section {
+  width: 100%;
+  height: 150vh;
+  background-color:#0c2414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'zapf_elliptical_711_regular';
+  font-size: 25px;
+  margin-top: 0px;
+  border:10px solid #9e086b;
+  border-radius: 2rem;
+}
+
+.container{
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+
+
+
+.btn-10{
+  font-family: 'vcr';
+    background-color: transparent;
+    border: 5px double black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.btn-10:hover {
+  font-family: 'vcr';
+    background-color: black;
+    border: 5px double  black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+.marquee-section {
+    position: relative;
+    min-height:   100px;
+    font-size: 80px;
+    font-family: 'joystix_monospace', serif;
+    color:black;
+    background-color: white;
+    text-transform: uppercase;
+    display: none;
+
+
+}
+
+.marquee-section, .marquee-section * {
+    overflow: hidden;
+}
+
+.marquee {
+    white-space: nowrap;
+}
+
+.marquee-div {
+    position: absolute;
+    animation: move-left-to-right linear 50s infinite;
+
+
+}
+
+/* use this one to move from left to right direction */
+@keyframes move-left-to-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* use this one to move from right to left direction */
+@keyframes move-right-to-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+footer{
+  color:black!important;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'vcr';
+  text-transform: uppercase;
+  height:30vh;
+  font-size: 20px;
+}
+#magazine2{
+  background-color:
+  lightgrey;
+height: 370px;
+padding-top: 4%;
+padding-left: 6%;
+padding-right: 6%;
+padding-bottom: 2%;
+  color:black;
+    font-family: 'harry_fat';
+    font-size: 22px;
+    text-align: justify;
+    border: 10px dashed  black;
+    border-radius: 2rem;
+
+
+}
+.btn_stili {
+  background-color:
+  #white!important;
+height: 100px;
+
+
+text-align: center;
+}
+
+
+---da copiare in git---
+.container{
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+    font-family: bodoni;
+    font-size: 22px;
+}
+
+section {
+
+  width: 100%;
+  height: 220vh;
+background-color: white;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  color: black;
+  background-color: #f1e8b9;
+    font-family: 'zapf_elliptical_711_regular';
+}
+
+/
+.style_title {
+  text-decoration: ;
+}
+
+
+.icons_nav {
+  margin-left: 295px;
+  margin-top: 7px;
+}
+
+#myModal {
+   font-family:'nimbus';
+
+         color:lightgrey;
+
+ }
+
+ .modal-header {
+     background-color:#0c2414;
+      color:lightgrey;
+ }
+
+ .modal-footer {
+     background-color:white;
+      color:lightgrey;
+
+
+ }
+
+
+
+.modal-footer .btn{
+   background-color: transparent;
+border: none;
+ color:black;
+ text-transform: uppercase;
+
+ }
+
+.modal-footer .btn:hover{
+   background-color:#0c2414;
+   color:lightgrey;
+
+}
+ .modal-header .firstbtn{
+    background-color: transparent;
+ border: none;
+  color:lightgrey;
+  font-size: 32px;
+
+  }
+.p-4{
+        background-color:white!important;
+        color: black;
+        font-size: 18px;
+
+
+ }
+
+.modal-title {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+  margin-left: 295px;
+  margin-top: 7px;
+}
+
+#myModal {
+  font-family:'joystix_monospace';
+
+        color:black;
+        text-transform: uppercase;
+        font-size: 15px;}
+
+.modal-header {
+    background-color: white!important;
+     color:black;
+     border: 10px double black;
+}
+
+.modal-footer {
+    background-color:white!important;
+     color:lightgrey;
+     border: 10px double black;
+
+
+
+}
+
+
+
+.modal-footer .btn{
+  background-color: transparent;
+border: 5px double black;
+color:black;
+text-transform: uppercase;
+
+}
+
+.modal-footer .btn:hover{
+  background-color:black;
+  color:white;
+
+}
+.modal-header .firstbtn{
+   background-color: transparent;
+border: none;
+ color:lightgrey;
+ font-size: 32px;
+
+ }
+.p-4{
+  font-family:'joystix_monospace'!important;
+       background-color:white!important;
+       color: black;
+       font-size: 15px;
+       border: 10px double black;
+
+
+}
+
+.modal-title {
+ font-size: 32px;
+ text-transform: uppercase;
+
+}
+
+.modal-title:hover {
+ font-size: 32px;
+ text-transform: uppercase;
+ background-color: black;
+ color: white;
+
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+  margin-left: 150px!important;
+  margin-top: 7px!important;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left:30px!important;
+    margin-top: 7px!important;
+
+  }

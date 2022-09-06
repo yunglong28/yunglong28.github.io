@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+  font-family:Golddrew;
+  src:url("../fonts/Golddrew.ttf");
+}
+
+@font-face{
+  font-family:Franklin;
+  src:url("../fonts/BenjaminFranklin.ttf");
+}
+
+/* NAVBAR */
+.navbar {
+  font-family: 'Bebas Neue';
+  background-image: url(../imgs/old_paper.jpg);
+  position: fixed;
+  color:black!important;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  height: 60px;
+  z-index: 100;
+
+
+}
+/* Rende la navbar orizzontale */
+.navbar ul {
+  margin: 1;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  clear: left;
+}
+
+/* Tutti gli elementi in navbar */
+.navbar li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  white-space: nowrap;
+  text-align:center !important;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  padding: 0px;
+  color: #9f281f;
+}
+
+.navbar li a {
+   color: #9f281f;
+   text-decoration: none;
+}
+
+.navbar li:hover{
+  color:black ;
+}
+
+.navbar li a:hover{
+ color:black;
+  text-decoration:none;
+}
+
+
+/* Dropdown */
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  padding: 10px 0;
+  visibility: hidden;
+  background: #fff;
+    z-index: 1;
+}
+
+/* Elementi che stanno del dropdown */
+.navbar .dropdown ul li{
+  padding: 10px;
+  font-size: 20px;
+  color: #9f281f;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+
+
+body{
+  background-image: url(../imgs/wall2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden!important;
+}
+
+.title_issue{
+  display: none;
+}
+
+.banner_issue{
+  display: none;
+}
+
+#sep_banner{
+  display:none;
+}
+
+.article_col{
+  margin: 0.5em;
+  height: 600px;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-width: 10px;
+  border-style: solid;
+  border-image: url(../imgs/old_paper.jpg)25% round;
+}
+
+.article_col figure{
+  text-align:center;
+}
+
+.article_col .video{
+  display: block;
+  text-align:center;
+}
+
+#col1{
+  padding:0;
+  background-color: rgb(211, 104, 65);
+  text-align: center;
+  font-family: 'Franklin', cursive;
+}
+
+#col1 .title{
+  font-size: 35px;
+  color:rgb(228, 217, 201);
+  padding:0.6em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+#col1 .subtitle{
+  font-size: 30px;
+  color:rgb(228, 217, 201);
+  line-height: 1em;
+  text-align: center;
+  text-transform: uppercase;
+ }
+
+ #col1 .author_and_date {
+  padding:1em;
+  text-align: left;
+  font-size: 15px;
+  color:rgb(228, 217, 201);
+ }
+
+  #col1 .start_line{
+     width: 50%;
+     border-top: 3px solid rgb(228, 217, 201);
+  }
+
+#col1 .title_and_subtitle img{
+ margin-top:-60px;
+}
+
+#col1 .subtitle{
+  background-image: url(../imgs/spaccata.png);
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: center;
+}
+
+#col1 p, #col1 li{
+  text-align: center;
+  color: rgb(194, 182, 166);
+  padding-right:15px;
+  padding-left: 15px;
+  font-size: 13px;
+  text-transform:uppercase;
+}
+
+#col1 .paragraph_header{
+  color: rgb(228, 217, 201);
+  text-align: center;
+  font-size: 15px;
+  text-transform:uppercase;
+}
+
+#col1 figcaption{
+  text-align: justify;
+  color:rgb(228, 217, 201);
+  text-align: center;
+  padding-top:0.5em;
+  text-transform:uppercase;
+  font-size: 10px;
+}
+
+
+#ballerini{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#music{
+  float: left;
+}
+
+#col2{
+  background-color:black;
+  font-family: 'Bebas Neue', cursive;
+  color:rgb(191, 164, 4);
+}
+
+#col2 .title{
+  color:rgb(191, 164, 4);
+  font-size: 50px;
+  line-height: 1em;
+  padding:0.4em;
+  text-align: center;
+}
+
+#col2 .title_and_subtitle img{
+ margin-top:-40px;
+}
+
+#col2 .author_and_date{
+   color:rgb(191, 164, 4);
+}
+
+ #col2 .start_line{
+     width: 50%;
+     border-top: 3px solid rgb(191, 164, 4);
+  }
+
+#amazzone{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#container_belle{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-image: url(../imgs/old_paper.jpg);
+}
+
+.emphasized{
+  display: none;
+}
+
+#left{
+  color: rgb(47,84,161);
+  text-align: center;
+  font-size: 30px;
+  padding-top: 9px;
+  line-height: 30px;
+}
+
+#center{
+  color: black;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 14px;
+}
+
+#right{
+  color: rgb(47,84,161);
+  text-align: center;
+  font-size: 30px;
+  padding-top: 9px;
+  line-height: 30px;
+}
+
+#col2_txt{
+  background-image: url(../imgs/old_paper.jpg);
+  text-align: center;
+  padding:15px;
+  font-size: 20px;
+}
+
+
+#col3{
+  background-image: url(../imgs/old_paper.jpg);
+  font-family:  'Golddrew', cursive;
+}
+
+#col3 .title_and_subtitle{
+  color: rgb(0, 53, 102);
+  font-size: 40px;
+  text-align: center;
+  line-height: 1em;
+  padding:0.6em;
+}
+
+#col3 .author_and_date{
+   color:rgb(0, 53, 102);
+}
+
+ #col3 .start_line{
+     width: 50%;
+     border-top: 3px solid rgb(0, 53, 102);
+  }
+
+#li{
+  float:left;
+}
+
+
+.smaller{
+  font-size: 30px;
+  line-height: 1em;
+}
+
+
+#col3 p{
+  color:rgb(0, 53, 102);
+  font-size: 15px;
+  text-align: center;
+}
+
+
+.article_col::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+}
+.article_col::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+.article_col::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+/
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+  float: right;
+}
+
+/*fine sidebar*/
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+   margin-left: 75px!important;
+  margin-top: 7px!important;
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: 20px!important;
+    margin-top: 7px!important;
+
+  }
+}
+
+
+footer{
+   color: #9f281f;
+  background-image: url(../imgs/old_paper.jpg);
+  padding-top: 20px;
+  padding-left: 20px;
+  font-family: 'Bebas Neue';
+  text-transform: uppercase;
+
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+
+
+ #myModal {
+       font-family: 'Franklin';
+
+         color:lightgrey;
+
+ }
+
+ .modal-header {
+  background-color: rgb(211, 104, 65)!important;
+      color:lightgrey;
+      font-family: 'Franklin'!important;
+ }
+
+ .modal-footer {
+     background-color:white;
+          color: rgb(0, 53, 102);
+          background-image: url(../imgs/old_paper.jpg);
+
+
+
+ }
+
+
+
+.modal-footer .btn{
+   background-color: transparent;
+border: none;
+  font-family: 'Golddrew', cursive;
+
+  color: rgb(0, 53, 102);
+ text-transform: uppercase;
+
+ }
+
+.modal-footer .btn:hover{
+   background-color: rgb(211, 104, 65);
+   color:lightgrey;
+
+}
+ .modal-header .firstbtn{
+    background-color: transparent;
+ border: none;
+  color:lightgrey;
+  font-size: 32px;
+
+  }
+.p-4{
+        background-color:white!important;
+            background-image: url(../imgs/old_paper.jpg);
+    color: rgb(0, 53, 102);
+        font-size: 18px;
+        font-family: 'Golddrew', cursive;
+
+
+ }
+
+.modal-title {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+
+
+#title1{
+  overflow: auto;
+}
+
+#float_left{
+  float: left;
+}
+
+#float_right{
+  float: right;
+}
+
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: url(../imgs/old_paper.jpg);
+    /*filter: opacity(70%);*/
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+
+/*.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}*/
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 78px;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 100px;
+    color: black !important;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.openbtn {
+    font-size: 30px;
+
+    cursor: pointer;
+    background-color: transparent;
+    color: #9f281f;
+    border: none;
+    font-family: "Bebas Neue";
+    text-transform: uppercase;
+}
+
+.openbtn:hover {
+    font-size: 30px;
+
+    cursor: pointer;
+    background-color: transparent;
+    color: black!important;
+    border: none;
+    font-family: "Bebas Neue";
+    text-transform: uppercase;
+}
+
+#metadata_intro{
+  font-family: 'Franklin';
+    background-color:#e6d8a8;
+    background-image: url(../imgs/old_paper.jpg);
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    color:   rgb(0, 53, 102);
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+.metadata_issue {
+    color: black !important;
+    margin-right: 75px !important;
+}
+
+
+.accordion-button{
+  font-family:Franklin;
+    background-color: rgb(211, 104, 65)!important;
+    color: rgb(228, 217, 201)!important;
+}
+
+.accordion-button:not(.collapsed) {
+  font-family: 'Bebas Neue';
+   color:rgb(191, 164, 4)!important;
+  background-color: black!important;
+}
+
+:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+ }
+
+.accordion-body{
+    font-family:Franklin;
+  background-color: #e6d8a8;
+    background-image: url(../imgs/old_paper.jpg);
+  }
+
+.accordion-body li{
+    list-style-type: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0.5em;
+    margin: 2px;
+    display: none;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  outline: 1px solid;
+}
+
+
+.focus{
+  text-align: center;
+}
+
+
+
+.btn-10{
+  font-family: Golddrew, cursive;
+    background-color: transparent;
+    border: 3px solid  rgb(0, 53, 102);
+    color: rgb(0, 53, 102);
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+
+.btn-10:hover {
+  font-family: Golddrew, cursive;
+  background-color: rgb(211, 104, 65);
+  border: 3px solid  rgb(228, 217, 201);
+  color: rgb(228, 217, 201);
+  padding: 7px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  }
+
+#buttunazzi{
+  text-align: center;
+}

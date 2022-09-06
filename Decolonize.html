@@ -1,0 +1,779 @@
+<!DOCTYPE HTML>
+
+<head>
+    <title id="francesca">Issue 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/00f73ab7c2.js"></script>
+    <script src="scripts/changes.js"></script>
+
+    <link  id="pagestyle" href="style/issue.css" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+
+
+<body>
+<!-- MODALS -->
+
+    <!-- disclaimer start -->
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Disclaimer</h5>
+            <button type="button" class="firstbtn" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body p-4">
+            <p>
+                The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "Information Modelling and Web Technologies" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, held by professor Fabio Vitali.
+            </p>
+
+            <p>
+                All copyrights and related rights on the content remain with their original owners.
+                <br>
+                All copyright on the typographic and layout choices are 2021 © Edoardo Dal Borgo and Alessandra Failla.
+            </p>
+            </div>
+            <div class="modal-footer">
+            <button type="button"   class="btn btn-secondary" class="close" data-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- disclaimer end -->
+<!-- NAV-->
+<nav class="navbar" id="navbar">
+
+        <ul>
+          <li><a href="home.html" onclick="keepstyle('pagestyle')">The Resonance</a></li>
+
+          <li class="dropdown">Issues
+            <ul>
+              <li><a href="Streaming.html" onclick="keepstyle('pagestyle')">Issue #1</a></li>
+              <li><a href="Decolonize.html" onclick="keepstyle('pagestyle')">Issue #2</a></li>
+              <li><a href="Queer.html" onclick="keepstyle('pagestyle')">Issue #3</a></li>
+            </ul>
+            </li>
+             <li class="dropdown"><a href=>About</a>
+            <ul>
+              <li><a href="documentation.html" onclick="keepstyle('pagestyle')">Documentation</a></li>
+              <a href=""data-toggle="modal" data-target="#myModal"><li>Disclaimer</li></a>
+              <li><a href="home.html#aboutus" onclick="keepstyle('pagestyle')">Us</a></li>
+            </ul>
+            </li>
+            <li id="metadati" onclick="openNav()">Metadata viewer</li>
+            <ul class="icons_nav">
+            <li class="icons" onclick="change('home')"><img id="home_icon" src="imgs/magazine.png"></li>
+            <li class="icons" onclick="change('illuminist')"><img id="cello" src="imgs/cellohome.png"></li>
+            <li class="icons" id="" onclick="change('hobbyhorse')"><img src="imgs/harphome.png" id="harp"></li>
+            <li class="icons" id="belle" onclick="change('belle')"><img src="imgs/gramophonehome.png" id="gramophone"></li>
+            <li class="icons" id="" onclick="change('analog')"><img src="imgs/strobohome.png" id="disco"></li>
+            <li class="icons" id="tabloid" onclick="change('tabloid')"><img src="imgs/boomboxhome.png" id="boombox"></li>
+            <li class="icons" id="future" onclick="change('future')"><img src="imgs/ipodhome.png" class="icons" id="walkman"></li>
+            </ul>
+
+      </nav>
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <div id="metadata_intro">Explore Metadata Per Article</div>
+    <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+         Brazilian Black Music
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="focus"><button class="custom-btn btn-10" clicked="false" onclick="focus_one(this)">Read better</button></div> <br>
+        <div class="general_metadata">
+            <b>Author</b>: Juliana Cantarelli Vita and Chico Santana<br>
+            <b>Date of publication</b>: January 21, 2020<br>
+            <b>Original source</b>: <a href="https://www.decolonizingthemusicroom.com/brazilian-black-music">Go to the source</a><br>
+            <b>Journal</b>: Decolonize the music room
+        </div>
+        <b>Click on the article column to read it better!</b>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        People
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p><b>Sort by</b>
+          <button class="custom-btn btn-10" onclick="undo('my_list_one')" >Appearance</button>
+          <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_one')">Alphabeth</button></p>
+          <!--button type="button" class="btn btn-light" onclick="undo('my_list_one')">Appearance</button> <button type="button" class="btn btn-light" onclick="sortAlphabet('my_list_one')">Alphabet</button-->
+        <ul id="my_list_one">
+         <li about="Juliana Cantarelli Vita" clicked="false" onclick="underline_col1(this, '#C0E6DE')">Juliana Cantarelli Vita (3)</li>
+        <li about="Chico Santana" clicked="false" onclick="underline_col1(this,'#C0E6DE')">Chico Santana (2)</li>
+        <li about="Agawu" clicked="false" onclick="underline_col1(this,'#C0E6DE')">Agawu (1)<a href="https://en.wikipedia.org/wiki/V._Kofi_Agawu"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+        <li><a about="Rose" clicked="false" onclick="underline_col1(this,'#C0E6DE')">Rose-Anynago Omolo-Ongati (2)</a></li>
+         <li><a about="Candeia" clicked="false" onclick="underline_col1(this,'#C0E6DE')">Candeia (1)<a href="https://en.wikipedia.org/wiki/Candeia"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+         </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Places
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p><b>Sort by</b>
+          <button class="custom-btn btn-10" onclick="undo('my_list_two')">Appearance</button>
+          <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_two')">Alphabeth</button>
+        </p>
+        <ul id="my_list_two">
+          <li about="U.S." clicked="false" onclick="underline_col1(this, '#9FD356')"> U.S. (4)<a href="https://en.wikipedia.org/wiki/United_States"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+          <li about="South_America" clicked="false" onclick="underline_col1(this,'#9FD356')">South America (3) <a href="https://en.wikipedia.org/wiki/South_America"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+          <li about="America" clicked="false" onclick="underline_col1(this,'#9FD356')">America (2)<a href="https://en.wikipedia.org/wiki/Americas"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+          <li about="Brazil" clicked="false" onclick="underline_col1(this,'#9FD356')">Brazil (13)<a href="https://en.wikipedia.org/wiki/Brazil"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+          <li about="Africa" clicked="false" onclick="underline_col1(this,'#9FD356')">Africa (4)<a href="https://en.wikipedia.org/wiki/Africa"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+          <li><a about="Germany" clicked="false" onclick="underline_col1(this,'#9FD356')">Germany (1)<a href="https://en.wikipedia.org/wiki/Germany"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+          <li about="Pernambuco" clicked="false" onclick="underline_col1(this,'#9FD356')">Pernambuco (1)<a href="https://en.wikipedia.org/wiki/Pernambuco"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+          <li about="Portugal" clicked="false" onclick="underline_col1(this,'#9FD356')">Portugal (1)<a href="https://en.wikipedia.org/wiki/Portugal"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+          <li about="Rio" clicked="false" onclick="underline_col1(this,'#9FD356')">Rio de Janeiro (2)<a href="https://en.wikipedia.org/wiki/Rio_de_Janeiro"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+       </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        Events
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <ul id="my_list_three">
+          <li about="black_history_month" clicked="false" onclick="underline_col1(this, '#DCED31')">Black History Month (2)<a href="https://en.wikipedia.org/wiki/Black_History_Month"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+          <li about="slave_trade" clicked="false" onclick="underline_col1(this,'#DCED31')">Slave Trade (2)<a href="https://en.wikipedia.org/wiki/History_of_slavery"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+          <li about="samba_birth" clicked="false" onclick="underline_col1(this,'#DCED31')">Samba's birth (1)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        Music Genres
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p><b>Sort by</b>
+          <button class="custom-btn btn-10" onclick="undo('my_list_four')">Appearance</button>
+          <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_four')">Alphabeth</button>
+        </p>
+        <ul id="my_list_four">
+          <li about="maracatu" clicked="false" onclick="underline_col1(this, '#F9CB40 ')">Maracatu (16)<a href="https://en.wikipedia.org/wiki/Maracatu"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+          <li about="samba" clicked="false" onclick="underline_col1(this,'#F9CB40 ')">Samba (20)<a href="https://en.wikipedia.org/wiki/Samba"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+          <li about="brazilian_music" clicked="false" onclick="underline_col1(this,'#F9CB40 ')">Brazilian Music (2)</li>
+          <li about="african_music" clicked="false" onclick="underline_col1(this,'#F9CB40 ')">African Music (2)</li>
+          <li about="afro_brazilian_music" clicked="false" onclick="underline_col1(this,'#F9CB40 ')">Afro-Brazilian Music (8)</li>
+          <li about="black_music" clicked="false" onclick="underline_col1(this,'#F9CB40 ')">Black Music (2)</li>
+       </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+        Concepts
+      </button>
+    </h2>
+    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p><b>Sort by</b>
+          <button class="custom-btn btn-10" onclick="undo('my_list_five')">Appearance</button>
+          <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_five')">Alphabeth</button>
+        </p>
+        <ul id="my_list_five">
+          <li about="black_people" clicked="false" onclick="underline_col1(this, '#73E2A7')">Black People (3)</li>
+          <li about="tradition" clicked="false" onclick="underline_col1(this,'#73E2A7')">Tradition (18)</li>
+          <li about="colonization" clicked="false" onclick="underline_col1(this,'#73E2A7')">Colonization (3)<a href="https://en.wikipedia.org/wiki/History_of_slavery"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+          <li about="slavery" clicked="false" onclick="underline_col1(this,'#73E2A7')">Slavery (7)</li>
+       </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSeven">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+        Decolonizing our music
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <div class="focus"><button class="custom-btn btn-10" clicked="false" onclick="focus_two(this)">Read better</button></div> <br>
+                <div class="general_metadata">
+                    <b>Author</b>: Gary Ingle<br>
+                    <b>Date of publication</b>: November 16, 2016<br>
+                    <b>Original source</b>: <a href="https://newmusicusa.org/nmbx/decolonizing-our-music/#:~:text=decolonize%E2%80%9D%20our%20music.-,Decolonizing%20music%20involves%20a%20conscious%20decision%20to%20move%20away%20from,and%E2%80%9D%20%E2%80%9Cdecolonized%E2%80%9D%20mentality">Go to the source</a><br>
+                    <b>Journal</b>: New Music USA
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingEight">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                People
+              </button>
+            </h2>
+            <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p><b>Sort by</b>
+                <button class="custom-btn btn-10" onclick="undo('my_list_six')">Appearance</button>
+                <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_six')">Alphabeth</button></p>
+                <!--button type="button" class="btn btn-light" onclick="undo('my_list_one')">Appearance</button> <button type="button" class="btn btn-light" onclick="sortAlphabet('my_list_one')">Alphabet</button-->
+                <ul id="my_list_six">
+                     <li about="ingle" clicked="false" onclick="underline_col2(this, '#C0E6DE')">Gary Ingle (1)</li>
+                     <li about="Christopher Columbus" clicked="false" onclick="underline_col2(this,'#C0E6DE')">Christopher Columbus (1)<a href="https://en.wikipedia.org/wiki/Christopher_Columbus"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                    <li about="clark" clicked="false" onclick="underline_col2(this,'#C0E6DE')">Andrew Clark (2) </li>
+                    <li about="grout" clicked="false" onclick="underline_col2(this,'#C0E6DE')">Donald J. Grout (2)<a href="https://en.wikipedia.org/wiki/Donald_Jay_Grout"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                    <li about="negroponte" clicked="false" onclick="underline_col2(this,'#C0E6DE')">Nicholas Negroponte (2)<a href="https://it.wikipedia.org/wiki/Nicholas_Negroponte"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                    <li about="karabuda" clicked="false" onclick="underline_col2(this,'#C0E6DE')">Alfons Karabuda (2)<a href="https://en.wikipedia.org/wiki/Alfons_Karabuda"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                    <li about="birkerts" clicked="false" onclick="underline_col2(this,'#C0E6DE')">Sven Birkerts (1)<a href="https://en.wikipedia.org/wiki/Sven_Birkerts"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+               </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingNine">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                Places
+              </button>
+            </h2>
+            <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p><b>Sort by</b>
+                <button class="custom-btn btn-10" onclick="undo('my_list_seven')">Appearance</button>
+                <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_seven')">Alphabeth</button></p>
+                <!--button type="button" class="btn btn-light" onclick="undo('my_list_one')">Appearance</button> <button type="button" class="btn btn-light" onclick="sortAlphabet('my_list_one')">Alphabet</button-->
+                <ul id="my_list_seven">
+                    <li about="Spain" clicked="false" onclick="underline_col2(this, '#9FD356')">Spain (2)<a href="https://en.wikipedia.org/wiki/Spain"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                    <li about="America" clicked="false" onclick="underline_col2(this,'#9FD356')">America (2)<a href="https://en.wikipedia.org/wiki/Americas"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                    <li about="UK" clicked="false" onclick="underline_col2(this,'#9FD356')">Great Britain (1)<a href="https://en.wikipedia.org/wiki/Great_Britain"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                    <li about="France" clicked="false" onclick="underline_col2(this,'#9FD356')">France (1)<a href="https://en.wikipedia.org/wiki/France"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+               </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                Events
+              </button>
+            </h2>
+            <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p><b>Sort by</b>
+                <button class="custom-btn btn-10" onclick="undo('my_list_eight')">Appearance</button>
+                <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_eight')">Alphabeth</button></p>
+                <ul id="my_list_eight">
+                    <li about="1500" clicked="false" onclick="underline_col2(this, '#DCED31')">XVI century (1)<a><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                    <li  about="renaissance" clicked="false" onclick="underline_col2(this,'#DCED31')">Renaissance (1)<a href="https://en.wikipedia.org/wiki/Renaissance"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                    <li about="baroque" clicked="false" onclick="underline_col2(this,'#DCED31')">Baroque (1)<a href="https://en.wikipedia.org/wiki/Baroque"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+               </ul>
+              </div>
+            </div>
+          </div>
+             <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingEleven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                Music Genre
+              </button>
+            </h2>
+            <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p><b>Sort by</b>
+                <button class="custom-btn btn-10" onclick="undo('my_list_nine')">Appearance</button>
+                <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_nine')">Alphabeth</button></p>
+                <ul id="my_list_nine">
+                    <li about="popular" clicked="false" onclick="underline_col2(this, '#F9CB40 ')">Popular music(6)<a href="https://en.wikipedia.org/wiki/Popular_music"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                    <li about="indigenous" clicked="false" onclick="underline_col2(this,'#F9CB40 ')">Indigenous music(9)</li>
+                    <li about="classical" clicked="false" onclick="underline_col2(this,'#F9CB40 ')">Classical music(7)<a href="https://en.wikipedia.org/wiki/Classical_music"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+               </ul>
+              </div>
+            </div>
+          </div>
+           <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwelve">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                Concepts
+              </button>
+            </h2>
+            <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p><b>Sort by</b>
+                <button class="custom-btn btn-10" onclick="undo('my_list_ten')">Appearance</button>
+                <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_ten')">Alphabeth</button></p>
+                <ul id="my_list_ten">
+                    <li about="colonization" clicked="false" onclick="underline_col2(this, '#73e2a7')">Colonization (12)<a href="https://en.wikipedia.org/wiki/Colonialism"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                    <li about="globalization" clicked="false" onclick="underline_col2(this,'#73e2a7')">Globalization (3)<a href="https://en.wikipedia.org/wiki/Globalization"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                    <li about="indigenous" clicked="false" onclick="underline_col2(this,'#73e2a7')">Indigenous (4)</li>
+                    <li about="religion" clicked="false" onclick="underline_col2(this,'#73e2a7')">Religion (3)</li>
+                    <li about="tech" clicked="false" onclick="underline_col2(this,'#73e2a7')">Tech (15)</li>
+                    <li about="decolonization" clicked="false" onclick="underline_col2(this,'#73e2a7')">Decolonization (11)<a href="https://en.wikipedia.org/wiki/Decolonization"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                    <li about="tradition" clicked="false" onclick="underline_col2(this,'#73e2a7')">Tradition (7)</li>
+               </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThirteen">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+        Decolonizing the ear
+      </button>
+    </h2>
+    <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+            <div class="focus"><button class="custom-btn btn-10" clicked="false" onclick="focus_three(this)">Read better</button></div> <br>
+              <div class="general_metadata">
+                  <b>Author</b>: Oliver Lovesey<br>
+                  <b>Date of publication</b>: October 11, 2016<br>
+                  <b>Original source</b>: <a href="https://www.tandfonline.com/doi/full/10.1080/03007766.2016.1230695">Go to the source</a><br>
+                  <b>Journal</b>: Popular Music and Society
+              </div>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFourteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
+              People
+            </button>
+          </h2>
+          <div id="flush-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFourteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p><b>Sort by</b>
+                <button class="custom-btn btn-10" onclick="undo('my_list_eleven')">Appearance</button>
+                <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_eleven')">Alphabeth</button></p>
+                <ul id="my_list_eleven">
+              <li about="lovesey" clicked="false" onclick="underline_col3(this, '#C0E6DE')">Oliver Lovesey (1)</li>
+              <li about="said" clicked="false" onclick="underline_col3(this, '#C0E6DE')">Edward Said (4)<a href="https://en.wikipedia.org/wiki/Edward_Said"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+              <li about="fanon" clicked="false" onclick="underline_col3(this, '#C0E6DE')">Frantz Fanon (1)<a href="https://it.wikipedia.org/wiki/Frantz_Fanon"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+              <li about="james" clicked="false" onclick="underline_col3(this, '#C0E6DE')">C. L. R. James (1))<a href="https://it.wikipedia.org/wiki/Cyril_Lionel_Robert_James"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+              <li about="pier" clicked="false" onclick="underline_col3(this, '#C0E6DE')">David Pier (1)</li>
+              <li about="mugula" clicked="false" onclick="underline_col3(this, '#C0E6DE')">Dan Mugula (1)</li>
+              <li about="Ndigi" clicked="false" onclick="underline_col3(this, '#C0E6DE')">Gĩchingiri Ndĩgĩrĩgĩ (1)</li>
+              <li about="Ngugi" clicked="false" onclick="underline_col3(this, '#C0E6DE')">Ngũgĩ wa Thiong’o’s Maitu Njugĩra (3)</li>
+              <li about="Williams" clicked="false" onclick="underline_col3(this, '#C0E6DE')">Justin A. Williams (2)</li>
+              <li about="Anja" clicked="false" onclick="underline_col3(this, '#C0E6DE')">Anja Brunner (1)</li>
+              <li about="Gilroy" clicked="false" onclick="underline_col3(this, '#C0E6DE')">Paul Gilroy (1)<a href="https://it.wikipedia.org/wiki/Paul_Gilroy"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+              <li about="Magnat" clicked="false" onclick="underline_col3(this, '#C0E6DE')">Virginie Magnat (1)</li>
+              <li about="Millar" clicked="false" onclick="underline_col3(this, '#C0E6DE')">Stephen R. Millar (1)</li>
+              <li about="Skelly" clicked="false" onclick="underline_col3(this, '#C0E6DE')">Tommy Skelly (1)</li>
+              <li about="Akala" clicked="false" onclick="underline_col3(this, '#C0E6DE')">Akala (1)<a href="https://en.wikipedia.org/wiki/Akala_(rapper)"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+              <li about="Lee" clicked="false" onclick="underline_col3(this, '#C0E6DE')">Seung-Ah Lee (2)</li>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFifteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFifteen" aria-expanded="false" aria-controls="flush-collapseFifteen">
+              Places
+            </button>
+          </h2>
+          <div id="flush-collapseFifteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFifteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><p><b>Sort by</b>
+                <button class="custom-btn btn-10" onclick="undo('my_list_twelve')">Appearance</button>
+                <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_twelve')">Alphabeth</button></p>
+                <ul id="my_list_twelve">
+                  <li about="Europe" clicked="false" onclick="underline_col3(this, '#9FD356')">Europe (1)<a href="https://en.wikipedia.org/wiki/Europe"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                  <li about="Korea" clicked="false" onclick="underline_col3(this, '#9FD356')">Korea (2)<a href="https://en.wikipedia.org/wiki/Korea"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                  <li about="Uganda" clicked="false" onclick="underline_col3(this, '#9FD356')">Uganda (2)<a href="https://en.wikipedia.org/wiki/Korea"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                  <li about="UK" clicked="false" onclick="underline_col3(this, '#9FD356')">Great Britain (1)<a href="https://en.wikipedia.org/wiki/Uganda"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                  <li about="Cameroon" clicked="false" onclick="underline_col3(this, '#9FD356')">Cameroon (2)<a href="https://en.wikipedia.org/wiki/Cameroon"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                  <li about="Ireland" clicked="false" onclick="underline_col3(this, '#9FD356')">Ireland (1)<a href="https://en.wikipedia.org/wiki/Ireland"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSixteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSixteen" aria-expanded="false" aria-controls="flush-collapseSixteen">
+              Events
+            </button>
+          </h2>
+          <div id="flush-collapseSixteen" class="accordion-collapse collapse" aria-labelledby="flush-headingSixteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul id="my_list_thirteen">
+                <li><a about="occupation" clicked="false" onclick="underline_col3(this, '#DCED31')">Korea under Japanese rule (1)</a></li>
+                <li><a about="XXI" clicked="false" onclick="underline_col3(this, '#DCED31')">XXI centrury (1)</a></li>
+                <li><a about="XIX" clicked="false" onclick="underline_col3(this, '#DCED31')">XIX century (1)</a></li>
+                <li><a about="50s" clicked="false" onclick="underline_col3(this, '#DCED31')">1950s and 60s (1)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSeventeen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeventeen" aria-expanded="false" aria-controls="flush-collapseSeventeen">
+              Music Genres
+            </button>
+          </h2>
+          <div id="flush-collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="flush-headingSeventeen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><p><b>Sort by</b>
+              <button class="custom-btn btn-10" onclick="undo('my_list_fourteen')">Appearance</button>
+              <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_fourteen')">Alphabeth</button></p>
+              <ul id="my_list_fourteen">
+                <li about="popular" clicked="false" onclick="underline_col3(this, '#F9CB40')">Popular music (22)<a href="https://en.wikipedia.org/wiki/Popular_music"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></a></li>
+                <li about="hip-hop" clicked="false" onclick="underline_col3(this, '#F9CB40')">Hip-hop (1)<a href="https://en.wikipedia.org/wiki/Hip_hop_music"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingEighteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEighteen" aria-expanded="false" aria-controls="flush-collapseEighteen">
+              Concepts
+            </button>
+          </h2>
+          <div id="flush-collapseEighteen" class="accordion-collapse collapse" aria-labelledby="flush-headingEighteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><p><b>Sort by</b>
+              <button class="custom-btn btn-10" onclick="undo('my_list_fifteen')">Appearance</button>
+              <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_fifteen')">Alphabeth</button></p>
+              <ul id="my_list_fifteen">
+                <li about="tech" clicked="false" onclick="underline_col3(this, '#73e2a7')">Technology (1)</li>
+                <li about="decolonization" clicked="false" onclick="underline_col3(this, '#73e2a7')">Decolonization (18)<a href="https://en.wikipedia.org/wiki/Decolonization"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                <li about="colonization" clicked="false" onclick="underline_col3(this, '#73e2a7')">Colonization (5)<a href="https://en.wikipedia.org/wiki/Colonialism"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                <li about="globalization" clicked="false" onclick="underline_col3(this, '#73e2a7')">Globalization (3)<a href="https://en.wikipedia.org/wiki/Globalization"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a></li>
+                <li about="indigenous" clicked="false" onclick="underline_col3(this, '#73e2a7')">Indigenous (1)</a></li>
+                <li about="tradition" clicked="false" onclick="underline_col3(this, '#73e2a7')">Tradition (1)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+     <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingNineteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNineteen" aria-expanded="false" aria-controls="flush-collapseNineteen">
+              Add metadata
+            </button>
+          </h2>
+          <div id="flush-collapseNineteen" class="accordion-collapse collapse" aria-labelledby="flush-headingNineteen" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>You can add customised metadata classes: type the new class' name below, select the portion of text you'd like to categorize and click on the 'Add metadata button'.</p>
+              <input type="text" class="form-control" id="add_class" placeholder="Class Name">
+              <br>
+              <div id="buttunazzi">
+                <button class="custom-btn btn-10" onclick="saveNewClass()" id="add_metadata_button">Add metadata</button><button class="custom-btn btn-10" id="delete_metadata_button" onclick="clearAll()">Clear all</button>
+              </div>
+              <div id="new_metadata_list"><br>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+</div>
+
+</div>
+
+<br id="sep_nav">
+
+
+<!--div class="title_issue"> <img src="imgs/theresonance.jpg"> </div> <solo tabloid-->
+<!--div class="banner_issue"> EXCLUSIVE: DECOLONISING MUSIC</div> <-solo tabloid-->
+<!--br id="sep_banner"><solo tabloid-->
+
+<div class="container container_articles"  id="articoli" onmouseup="document.getSelection()">
+<div class="row row_articles">
+
+<div class="col article_col" id="col1" clicked="false">
+
+<div class='article_header'>
+<div class="title_and_subtitle" id="title_and_subtitle_1">
+  <div class="title">Brazilian Black Music</div>
+  <!--img class="opening_img" id="ballerini" src="imgs/ballerini.png">solo belle-->
+  <div class="subtitle">Latin America beyond the stigmas</div> <!--tabloid maiuscolo-->
+</div>
+ <img class="first_img" id="first_img_one" src="https://img1.wsimg.com/isteam/ip/d8d3ee10-86f5-4a41-aa20-fec4c8ea1c2e/Maracatu%20Coronation.png/:/cr=t:3.65%25,l:0.71%25,w:94.34%25,h:94.34%25/rs=w:1280" alt="Coronation ceremony" width="300">
+
+<div class="author_and_date">
+<div class="author">By <span  class="person" about="Juliana Cantarelli Vita">Juliana Cantarelli Vita</span> and <span class="person" about="Chico Santana"> Chico Santana, PhD</span> phd </div>
+<div class="publicationDate">January 21, 2020.</div>
+<hr class="start_line">
+</div>
+</div>
+
+<div class="ArtBody" id="first_article">
+    <p id="fra1"><span class="date" about="black_history_month">Every February</span>, North Americans take time to celebrate and recognize the central role of <span class="key" about="black_people">Black People</span> in <span class="place" about="U.S.">U.S.</span> history. With this article, we intend to go a little farther than<span class="place" about="U.S."> North America</span>, focusing on <span class="place" about="South_America">South America</span> and more specifically on Afro-Brazilian <span class="key" about="tradition">traditions</span>. Before we dive into two Afro-Brazilian musical <span class="key" about="tradition">traditions</span> that comprise the focus of this paper (namely, <span class="genre" about="maracatu">maracatu de baque virado</span> and <span class="genre" about="samba"> samba</span>), let's briefly discuss the ways in which Brazilian music may be positioned among marketable and social categories. Being Brazilian means to be Latinx, even though some Brazilians often do not recognize themselves as such due to the fact that the term "Latinx" is normally associated with Hispanic cultural traits (which is not a part of Brazilian music/culture necessarily). We argue, however, that is important to recognize Brazilians as Latinx, as the term bonds cultures who have been historically oppressed and <span class="key" about="colonization"> colonized</span>.</p>
+
+    <p>With that said, yes, we are a part of <span class="place" about="South_America"> América Latina </span>(yes, <span class="place" about="America">America</span> is a continent and not a country), but <span class="genre" about="brazilian_music">Brazilian music</span> has known a wide influence of African cultures, beyond the aesthetics and musical "sound" itself all the way to the meanings and contexts of the musical performances. As <span class="person" about="Agawu">Agawu</span> (2003) argues,</p> <p class="quote">the concept of <span class="genre" about="african_music">"African music"</span> is a problematic one: a whole continent cannot be represented by "one" music.</p> <p>Then, when we think about African traits in <span class="genre" about="brazilian_music"> Brazilian music</span>, we may observe the diversity of African elements. Of course, this view contrasts with mainstream history courses taught in the<span class="place" about="Brazil"> Brazilian</span> education system that focus on a Eurocentric perspective of music’s European facets and thus reduces <span class="place" about="Africa">Africa</span> (and its influences on Brazilian music) to an exotic and stigmatized place. It is important to understand which elements of African culture are inherent in <span class="genre" about="afro_brazilian_music">Afro-Brazilian</span> and Latinx music in order to avoid a reduction or misunderstanding of the wide and extremely rich cultural universe of <span class="place" about="Africa">African continent</span>.</p>
+
+
+    <p>The myriad traces of <span class="genre" about="african_music">African music </span> in <span class="place" about="Brazil">Brazil</span> are a consequence of the long period of <span class="key" about="slavery">slavery</span> time in the country, when <span class="place" about="Brazil"> Brazil</span> was a <span class="key" about="colonization">Portuguese colony</span>. The forceful bringing of <span class="key" about="slavery">enslaved Africans to Brazilian shores</span> <span class="date" about="slave_trade">began in 1550</span> and was <span class="date" about="slave_trade">not abolished until 1888</span>, during which period Brazil received more <span class="key" about="slavery">enslaved Africans</span> than any other country</span>. West and Central African peoples were forced to embark for <span class="place" about="Brazil">Brazil</span> at their ports (most from <span class="place" about="Africa">Luanda, present-day Angola</span>). An estimate of four million <span class="key" about="slavery">enslaved people</span> were brought to <span class="place" about="Brazil"> Brazil</span>, adding to 40% of the total number brought to all the <span class="place" about="America">Americas—North, Central, and South</span>.</p>
+
+
+    <p>As we know,</p> <p class="quote"><span class="key" about="black_history_month">Black History month</span> does not limit itself to times of struggles of African descendants in the Americas.</p> <p>Being aware of these is crucial for an understanding of what comes after, but let's not stop there. The two <span class="key" about="tradition"> traditions</span> we are approaching here are a matter of pride and celebration for not only <span class="key" about="black_people">Black communities</span> in <span class="place" about="Brazil">Brazil</span> but for Brazilian culture as a whole. This paper addresses ways in which we can embrace Afro-Brazilian music in and as culture in a respectful and responsible manner. What to consider teaching Brazilian music abroad? Considering the complexity of the "African" and "Latin" concepts, what and how do we  teach <span class="genre" about="afro_brazilian_music">Afro-Brazilian Music</span> outside of its original contexts, where most often stigmas exist in relation to<span class="place" about="Brazil"> Brazil</span> itself?</p>
+
+    <p> <span  class="person" about="Juliana Cantarelli Vita">Juliana Cantarelli Vita</span> In terms of our positionality, it is importnt to highlight that our identities shift depending on where we are. Although we do identify as White in <span class="place" about="Brazil"> Brazil</span>, we have been perceived as <span class="key" about="black_people">people of color</span> when living abroad, as both of us have lived outside of <span class="place" about="Brazil">Brazil</span> for an extensive period of time (<span class="person" about="Juliana Cantarelli Vita">Juliana</span> in the <span class="place" about="U.S."> United States</span>, <span class="person" about="Chico Santana"> Chico</span> in <span class="place" about="Germany"> Germany</span>). More often than not, when abroad, we are put in a conglomerate of "Brazilians" in which ethnicity is not likely to be emphasized. For that very reason, we like and need to make clear that although we are seen as part of a minority group when we are abroad, we belong to a position of white privilege back home. And that makes all the difference when we are teaching traditions that are so close to our hearts that are based in marginalized ethnic groups of which we ourselves are not members. This is especially true when others can and often do perceive us as “insiders” when we are not, no matter how close to our hearts these <span class="key" about="tradition">musical traditions </span> may be, and no matter the extensive training and the permissions we have been granted to share these musics. With this piece, we hope to bring forward our experiences with the<span class="key" about="tradition">Afro-Brazilian traditions </span> of <span class="genre" about="maracatu"> maracatu de baque virado</span> and <span class="genre" about="samba"> samba</span>, as we have both been deeply involved with these in <span class="place" about="Brazil"> Brazil</span> and have been participating in the diasporic movement of these <span class="key" about="tradition">traditions </span>.</p>
+
+    <h3 class="paragraph_header">Two (of the Many)<span class="key" about="tradition">Afro-Brazilian Traditions</span></h3>
+    <figure>
+      <img class="article_images" src="https://img1.wsimg.com/isteam/ip/d8d3ee10-86f5-4a41-aa20-fec4c8ea1c2e/Maracatu%20Coronation.png/:/cr=t:3.65%25,l:0.71%25,w:94.34%25,h:94.34%25/rs=w:1280" alt="Coronation ceremony" width="300">
+      <figcaption><i><b>First capture of a coronation ceremony (no date).</b></i></figcaption>
+    </figure>
+
+
+    <h3 class="paragraph_header"><span class="genre" about="maracatu">Maracatu de baque virado</span>, <span class=" genre" about="black_music">Black music</span> of the northeast.</h3><p> <span class="genre" about="maracatu">Maracatu de baque virado</span> (“turned beat” maracatu, also known as <span class="genre" about="maracatu"> maracatu de nação</span>) is an <span class="genre" about="afro_brazilian_music">Afro-Brazilian genre</span> and cultural <span class="key" about="tradition">tradition</span> from the state of <span class= "place" about="Pernambuco">Pernambuco</span>. The term, often shortened simply to nação, refers not only to the performance but also to the performing group themselves. The origins of <span class="genre" about="maracatu"> maracatu de nação </span> lie in the reenactment of the ceremonies of the Kings of Congo, who were <span class="key" about="slavery"> slaves </span> that occupied leadership roles within the <span class="key" about="slavery">slave community</span>.</p>
+
+    <p>Although the annual maracatu performances in the carnival parade are not religious, <span class="key" about="tradition">traditional nações</span> are grouped around Candomblé (an Afro-Brazilian religion based on Yoruba principles), and the principles of that religion infuse their activities. <span class="key" about="tradition">Traditional nações</span> , perform parading with a drumming group of around 100 players who also sing in response to the master singer, as well as a group of dancers and characters, including the king and queen. Dancers and characters dress and behave as the Portuguese royal court of the Baroque era, as both a way of mocking the Portuguese court (as <span class="place" about="Portugal">Portugal</span> was the country that <span class="key" about="colonization">colonized</span> and <span class="kay" about="slavery"> enslaved </span> their ancestors) and a way of legitimizing their own nação. The performance also enacts <span class="key" about="tradition">pre-colonial African traditions</span>, like parading with the calunga, the doll representing different orishas (deities).</p>
+
+
+    <figure>
+      <img class="article_images" src="https://img1.wsimg.com/isteam/ip/d8d3ee10-86f5-4a41-aa20-fec4c8ea1c2e/Maracatu%20Carnival%20Parade.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1280" alt="Carnival Parade" width="300">
+      <figcaption><i><b><span class="genre" about="maracatu">Nação do Maracatu </span> Porto Rico on the Carnival Parade. Recife, 2012.</b></i></figcaption>
+    </figure>
+
+
+    <p>Beside the nações,<span class="genre" about="maracatu"> maracatu</span> percussion groups that perform musically “in the style of” <span class="genre" about="maracatu"> maracatus de nação</span>, although not considered a legitimate practice by the nações (i.e., with no historical lineage or ties to religion), play an important role in the dispersonal of tradition. Often referred to as “balacatu” (“party” <span class="genre" about="maracatu">maracatu</span>), these are seen not part of a culture with a set of beliefs, but rather percussion ensembles for “fun practice.” These groups are seen as vessels in which <span class="key" about="tradition"> Afro-Brazilian cultural traditions</span> are spread within <span class="place" about="Brazil">Brazil</span> and throughout the world. One does not have to conform to Candomblé in order to play <span class="genre" about="maracatu">maracatu</span>, but there is an understanding of respect and acknowledgment of the origins of the <span class="key" about="tradition">tradition</span>.
+    The music entails the thundering sounds of the alfaia (a low-pitched rope drum, similar to the European fielddrum), agbê (shakers that resemble the West African axatse gourd instrument), agogô (high-and-low bell, resembling a gankogui, drawn from <span class="key" about="tradition">West African traditions</span>), and gonguê (single bell, thought to be an influence from <span class="place" about="Africa">East Africa</span>). Some groups, such as Nação Porto Rico, have incorporated the use of atabaques (hand drums).
+    <figure>
+      <img class="article_images" src="https://img1.wsimg.com/isteam/ip/d8d3ee10-86f5-4a41-aa20-fec4c8ea1c2e/Maracatu%20Practice.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1280" alt="Musicians with alfaia" width="300">
+      <figcaption><i><b>Musicians with alfaia</b></i></figcaption>
+    </figure>
+
+
+
+    <h3 class="paragraph_header"><span class="genre" about="maracatu">Nação do Maracatu</span> Porto Rico:</h3>
+    <div class="video">
+      <iframe width="300" height="auto" src="https://www.youtube.com/embed/Yv_oRjhVVAA?fs=1&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+    <h3 class="paragraph_header"><span class="genre" about="maracatu">Nação do Maracatu Porto Rico on the 2019 carnival parade</span>:</h3>
+    <div class="video">
+      <iframe width="300" height="auto" src="https://www.youtube.com/embed/3us6T843Z9s?fs=1&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+    <h3 class="paragraph_header"><span class="genre" about="maracatu">Nação do Maracatu</span> Porto Rico during a rehearsal on the community:</h3>
+    <div class="video">
+      <iframe width="300" height="auto" src="https://www.youtube.com/embed/MDcAhcOBwLQ?fs=1&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h3 class="paragraph_header"><span class="genre" about="samba">Samba</span> In a Broader Perspective</h3>
+    <p><span class="genre" about="samba">Samba</span> is a Brazilian musical genre, with several styles within it: <span class="genre" about="samba">samba enredo, pagode, partido alto, samba de breque, samba canção, samba de roda</span>, among others. More than a genre, <span class="genre" about="samba">samba</span> refers to a broader concept that includes three dimensions: to play (instruments and voice), to dance, and to celebrate.<span class="genre" about="samba"> Samba</span> can refer to a song, to a party/celebration or to the dance movements/gestures - sometimes to all these things at the same time. During the 19th century, the word <span class="genre" about="samba"> samba </span> was used to convey several kinds of Black manifestations including dance, singing and percussion instruments. Then, when we think about teaching samba music, we may consider this wider concept.</p>
+
+
+    <p>Musically speaking, <span class="genre" about="samba">samba</span> has some rhythmic aspects that are inherent to different styles. Each kind of <span class="genre" about="samba"> samba </span> has its own features, and the most widespread style is the samba from <span class="place" about="Rio"> Rio de Janeiro</span>, or <span class="genre" about="samba">samba carioca</span>, <span class="date" about="samba_birth">created at the end of the 1920s</span>. This is the style that is known worldwide, which is normally associated to the Brazilian Carnival. Because of it, <span class="genre" about="samba">samba</span> brings some stigmatized and reduced concepts when approached in foreign countries, what creates a great responsibility for the music educator who teaches it. Thus, it is important to discuss and expose the contexts where <span class="genre" about="samba">samba</span> is played, danced and celebrated, pointing out how musical aspects are related to it.
+    Different from <span class="genre" about="maracatu">maracatu</span>, <span class="genre" about="samba">samba</span> and its styles has a mediatic appeal, which drove it away from its Black origins. However, it is essential to recognize <span class="genre" about="samba">samba</span> as <span class="genre" about="black_music">Black music</span>, forged by oppressed people within social-political tensions and negotiations. The very transformations of this manifestation reflects those processes of denial and acceptance within a racist society. In this sense, <span class="genre" about="samba">samba</span> can be seen as a resistance practice. To teach samba in a foreign context (outside <span class="place" about="Brazil">Brazil</span>, in another social context) represents an opportunity to approach historical and social aspects that goes beyond musical aspects.</p>
+
+    <h3 class="paragraph_header">Example of <span class="genre" about="samba">“samba de partido alto”</span> in <span class="place" about="Rio">Rio de Janeiro</span>, with the musician <span class="person" about="Candeia">Candeia</span> explaining some kinds of dance:</h3>
+    <div class="video">
+      <iframe width="300" height="auto" src="https://www.youtube.com/embed/j7gG-onRK28?fs=1&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h3 class="video_description">Example of a <span class="genre" about="samba">"roda de samba"</span> (samba "circle"), with composers presenting <span class="genre" about="samba">"samba de quadra"</span> style (compositions made out the Carnival period):</h3>
+    <div class="video">
+      <iframe width="300" height="auto" src="https://www.youtube.com/embed/9QeKpmmZ_Ks?fs=1&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h3 class="paragraph_header">Considerations for Recontextualization</h3>
+
+    <p>As rich as these <span class="key" about="tradition">traditions</span> are, their recontextualization outside of their places of origin merit further discussion, especially in terms of transmission and understanding of its context. Teaching and learning practices within both maracatu de baque virado and samba are based on cultural and aesthetics features distinct from Western/European ones. These features along with forced colonial processes have led to pushing both <span class="key" about="tradition">traditions</span> to the margins, especially when it comes to school music curricula.</p>
+
+    <p>In terms of transmission, it is crucial to embrace the “ways-of-doing” besides the repertoire. <span class="person" about="Rose">Rose-Anynago Omolo-Ongati</span> (2005) advises that it is always better to incorporate the transmission routines used in the culture of origin. There are several things going on here: when <span class="person" about="Rose">Omolo-Ongati</span> argues for a "same transmission method" in the culture of origin, the author points out to the fact that formal institutions, such as schools and universities, have been incorporating multicultural repertoire in their classrooms but curricula generally adopt solely repertoire, leaving out the unique teaching and learning practices that may differ from formal education practices. </p>
+
+    <p> It is ideal to grant all music the same attention and accuracy as we do other musical traditions (such as Western art music). After all, both <span class="genre" about="maracatu">maracatu de baque virado</span> and <span class="genre" about="samba">samba</span> are centuries-old <span class="key" about="tradition">traditions</span>.</p>
+
+    <p>Understanding the classroom as a culture-sharing group itself, it is necessary to acknowledge and embrace as much of the transmission that happens in the tradition as possible when teaching <span class="genre" about="afro_brazilian_music">Afro-Brazilian music</span> in schools. Every aspect of the recontextualization works in a way or another, as music educators take on the challenge of recontextualizing transmission processes. Passing on living traditions as teachers reshape and recontextualize the music in their own settings, children will have an opportunity to be exposed to issues of careful learning of different <span class="key" about="tradition">traditions</span>, respect, and social justice. A few inquiry points to consider when thinking about context and recontextualization:</p>
+
+
+    <ul>
+      <li>Consider several questions pertaining to the multiple “facets” of a musical culture: What is the context—where does the music happen? How does the music function for the people from the culture of origin? What is the role and interaction of musicians and audience?</li>
+      <li>Present sociocultural constructs associated with the selected musical culture.</li>
+      <li>What is your positionality related to that particular culture? Make that clear.</li>
+    </ul>
+
+    <h3 class="paragraph_header">Points to ponder when incorporating <span class="key" about="tradition">Afro-Brazilian traditions</span></h3>
+
+    <p>One central issue of <span class="genre" about="afro_brazilian_music">Afro-Brazilian music</span> learning processes is corporeality/embodiment. In order to have a meaningful experience with samba and maracatu, it is important to place musical elements in the body. For example, make use of the voice and/or body percussion to teach rhythmic patterns before playing them on instruments. Also, teach rhythmic patterns before teaching a song is another pedagogical tool used in these contexts. These methodological strategies points to the orality of Afro-Brazilian manifestations and lead to a more contextualized musical and pedagogical approach. Instead of using of sheet music and focusing on a specific technical skill on an instrument, we should plan to embrace a more holistic approach, trying to develop an embodied perception of <span class="genre" about="afro_brazilian_music">Afro-Brazilian music</span> within its context and features. Take time to talk about the context, function, and history of each tradition. In that way, students can be able to develop a consciousness about the wide context of <span class="genre" about="afro_brazilian_music">Afro-Brazilian music</span> and culture, going beyond the sonic and technical elements to the development of a critical point of view. In summary:</p>
+
+    <ul>
+      <li>Teach patterns using your voice and body
+      <li>Teach rhythmic patterns before teaching the song</li>
+      <li>Avoid the use of conventional music scores/notation</li>
+      <li>Resist the temptation to focus on instrument technical skills. Playing together is more important than playing "right".</li>
+      <li>Take time to talk about the context, function, and history.</li>
+    </ul>
+
+    <h3 class="paragraph_header">Closing thoughts</h3>
+
+   <p> As thoughtful music educators committed to embracing the unique transmission aspects and accents of the world's musical cultures, how might one go about deploying these techniques in a specific classroom? More deeply, though, how can a personon occupying a position of privilege (racially/ethnically, within class or gender, etc.) teach music that belongs to minority groups in respectful and impactful ways? These never-ending reflections should always be in the back of our heads as we plan lessons and build our curriculum, as the curriculum structure itself is something that needs to be problematized.</p>
+
+  <p> With this piece, we tried to approach some of these questions within our work with Afro-Brazilian traditions. As Brazilian music educators teaching abroad, it is our attempt to break a stigmatized view of the music we teach and love so dearly. Even more so due to our white-representing-selves-in-our-culture-of-origin position, that demands of us a great responsibility especially when working with musical traditions that have been historically oppressed and marginalized.</p>
+
+   <p> In summary, we suggested these two guiding principles: </p>
+   <ol>
+    <li>Awareness and disruption of colonial practices imbued in music education curricula, through the embracement of music that has served as resistance for black people in<span class="place" about="Brazil"> Brazil</span>, and </li>
+    <li>Methodological approaches that are respectful and critically engaged, going beyond the repertoire/musical skills to building a sense of community through embodied and collective musical practices.</li>
+  </ol>
+   <p id="advnextissue"> Broadening the conversation about the multiple facets of <span class="genre" about="afro_brazilian_music">Afro-Brazilian music</span>, especially since that entails issues pertaining to minority groups, is a way to embody and put in action narratives and considerations outside the Western European canon, disrupting paradigms, in order to build a more equitable future in and through music.</p>
+  </div>
+</div>
+<!--Fine prima colonna-->
+
+<!--Inizio seconda colonna-->
+<div class="col-lg article_col" id="col2" clicked="false">
+
+<div class='article_header'>
+<div class="title_and_subtitle" id="title_and_subtitle_2">
+  <div class="title" id="title1"><span id="float_left">Decolonizing</span> <span id="float_right">music</span></div>
+  <!--img class="opening_img" id="amazzone" src="imgs/amazzone.png">solo belle-->
+</div>
+  <img class="first_img" id="first_img_two" src="https://2104310a1da50059d9c5-d1823d6f516b5299e7df5375e9cf45d2.ssl.cf2.rackcdn.com/nmbx/2016/11/GaryIngle-475x358.jpg" width="300">
+
+<div class="author_and_date">
+<div class="author">By <span class="person" about="ingle">Gary Ingle</span></div>
+<div class="publicationDate">November 16, 2016.</div>
+</div>
+<hr class="start_line">
+</div>
+
+
+
+<div class="ArtBody" id="second_article">
+  <div id="container_belle"><!--solo belle-->
+  <span id="left"> <span class="key" about="colonization">Colonization</span></span> <span id="center">rears its ugly head whenever there is</span> <span id="right"><span class="key" about="globalization"> globalization</span></span>
+  </div>
+  <br id="sep_container_belle"><!--solo belle-->
+
+
+  <p id="fra2"><span class="date" about="1500">In the 1500s</span>, several European nations were aggressively <span class="key" about="globalization"> globalizing </span>, especially <span class="place" about="Spain">Spain</span>, and especially in the <span class="place" about="America">Americas</span>. At the time of <span class="pers" about="Christopher Columbus"> Christopher Columbus’s</span> westward wanderings, the Americas already had strong indigenous cultures. There was a great fondness for music and dancing, especially for rituals and celebrations.</p>
+
+  <p>Alongside the arrival of the <span class="key" about="colonization">Spanish conquistadors</span> came the arrival of <span class="key" about="religion">Catholic missionaries</span>. The militaries with their governments and the <span class="key" about="religion">churches</span> with their faith began the process of <span class="key" about="colonization">colonization</span> and, with it, they brought Western music and culture. While  <span class="key" about="indigenous">indigenous music</span> and  Western music have coexisted for sure, Western music became preeminent as the government and <span class="key" about="religion">the church</span> often imposed a rigid adoption o Western ways, much to the detriment of <span class="key" about="indigenous">indigenous music</span>.</p>
+
+  <p>The same is true today with digital <span class="key" about="colonization">colonization</span>. The companies with the financial resources and the political clout often impose a uniformity on the consumption of the music they believe is <span class="genre" about="popular">popular</span> and therefore profitable. Given the ubiquity of their total command of the <span class="key" about="tech">internet</span>, the “world” becomes their <span class="key" about="colonization">colony</span> and the <span class="genre" about="popular">“popular”</span> tastes rule, again to the detriment of the <span class="genre" about="indigenous"> indigenous music</span>, but also to art music and to any other music with a limited audience and appeal.</p>
+
+  <p>This scenario has forced <span class="genre" about="indigenous">indigenous music</span> and even our beloved <span class="genre" about="classical">“classical” music</span> into competing with everything—sports,<span class="genre" about="popular"> popular music</span>, even each other.  Unfortunately, <span class="genre" about="indigenous"> indigenous music</span> and <span class="genre" about="classical">classical music</span> were never intended to compete.  In an April 4, 2003 <span class="newspaper" about="London Financial Times">London Financial Times</span> article entitled “Out of Tune,” <span class="person" about="clark">music critic Andrew Clark</span> postulated that, throughout most of its history,<span class="genre" about="classical"> classical music</span> had been able to flourish through a mixture of patronage (government, corporations, private philanthropy) and paternal influence on public policy (e.g. <span class="genre" about="classical">  “classical music</span> is good for you”).  Now, neither patronage nor paternalism is certain or sufficient.  Today, corporate, private, and governmental philanthropy continues to decline.  And no one can stand before a Board of Education and use the argument that music must be in the curriculum because it’s good for us.  So now we as supporters of <span class="genre" about="indigenous">indigenous</span> and <span class="genre" about="classical"> classical music </span> are trying to compete where we were never intended to compete in the first place — in the sphere of popular culture.  Add to that mix what<span class="person" about="clark">Clark</span> describes as “the overwhelming evidence that <span class="genre" about="classical">  classical music</span> spent most of the past century in creative implosion, and there seem justifiable grounds for panic.” We face quite a challenge. But back to <span class="key" about="decolonization"> decolonization</span>.</p>
+
+  <p id="adv8000">The common thread of <span class="key" about="colonization"> colonization</span>, whether it’s the old kind of <span class="key" about="colonization">colonization</span> or the new, is an “either/or” mentality. One music reigns supreme, while the other is neglected at best or dies away at worst. The either/or <span class="key" about="colonization">colonial</span> approach is not healthy or even desirable for a flourishing culture. Thus, the necessity to <span class="key" about="decolonization">“decolonize”</span> our music.</p>
+
+
+  <p><span class="key" about="decolonization">Decolonizing</span> music involves a conscious decision to move away from an “either/or” <span class="key" about="colonization">“colonial”</span> mentality to a “both/an<span class="key" about="decolonization">” “decolonized” mentality</span>. <span class="key" about="decolonization">Decolonizing</span> music, however, is not about replacing one style or genre with another. Replacing colonial music with <span class="genre" about="indigenous"> indigenous music </span> only perpetuates the either/or mentality that has always been destructive to music, just with a different style becoming preeminent. We must be open and accepting of new music as well as old, of <span class="genre" about="classical">classical music</span> as well as <span class="genre" about="popular"> popular </span>, improvised as well as notated, and on it goes.</p>
+
+  <p>The great <span class="person" about="grout"> music historian Donald J. Grout</span>, in his magnum opus <i>A History of Western Music</i>, framed this concept in very vivid terms. He observed that “reconciliation of the new with the <span class="key" about="tradition"> traditional </span> is the task that confronts every artist in his own generation, and one that can be avoided only at the price of artistic suicide.” <span class="person" about="grout">Grout’s</span> comments are directed at purely musical issues during the transition between the late <span class="date" about="renaissance">Renaissance</span> and the early <span class="date" about="baroque">Baroque</span>. However, the parallels to the issue of<span class="key" about="decolonization"> “decolonization”</span> are unmistakable.</p>
+  <p>In order to adequately and effectively <span class="key" about="decolonization">“decolonize” </span> music, we must become “reconcilers” or, to use a musical term, “harmonizers.” We must reconcile the new with the <span class="key" about="tradition"> traditional</span>, affirming the “both/and” and dismissing the “either/or.” We should not let our <span class="key" about="tradition"> traditions</span> swallow up the new, but we should not allow the new to swallow up our <span class="key" about="tradition"> traditions</span>. Both the new and the <span class="key" about="tradition"> traditional </span> are vital to a healthy state of musical and cultural affairs. We must maintain a creative tension between our <span class="key" about="tradition">traditions</span> on the one hand, and the new on the other.</p>
+
+  <p>Our greatest and most immediate challenge will be how we deal with technology. As we all know, the <span class="key" about="tech"> digital age</span> is upon us, utterly transforming all of society with a new <span class="key" about="tech"> cyber-reality </span>.</p>
+
+  <p>One of the gurus of contemporary thought is <span class="person" about="negroponte">Nicholas Negroponte</span>, a professor and founder of the Media Lab at the Massachusetts Institute of Technology.<span class="person" about="negroponte"> Negroponte</span> describes the technological revolution in terms of a shift from atoms to bits; that is, a shift from the importance of material objects to the supremacy of digital information. All of life, music included, is in the process of <span class="key" about="tech"> digital transformation </span>. Hence, the description by Swedish composer and acting CEO of the Swedish performing rights society <span class="person" about="karabuda">Alfons Karabuda </span> of the newest form of conquering “space.” Not the kind of “space” associated with Star Trek and its motto “To boldly go where no man has gone before,” but the infinite space of the <span class="key" about="tech"> internet </span> and, as<span class="person" about="karabuda">Alfons</span> described it,<span class="key" about="colonization"> <span class="key" about="tech">  “digital colonization.”</span> </span> The conquering of <span class="key" about="tech">digital space</span> has shifted <span class="key" about="colonization">colonization</span> from countries to companies. In the past, it was countries like <span class="place" about="UK">Britain</span>,<span class="place" about="France"> France</span>, and <span class="place" about="Spain">Spain</span> who amassed land colonies across the world. Today it is companies like <span class="organization" about="Apple"> Apple</span>, <span class="organization" about="Google"> Google</span>, and <span class="organization" about="YouTube"> YouTube </span> (which is owned by <span class="organization" about="Google"> Google</span>) who are the great<span class="key" about="colonization"> colonizers </span> of digital space, especially in music.</p>
+
+  <p>Yes, <span class="key" about="tech"> technology </span> is the driving force today. <span class="key" about="tech"> Technological innovations</span> have changed the way we work and live and think. We cannot imagine our lives without computers or the <span class="key" about="tech">internet</span>. But neither can we imagine life, especially musical life, without persononal interactions, human conversation, or, for that matter and very important for me, music studios without a living, breathing teacher.</p>
+
+  <p>Prominent <span class="key" about="tech">technology</span> essayist and literary critic <span class="person" about="birkerts">Sven Birkerts</span> warns, “I would urge that we not fall all over ourselves in our haste to filter all of our experiences through circuitry.” Otherwise, he says, the end result of <span class="key" about="tech"> cyber-reality</span> may well be loss of meaning under a tide of endless information and <span class="key" about="tech"> computer bytes</span>.</p>
+
+  <p>I know this was a long diversion into<span class="key" about="tech"> technology</span>. But I believe it is central to our ability to be reconcilers. <span class="key" about="tech"> Technology and the internet </span> open up all sorts of possibilities for <span class="key" about="decolonization">“decolonized”</span> <span class="key" about="indigenous">indigenous music</span> to be heard, experienced, and enjoyed by more people than ever thought possible. But at the same time, it presents a potent tool for<span class="key" about="colonization">“digital colonization”</span>by the companies who control who and what gets heard and whose only motive is profit from the<span class="genre" about="popular"> popular</span>.</p>
+
+  <p>So, what is the point of all of this talk of <span class="key" about="decolonization"> decolonization </span> and reconciliation? The point is that it is up to each of us individually and all of us collectively to ensure that both <span class="genre" about="indigenous">indigenous music</span> as well as <span class="genre" about="popular"> popular music </span>flourishes. As individuals, we must adopt the<span class="key" about="decolonization"> decolonized</span> reconciler mindset. More importantly, we must unify our message through the music organizations that represent us in each of our own countries, as well as around the world.</p>
+
+  <p>The central reason for all of our associations, societies, and councils is empowerment. As members of groups like these, we are able to exert an influence on these companies that control who and what gets heard in the media. This is not possible by individuals acting alone. To use a musical metaphor, organizations like the <span class="organization" about="Music Council of the Three Americas"> Music Council of the Three Americas </span> and the <span class="organization" about="International Music Council"> International Music Council </span> represent a unified voice, rather than several voices singing their own tunes. Individuals who act independently can become just noise that can be dismissed or played against each other by the companies and policy makers. A unified voice gets heard. And good things happen when groups of people are empowered to speak with one voice.</p>
+
+  <p>We must use the empowerment and collective strength of all of us who are committed to <span class="key" about="decolonization"> “decolonizing”</span> music, to reconciling the new with the <span class="key" about="tradition"> traditional</span>, to changing the paradigm from “either/or” to “both/and,” and to ensuring the viability and availability of all music to all people.</p>
+
+</div>
+</div>
+<!-- Fine seconda colonna-->
+
+<!-- Inizio terza colonna-->
+<div class="col article_col" id="col3" clicked="false">
+
+<div class='article_header'>
+<div class="title_and_subtitle"  id="title_and_subtitle_3">
+  <div class="title"> Decolonizing the ear</div>
+  <!--img class="opening_img" id="pattinatrice" src="imgs/pattinatrice.png"/> solo belle-->
+   <div class="subtitle"> Introduction to <br> <span class="smaller">"Popular music and the postcolonial"</span></div>
+</div>
+ <img class="first_img" id="first_img_three" src="imgs/popular_music_and_society.jpg" width="300">
+
+<div class="author_and_date">
+<div class="author">By <span class="person" about="lovesey">Oliver Lovesey</span> </div>
+<div class="publicationDate">11 October 2016.</div>
+<div class='article_header'>
+<hr class="start_line">
+</div>
+</div>
+
+
+
+<div class="ArtBody" id="third_article">
+<p id="fra3">This special issue of <span class="newspaper" about="Popular Music and Society">Popular Music and Society</span> examines the often overlooked relationship of <span class="genre" about="popular">popular music</span> and the postcolonial. The explosion of <span class="genre" about="popular">popular music</span> in the <span class="date" about="50s">1950s and ’60s</span>, in line with developments in <span class="key" about="tech">sound technology</span> and exchanges across the Black Atlantic, took place in an era of <span class="key" about="decolonization">decolonization</span>. <span class="genre" about="popular">Popular music </span> sometimes had a direct role in fostering <span class="key" about="decolonization"> anti-colonial cultural resistance</span> and organizational communication, as well as <span class="key" about="decolonization"> decolonizing</span> hearts and minds and ears. <span class="genre" about="popular">Popular music </span> also in some cases would be used to define the parameters of the postcolony or to protest its<span class="key" about="colonization">neocolonial</span> mimicry.</p>
+
+<p>While a number of <span class="key" about="decolonization"> postcolonial</span> theorists, such as<span class="person" about="said"> Edward Said</span>, <span class="person" about="fanon">Frantz Fanon</span> , and <span class="person" about="james"> C. L. R. James</span> , had a developed interest in music and/or popular culture, <span class="key" about="decolonization">postcolonial</span> studies has often ignored popular culture and particularly <span class="genre" about="popular">popular music</span>, along with its often noted deafness to the material realities of <span class="key" about="colonization">colonial oppression</span>. <span class="key" about="decolonization">Postcolonial </span>studies — however personistently self-critical and even narcissistic in its approaches — has focused on literature, and yet more narrowly on late 20th-century Anglophone postmodern novels and a large handful of counter-canonical classics.</p>
+
+
+<p>Distinguishing <span class="key" about="decolonization">postcolonial</span> <span class="genre" about="popular">popular music</span> studies from the insights of ethnomusicology or world music studies or other disciplinary silos is largely a question of isolating the socio-economic and political contexts of production and reception, though there is inevitably much overlap and hopefully cross-fertilization. <span class="genre" about="popular">Popular music</span> considered within a<span class="key" about="decolonization">  postcolonial</span> frame of reference advances at least notionally a <span class="key" about="decolonization">decolonizing </span> political agenda. It less obviously belongs to a disinterested process of salvage or archival ethnography though it may look critically at the parasitic nourishment of contemporary musical expression from a repository of cultural artifacts from the <span class="key" about="globalization">global south</span>. <span class="key" about="decolonization">Postcolonial</span> necrophilia, the preservation of non-Western cultural archives to inspire and sustain present-day and
+future Western musical production, is a practice with deep roots in <span class="date" about="XIX">19th-century</span> exoticism. <span class="key" about="decolonization">Postcolonial </span><span class="genre" about="popular">popular music</span> studies also is distanced from the cultural<span class="key" about="globalization"> globalization</span> of world music, itself originating as a marketing category and reproducing a synthetic brand of hybridized homogenization.</p>
+
+<p>Postcolonial <span class="genre" about="popular">popular music</span> studies seeks to examine all uses of <span class="genre" about="popular">popular music</span> for an understanding of the historical and ongoing process of <span class="key" about="decolonization"> decolonization</span>, recognizing that flag raising in the postcolony alone does not consign the colonial legacy to the past. In the <span class="date" about="XXI">21st century</span>, postcolonial studies has become multifaceted,<span class="key" about="globalization">global</span>, and plural, and “postcolonialisms” encompass the recent experience of metropolitan centers in Europe with the flows of migrants and refugees,as well as often-ignored <span class="key" about="colonization">colonial </span> paradigms operating both inside and outside the European matrix. The articles in this special issue reflect this development with analyses of internal <span class="key" about="colonization"> colonization</span> within <span class="place" about="Europe">Europe</span> and the ambivalent experience of <span class="key" about="decolonization"> postcolonial</span> <span class="place" about="Korea">Korea</span>. <span class="key" about="decolonization"> Postcolonial</span><span class="genre" about="popular"> popular music</span> studies challenges the spatiotemporal boundaries of the postcolonial, and its notional hyphen, which like the<span class="key" about="colonization">colonial</span> itself, is not bracketed in the past. Moreover, there is an inevitable and welcome expansion of analyses to embrace cultural studies, performance studies, and world history as well as the inter- and multidisciplinary.</p>
+
+
+<p>There are different modes of resistance in postcolonial <span class="genre" about="popular">popular music</span>, broadly conceived, some of which are explored in the essays in this special issue. The music considered here, moreover, was performed and circulated in a wide range of different modes from recordings and radio play, to festivals, pubs and nightclubs, theatres, rural gathering places, and the zone of cyberspace. In some cases, songs connect with an <span class="key" about="indigenous">indigenous</span> <span class="key" about="tradition">tradition</span> of popular resistance, or reconfigure seemingly banal songs to circulate new messages, virtually crafting a new language of resistance in the process. Some bear witness to and memorialize acts of injustice or terror and celebrate survival. Others inspire, organize, and re-energize resistance, calling for collective unity and activism while also voicing demands for redress. The articles in this special collection set out to uncover some of the diverse dimensions
+of the intersection of <span class="genre" about="popular">popular music</span> and the <span class="key" about="decolonization">postcolonial</span>. In the first cluster, they explore various aspects of the role of <span class="genre" about="popular">popular music</span> in African <span class="key" about="decolonization">decolonization</span> and the stance of <span class="person" about="said">Edward Said</span>, often considered the founder of postcolonial studies on <span class="genre" about="popular">popular music</span>.
+
+<p id="advatari"> In the context of a consideration of the phenomenology of musical appreciation in terms of a re-engagement with the past, <span class="person" about="pier">David Pier’s</span> “Song for a King’s Exile: Royalism and <span class="genre" about="popular">Popular Music</span> in Postcolonial <span class="place" about="Uganda">Uganda</span>” considers the contemporary, political uses made of the legacy of royal music in <span class="place" about="Uganda">Uganda</span>, looking in detail at <span class="person" about="mugula">Dan Mugula’s</span> “Muteesa, Baalaba Taliiwo Buganda.” <span class="person" about="Ndigi">Gĩchingiri Ndĩgĩrĩgĩ’s</span> “Popular Songs and Resistance: <span class="person" about="Ngugi">Ngũgĩ wa Thiong’o’s Maitu Njugĩra</span> examines the musical resistance encoded in an as-yet-unpublished work of musical theatre by renowned Kenyan-American artist and postcolonial theorist <span class="person" about="Ngugi">Ngũgĩ wa Thiong’o</span>, whose transformational novel Caitaani Mũtharaba-inĩ (Devil on the Cross) is also referenced later in the collection in <span class="person" about="Williams">Williams’s</span> study of Akala’s The Thieves Banquet.
+<span class="person" about="Anja">Anja Brunner’s</span> “<span class="genre" about="popular">Popular Music</span> and the Young Postcolonial State of <span class="place" about="Cameroon">Cameroon</span>, 1960–80” examines official state intervention in the crafting of popular music as a method of fashioning the identity of postcolonial <span class="place" about="Cameroon">Cameroon</span>. <span class="person" about="said">Edward Said’s</span> little-known interventions on popular music are the subject of Wouter Capitain’s “<span class="person" about="said">Edward Said</span> on <span class="genre" about="popular">Popular Music</span>” that forms a bridge to a consideration of contemporary European postcolonialisms. Capitain argues that Said’s justification of an apparent lack of interest in contemporary popular music, despite his recognition of its cultural significance and his own troubled, recurring memory of an early encounter, conflicts with assertions in his theoretical and political work.
+European postcolonialisms are the subject of the next cluster of paperson, ending with an expansion beyond the remit of European internal colonialism to a consideration of postcolonial <span class="place" about="Korea">Korea</span>. <span class="person" about="Magnat">Virginie Magnat’s</span> “Occitan Music Revitalization as Radical Cultural Activism: From Postcolonial Regionalism to Altermondialisation” explores the survival of the music and other cultural expressions of the Occitan region, an example of resistance to what might be termed a type of musicological ethnic cleansing. In the context of a critique of the inadequacy of the “postcolonial” as a category for defining contemporary <span class="place" about="Ireland">Ireland</span>, <span class="person" about="Millar">Stephen R. Millar’s</span> “Irish Republican Music and (Post)colonial Schizophrenia” analyses the work of cultural resistance to internal <span class="key" about="colonization">colonialism</span> within <span class="place" about="UK">Greater Britain</span>, examining the <span class="genre" about="popular">Popular Music</span> and Society 3 case of <span class="person" about="Skelly">Tommy Skelly’s</span> “Go On Home British Soldiers.” In light of <span class="person" about="Gilroy">Paul Gilroy’s</span> extensive uncovering of Black Britain, <span class="person" about="Williams">Justin A. Williams’s</span> “Rapping Postcoloniality: <span class="person" about="Akala">Akala’s</span> ‘The Thieves Banquet’ and Neocolonial Critique” examines the work of <span class="genre" about="hip-hop">hip-hop</span> artist <span class="person" about="Akala">Akala</span> and particularly his “The Thieves Banquet,” a work of parody and pastiche, inspired by <span class="person" about="Ngugi">Ngũgĩ’s</span> work as mentioned above, and its interrogation of the omnipresence of the imperial past in Britain’s vibrant but troubled postcolonial present. <span class="person" about="Lee">Seung-Ah Lee’s</span> “<span class="key" about="decolonization">Decolonizing</span> Korean <span class="genre" about="popular">Popular Music</span>: The ‘Japanese Color’ Dispute over Trot” completes the present collection’s opening of some of the possibilities of the intersection of <span class="genre" about="popular">popular music</span> and the postcolonial. <span class="person" about="Lee">Lee</span> explores South Korea’s fraught love-hate relationship with Japanese culture, including Japanese <span class="genre" about="popular">popular music</span>, and its struggle to achieve meaningful <span class="key" about="decolonization">decolonization</span> after its <span class="date" about="occupation">occupation by Japan from 1910 to 1945</span>. Musicological interpretations and counter-interpretations of the nature and origin
+of songs like “Camellia Lady”—whether it bears traces of Japanese music or announces a distinctly authentic Korean music or a uniquely Asian hybrid—became the focus of state intervention amid campaigns to eliminate the lingering residue of imperial spiritual pollution. This interpretative struggle indicates, as do a number of the paperson in this special
+issue, one of the parameters of postcolonial popular music studies and the ways in which popular song can become a unifying or a discordant and contested site in the postcolony.</p>
+    </div>
+  </p></div></div></div></div>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+<footer class="footer_baroque">
+                  <div class="cont">
+                    <div class="row">
+                      <div class="col-6">
+                        <h3>The Project</h3>
+                        This project is part of the exam of Information Modeling and Web Technology for the year 2020/2021 by Professor Fabio Vitali.
+                      </div>
+                      <div class="col-6">
+                        <h3> Rights </h3>
+                        © 2022 Copyright: Alessandro Y. Longo, Francesca Borriello, Lorenza Pierucci
+                      </div>
+                    </div>
+                  </div>
+                </footer>

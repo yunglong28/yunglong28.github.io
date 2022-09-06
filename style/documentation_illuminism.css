@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*Fonts */
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+
+@font-face {
+    font-family: 'Lynotype Didot Roman';
+    src: url('/fonts/DidotLH-Roman.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* NAVBAR */
+
+.navbar {
+    font-family: 'GFS Didot', serif;
+    position: fixed;
+    color:black!important;
+    text-transform: uppercase;
+    font-size: 8px;
+    height: 60px;
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
+
+}
+
+/* Rende la navbar orizzontale */
+.navbar ul {
+    margin: 1px;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    clear: left;
+}
+
+/* Tutti gli elementi in navbar */
+.navbar li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    white-space: nowrap;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    padding: 0px;
+    color:black;
+    text-align: left !important;
+}
+
+.icons_nav {
+    margin-left: 280px!important;
+    margin-top: 7px!important;
+}
+
+
+.navbar li a {
+    color:black;
+}
+
+
+.navbar li a:hover{
+    text-decoration:none;
+}
+
+
+/* Dropdown */
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    padding: 5px 0;
+    visibility: hidden;
+    background: #fff;
+}
+
+/* Elementi che stanno del dropdown */
+.navbar .dropdown ul li{
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    margin: 3px;
+}
+
+.navbar .dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+
+
+/*Section used for centering process*/
+#magazine2{
+    background-color: #bcb19d !important;
+    height: 370px;
+    padding-top: 4%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 2%;
+    color:black;
+    font-size: 25px;
+    font-family: "GFS Didot" !important;
+    text-align: justify;
+
+}
+
+
+
+section {
+    width: 100%;
+    height: 150vh;
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lynotype Didot Roman"!important;
+    font-size: 25px;
+    margin-top: 0px;
+    color: black !important;
+}
+
+.container{
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+
+
+
+.btn-10{
+    font-family: Didot, serif;
+    background-color: transparent;
+    text-shadow: 2px 2px 4px #000000;
+    border: 3px inset #bcb19d;
+    color: #bcb19d;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.marquee-section {
+    position: relative;
+    min-height: 100px;
+    font-size: 80px;
+    border: 3px inset #bcb19d;
+    color: #bcb19d;
+    background-color: white;
+    font-family: "Lynotype Didot Roman";
+    text-transform: uppercase;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hubert_Robert_003.jpg/1280px-Hubert_Robert_003.jpg");
+
+
+}
+
+.marquee-section, .marquee-section * {
+    overflow: hidden;
+}
+
+.marquee {
+    white-space: nowrap;
+}
+
+.marquee-div {
+    position: absolute;
+    animation: move-left-to-right linear 50s infinite;
+
+
+}
+
+/* use this one to move from left to right direction */
+@keyframes move-left-to-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* use this one to move from right to left direction */
+@keyframes move-right-to-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.btn_stili {
+    height: 100px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hubert_Robert_003.jpg/1280px-Hubert_Robert_003.jpg");
+    text-align: center;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    font-size: 22px;
+}
+
+section {
+    width: 100%;
+    height: 220vh;
+    background-color:#0c2414;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: white;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: red;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.modal-title {
+    font-family: "Lynotype Didot Roman" !important;
+    font-size: 30px !important;
+    text-transform: uppercase !important;
+}
+
+.modal-content {
+    background-color: #bcb19d !important;
+}
+
+.modal-body .p4 {
+    font-family: "Lynotype Didot Roman" !important;
+    font-size: 25px !important;
+}
+
+.firstbtn {
+    background-color: transparent !important;
+    border: 3px inset #bcb19d !important;
+    display: inline-block !important;
+    font-size: 25px !important;
+    font-family: Didot, serif !important;
+
+}
+
+.btn {
+    font-family: Didot, serif !important;
+    color: black;
+    background-color: transparent !important;
+    border: 3px inset #bcb19d !important;
+    display: inline-block !important;
+    font-size: 25px !important;
+}
+
+footer{
+    color: rgb(255, 255, 255) !important;
+    font-family: 'GFS Didot', serif !important;
+    text-transform: none !important;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 20px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hubert_Robert_003.jpg/1280px-Hubert_Robert_003.jpg");
+    background-repeat: repeat !important;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: 210px!important;
+    margin-top: 7px!important;
+
+  }

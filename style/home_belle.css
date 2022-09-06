@@ -1,0 +1,780 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+  font-family:Golddrew;
+  src:url("../fonts/Golddrew.ttf");
+}
+
+@font-face{
+  font-family:Franklin;
+  src:url("../fonts/BenjaminFranklin.ttf");
+}
+
+@font-face{
+  font-family:Romantine;
+  src:url("../fonts/Romantine.ttf");
+}
+
+    /* NAVBAR */
+.navbar {
+  font-family: 'Bebas Neue';
+  background-image: url(../imgs/old_paper.jpg);
+  position: fixed;
+  text-transform: uppercase;
+  font-size: 8px;
+}
+/* Rende la navbar orizzontale */
+.navbar ul {
+  margin: 1px;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  clear: left;
+}
+
+/* Tutti gli elementi in navbar */
+.navbar li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  white-space: nowrap;
+  text-align:center !important;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  padding: 0;
+  color:#9f281f;
+}
+
+.navbar li a {
+   color: #9f281f;
+}
+
+.navbar li:hover{
+  color:  #9fa4c4 !important;
+}
+
+.navbar li a:hover{
+  color:  #9fa4c4 !important;
+  text-decoration:none;
+
+}
+
+
+/* Dropdown */
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  padding: 5px 0;
+  visibility: hidden;
+  background: #fff;
+
+}
+
+/* Elementi che stanno del dropdown */
+.navbar .dropdown ul li{
+  padding: 10px;
+  font-size: 20px;
+
+
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+
+}
+
+
+/*Fine navbar*/
+
+#main_subt{
+  font-size: 20px;
+  text-align: left;
+  line-height: 1em;
+}
+
+
+.title{
+  text-align: center;
+  font-family:'Zen Antique', serif;
+  color: white;
+}
+
+body{
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.parallax{
+  background-image: url("https://freight.cargo.site/w/2200/q/94/i/d4b8367a125f0c7fa60a1cb62de74884f1c5558817979ad4553c5446a400c1ae/resonance-2.2.png");
+  min-height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.parallax2{
+  background-image: url("https://freight.cargo.site/t/original/i/e6675457d15c345d093f43370d1075fdb4787b00228b7eda6ce7d23ca5231068/resonance-2.3.png ");
+  min-height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+
+
+.card{
+  margin-left: 70px;
+}
+
+#hr{
+  border-top: 3px solid whitesmoke;
+  width: 50%;
+}
+
+.row{
+  column-gap: 9px;
+}
+
+.col{
+  margin-top: 40px;
+  text-align: center;
+  border: 3px solid whitesmoke;
+  border-radius: unset;
+  margin: 0.5em;
+}
+
+#one{
+ margin-left: 10px;
+}
+
+#three{
+   margin-right: 10px;
+}
+
+.img_issue{
+  width:200px;
+  height: auto;
+  border-radius: 25px;
+}
+
+
+.issue_title {
+  font-family:'Zen Antique', serif;
+  color: white;
+
+
+}
+
+.issue_txt {
+  font-family:'Zen Antique', serif;
+  color: white;
+
+
+}
+
+#magazine{
+  background-color: #fc4434;
+height: 600px;
+
+  color: lightgrey;
+    font-family: 'bodoni';
+    font-size: 25px;
+    z-index: 100;
+    position: relative;
+    padding: 5vh;
+    padding-right: 40%;
+    text-align: justify;
+    background-size: cover;
+
+    margin: 0;
+    margin-top: -57px;
+
+}
+#magazine2{
+background-color:#0c2414;
+height: 700px;
+
+  color:#e1e2f1;
+    font-family: 'bodoni';
+    font-size: 25px;
+    text-align: right;
+    z-index: 100;
+    position: relative;
+    padding: 5vh;
+padding-top: 10%;
+    padding-left: 40%;
+    text-align: justify;
+    background-size: cover;
+
+    margin: 0;
+
+}
+
+.projectsection {
+    background-color: #e6d8a8;
+height: 700px;
+}
+.text{
+  color:rgb(228, 217, 201);
+    font-family: 'Franklin';
+    font-size: 25px;
+
+    z-index: 100;
+
+    text-align: justify;
+margin-top: 80px;
+}
+
+.colspotify{
+  color:black;
+    font-family: 'bodoni';
+    font-size: 25px;
+
+    z-index: 100;
+
+    text-align: justify;
+margin-top: 80px;
+margin-left: 70px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 500px 700px ;
+  background-color: rgb(211, 104, 65);
+  height: 600px;
+}
+
+.wrapper_mag {
+  display: grid;
+  grid-template-columns: 704px 700px ;
+  background-color: black;
+  height: 600px;
+  margin-left: -32px;
+}
+
+.coltext {
+  color:rgb(191, 164, 4);
+  font-family: 'Bebas Neue';
+  font-size: 28px;
+  text-transform: uppercase;
+  z-index: 100;
+  text-align: justify;
+  margin-top: 60px;
+  margin-left: 70px;
+}
+
+.colimg {
+  color:black;
+    font-family: 'bodoni';
+    font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: 21px;
+    margin-left: 100px;
+    z-index: 0;
+  background-color: black;
+}
+
+.col_button {
+    color:black;
+    font-family: 'bodoni';
+    font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: 216px;
+    margin-left: 159px;
+}
+
+.col_issue {
+    color: lightgrey;
+    font-family: Golddrew, cursive;
+    color: rgb(0, 53, 102);
+    font-size: 23px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: -488px;
+    margin-left: 532px;
+    margin-right: -525px;
+}
+
+.wrapper_issue {
+  display: grid;
+    grid-template-columns: 704px 700px ;
+  background-image:url(../imgs/old_paper.jpg);
+  height: 900px;
+  margin-left: -32px;
+}
+
+.wrapper_issue .btn-10{
+font-family: Golddrew, cursive;
+  background-color: transparent;
+  border: 3px solid  rgb(0, 53, 102);
+  color: rgb(0, 53, 102);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.wrapper_issue .btn-10 a{
+  color: rgb(0, 53, 102);
+  text-decoration: none;
+}
+
+
+.wrapper_issue .btn-10 a:hover{
+  color: rgb(228, 217, 201);
+  text-decoration: none;
+}
+
+
+.col_button_us {
+    color:rgb(191, 164, 4);
+    font-family: 'Bebas Neue';
+    font-size: 102px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: -19px;
+    margin-left: 41px;}
+
+.col_us {
+    color:rgb(191, 164, 4);
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: -104px;
+    margin-left: 532px;
+    margin-right: -525px;
+}
+
+.wrapper_us{
+  display: grid;
+  grid-template-columns: 704px 700px ;
+  background-color: black;
+  height: 650px;
+  margin-left: -32px;
+}
+
+
+
+.col_img_yet {
+  color:black;
+    font-family: 'bodoni';
+    font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: 110px;
+    margin-left: 200px;
+    z-index: 0;
+}
+
+.col_text_yet {
+  color: rgb(0, 53, 102);
+  font-family: 'Golddrew', cursive;
+  font-size: 20px;
+  z-index: 100;
+  text-align: justify;
+  margin-top: -580px;
+  margin-left: 453px;
+  margin-right: -525px;
+}
+
+.wrapper_yet{
+  display: grid;
+  grid-template-columns: 704px 800px ;
+  background-image: url(../imgs/old_paper.jpg);
+  height: 700px;
+  margin-left: -32px;
+
+}
+
+.carousel{
+  margin-top: 50px;
+}
+.carousel-inner{
+  height: 100px;
+}
+.carousel-caption{
+  color: #fff;
+  top: 50%;
+}
+#us {
+  font-family: 'bodoni';
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.us_title {
+
+       color:rgb(191, 164, 4);
+  font-family: 'Bebas Neue';
+}
+#project{
+  background-color: #0d2110;
+  font-family:'bodony', serif;
+  color: whitesmoke;
+
+}
+
+
+
+.alignleft {
+	float: left;
+  background-color: #0d2110;
+  font-family:'bodony', serif;
+  color: whitesmoke;
+}
+.alignright {
+	float: right;
+  background-color: #0d2110;
+  font-family:'bodony', serif;
+  color: whitesmoke;
+}
+
+
+.marquee-section {
+    position: relative;
+    min-height: 100px;
+    font-size: 80px;
+    font-family: 'Franklin', cursive;
+    color:rgb(228, 217, 201);
+    background-color: rgb(211, 104, 65);
+}
+
+#first_marquee{
+  background-color: black;
+  font-family: "Bebas Neue";
+   color:rgb(191, 164, 4);
+   padding-top: none;
+}
+
+/*.marquee-section {
+    position: relative;
+    min-height: 100px;
+    font-size: 80px;
+    font-family: 'Bebas Neue';
+    color:rgb(191, 164, 4);
+    background-color: black;
+    padding-top: 4px;
+}*/
+
+
+.marquee-section, .marquee-section * {
+    overflow: hidden;
+}
+
+.marquee {
+    white-space: nowrap;
+}
+
+.marquee-div {
+    position: absolute;
+    animation: move-left-to-right linear 50s infinite;
+
+
+}
+
+/* use this one to move from left to right direction */
+@keyframes move-left-to-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* use this one to move from right to left direction */
+@keyframes move-right-to-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+{
+  box-sizing: border-box;
+}
+
+
+
+
+.cont {
+
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 14px;
+  margin-top: -27px;
+  margin-bottom: 14px;
+
+}
+
+
+
+.wrapper_yet .btn-10{
+font-family: Golddrew, cursive;
+  background-color: transparent;
+  border: 3px solid  rgb(0, 53, 102);
+  color: rgb(0, 53, 102);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.btn-10:hover {
+    font-family: Golddrew, cursive;
+    background-color: rgb(211, 104, 65);
+    border: 3px solid  rgb(228, 217, 201);
+    color: rgb(228, 217, 201);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  #block1 {
+      float:left;
+  }
+
+  #block2
+  {
+      float:right;
+      background-color: #F5F5F5;
+      margin: 10px 20px;
+      padding: 20px;
+      width: 180px;
+  }
+
+
+  *,
+   *:before,
+   *:after {
+     box-sizing: border-box;
+   }
+
+
+
+
+
+   .container{
+     width: 100%;
+     max-width: 100rem;
+     margin: 0 auto;
+     padding: 0 1.5rem;
+
+       font-family: 'bodoni';
+       font-size: 25px;
+   }
+
+
+
+   section {
+     width: 100%;
+     height: 140vh;
+   background-color:#0c2414;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: 'bodoni';
+     font-size: 25px;
+     margin-top: 0px;
+     align-items: center;
+     text-align: justify;
+       color:  lightgrey;
+   }
+
+   /* unvisited link */
+   a:link {
+     color: red;
+   }
+
+   /* visited link */
+   a:visited {
+     color: red;
+   }
+
+   /* mouse over link */
+   a:hover {
+   }
+   /* selected link */
+   a:active {
+     color: red;
+   }
+
+   a:link {
+     text-decoration: none;
+   }
+
+   a:visited {
+     text-decoration: none;
+   }
+
+   a:hover {
+     text-decoration: none;
+   }
+
+   a:active {
+     text-decoration: none;
+   }
+
+   .issue_title {
+     font-family: Golddrew, cursive;
+     color: rgb(0, 53, 102);;
+   }
+
+.btn_stili {
+  margin-top: 20px;
+  background-color:#0c2414;
+  text-align: left;
+  padding-left: 72px;
+}
+
+
+div.col-6 {
+
+    width: 48%;
+    font-size: 15px;
+
+  }
+
+
+  .carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}
+
+.slide_us {
+  font-size: 65px;
+}
+
+ .wrapper_us a, a:hover, a:focus, a:active {
+      text-decoration: none
+      ;
+      color:rgb(191, 164, 4);
+ }
+
+ #myModal {
+       font-family: 'Franklin';
+
+         color:lightgrey;
+
+ }
+
+ .modal-header {
+  background-color: rgb(211, 104, 65)!important;
+      color:lightgrey;
+      font-family: 'Franklin'!important;
+ }
+
+ .modal-footer {
+     background-color:white;
+          color: rgb(0, 53, 102);
+          background-image: url(../imgs/old_paper.jpg);
+
+
+
+ }
+
+
+
+.modal-footer .btn{
+   background-color: transparent;
+border: none;
+  font-family: 'Golddrew', cursive;
+
+  color: rgb(0, 53, 102);
+ text-transform: uppercase;
+
+ }
+
+.modal-footer .btn:hover{
+   background-color: rgb(211, 104, 65);
+   color:lightgrey;
+
+}
+ .modal-header .firstbtn{
+    background-color: transparent;
+ border: none;
+  color:lightgrey;
+  font-size: 32px;
+
+  }
+.p-4{
+        background-color:white!important;
+            background-image: url(../imgs/old_paper.jpg);
+    color: rgb(0, 53, 102);
+        font-size: 18px;
+        font-family: 'Golddrew', cursive;
+
+
+ }
+
+.modal-title {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+
+
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+  margin-left: 350px!important;
+  margin-top: 7px!important;
+}
+
+
+footer{
+  background-image:url(../imgs/old_paper.jpg);
+  font-family: Golddrew, cursive;
+  color: rgb(0, 53, 102);
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: 260px!important;
+    margin-top: 7px!important;
+
+  }
+}

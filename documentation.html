@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+
+<head>
+    <title>Documentation</title>
+    <link rel="icon" href="imgs/noise3.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/sidebar.js"></script>
+  <script src="scripts/documentation_script.js"></script>
+  <link id="pagestyle" href="style/documentation_illuminism.css" rel="stylesheet" type="text/css">
+  <link href="style/bootstrap.min.css" rel="stylesheet">
+  <link href="style/bootstrap-icons.css" rel="stylesheet">
+  <link href="style/boxicons.min.css" rel="stylesheet">
+  <link href="style/glightbox.min.css" rel="stylesheet">
+  <link href="style/swiper-bundle.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="bootstrap.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+
+
+<!-- fine nav-->
+
+<body>
+  <!-- MODALS -->
+
+    <!-- disclaimer start -->
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Disclaimer</h5>
+            <button type="button" class="firstbtn" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body p-4">
+            <p>
+                The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "Information Modelling and Web Technologies" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, held by professor Fabio Vitali.
+            </p>
+
+            <p>
+                All copyrights and related rights on the content remain with their original owners.
+                <br>
+                All copyright on the typographic and layout choices are 2022 © Lorenza Pierucci, Francesca Borriello and Alessandro Y. Longo.
+            </p>
+            </div>
+            <div class="modal-footer">
+            <button type="button"   class="btn btn-secondary" class="close" data-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- disclaimer end -->
+  <nav class="navbar sticky-top navbar-light" class="navbar">
+
+          <ul>
+            <li><a href="home.html"onclick="keepstyle('pagestyle')">The Resonance</a></li>
+
+            <li class="dropdown"><a href=>Issues</a>
+              <ul>
+                <li><a href="Streaming.html" onclick="keepstyle('pagestyle')">Issue #1</a></li>
+                <li><a href="Decolonize.html" onclick="keepstyle('pagestyle')">Issue #2</a></li>
+                <li><a href="Queer.html" onclick="keepstyle('pagestyle')">Issue #3</a></li>
+              </ul>
+              </li>
+               <li class="dropdown"><a href=>About</a>
+              <ul>
+                 <li><a href="documentation.html" onclick="keepstyle('pagestyle')">Documentation</a></li>
+                <li><a href=""data-toggle="modal" data-target="#myModal">Disclaimer</a></li>
+                  <li><a href="home.html#aboutus" onclick="keepstyle('pagestyle')">Us</a></li>
+              </ul>
+              </li>
+              <ul class="icons_nav">
+            <li id="" onclick="change('home')"><img class="icons" id="home_icon" src="imgs/magazine.png"></li>
+            <li id="illuminist" onclick="change('illuminist')"><img class="icons" id="cello" src="imgs/cellohome.png"></li>
+            <li id="" onclick="change('hobbyhorse')"><img class="icons" id="harp" src="imgs/harphome.png"></li>
+            <li id="belle" onclick="change('belle')"><img class="icons" id="gramophone"src="imgs/gramophonehome.png"></li>
+            <li id="" onclick="change('disco')"><img class="icons"id="disco"src="imgs/strobohome.png"></li>
+            <li id="tabloid" onclick="change('tabloid')"><img id="boombox"class="icons"src="imgs/boomboxhome.png"></li>
+            <li id="future" onclick="change('future')"><img class="icons" id="walkman"src="imgs/ipodhome.png"></li>
+        </ul>
+
+        </nav>
+        <div class="marquee-section">
+            <div class="marquee-div">
+                <div class="marquee"> &bull; Documentation &bull; Documentation &bull; Documentation &bull; Documentation &bull; Documentation &bull; Documentation &bull; Documentation &bull; Documentation &bull; Documentation &bull; Documentation &bull; Documentation &bull; Documentation &bull; Documentation &bull; Documentation &bull; Documentation &bull; Documentation &bull;</div>
+            </div>
+        </div>
+<div>
+  <div class="home2" id="magazine2">
+      Following the project’s guidelines, this page is dedicated to documenting properly the development of our styles according to their historical inspiration. In this section, we will spend some words on the general process behind the development of RESONANCE.
+      The structure of the three issues and their articles reflects a hierarchical form, composed of nested HTML elements, tags, and attributes. Collective classes and individual ids were added to help in the stylistic process of the different elements.
+      Furthermore, we also semantically marked up the article, in order to create a filtering feature for highlighting meaningful elements in the different articles. For this purpose, the following categories were individuated across the issues:
+<i>People, Places, Musicians, Newspapers, Streaming Services, Organizations, Websites, Events, Music genres, Album, Songs</i> & <i>Concepts</i>.
+
+
+
+  </div>
+
+  <div class="btn_stili">
+  <p>
+    <button  class="custom-btn btn-10"role="presentation" class="active" href="#Illuminism" aria-controls="Illuminism" role="tab" data-toggle="tab">ILLUMINISM</button>
+      <button  class="custom-btn btn-10"role="presentation"  href="#Hobby" aria-controls="Hobby" role="tab" data-toggle="tab">HOBBY HORSE</button>
+      <button  class="custom-btn btn-10"role="presentation" href="#Chat" aria-controls="Chat" role="tab" data-toggle="tab">CHAT</button>
+        <button  class="custom-btn btn-10"role="presentation"  href="#Analog" aria-controls="Analog" role="tab" data-toggle="tab">ANALOG</button>
+        <button class="custom-btn btn-10" role="presentation"  href="#Tabloid" aria-controls="Tabloid" role="tab" data-toggle="tab">TABLOID</button>
+          <button  class="custom-btn btn-10" class="custom-btn btn-10"role="presentation" href="#Future" aria-controls="Future" role="tab" data-toggle="tab">FUTURE</button>
+    </p>
+  </div>
+
+<section>
+
+
+  <br />
+  		<div class="container">
+
+
+
+          <div class="tab-content">
+
+          	<div role="tabpanel" class="tab-pane active" id="Illuminism">
+              <p class="titles style_title">ILLUMINISM</p>
+                 <p class="style">To recreate the style of the 15th century manuscript, we chose to take inspiration from several manuscripts decorated with illuminations at that period in Europe. The illuminations on Medieval manuscripts were used to bring emphasis on the text content and pleasant visual support, as well as enhancing the manuscript's value. It could be used to showcase the importance of the person that had commissioned the book, since highly decorated manuscripts costed more, because of the pigments, the gold and the time spent on working on the manuscript.</p>
+                 <P class="titles fonts_title">FONTS</p>
+                 <p class="fonts">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date.</p>
+                 <P class="titles layout_title">LAYOUT</p>
+                 <p class="layout">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date. The reference image taken from the Burgerbibliothek in Bern illustrates it well.</p>
+                 <P class="titles colors_title">COLORS</p>
+                 <p class="colors">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date. The reference image taken from the Burgerbibliothek in Bern illustrates it well.</p>
+
+          	</div>
+            <div role="tabpanel" class="tab-pane" id="Hobby">
+              <p class="titles style_title">HOBBY HORSE</p>
+                 <p class="style">Ut pellentesque diam sit amet efficitur tempor. Maecenas consectetur finibus imperdiet. Fusce in volutpat diam. Donec imperdiet nibh et tincidunt feugiat. Phasellus vulputate tincidunt purus, quis tempor nisl hendrerit eu. Quisque a nulla metus. Fusce hendrerit mollis quam sit amet elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet eros a quam faucibus ornare. Nam nec purus non mi aliquam feugiat. Proin ornare vestibulum convallis. Duis suscipit tristique rhoncus. Integer malesuada maximus leo, vel pretium dui semper non.</p>
+                 <P class="titles fonts_title">FONTS</p>
+                 <p class="fonts">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date.</p>
+                 <P class="titles layout_title">LAYOUT</p>
+                 <p class="layout">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date. The reference image taken from the Burgerbibliothek in Bern illustrates it well.</p>
+                 <P class="titles colors_title">COLORS</p>
+                 <p class="colors">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date. The reference image taken from the Burgerbibliothek in Bern illustrates it well.</p>
+
+
+            </div><!-- #Etape1 -->
+            <div role="tabpanel" class="tab-pane" id="Chat">
+              <p class="titles style_title">CHAT</p>
+                 <p class="style">To recreate the style of the 15th century manuscript, we chose to take inspiration from several manuscripts decorated with illuminations at that period in Europe. The illuminations on Medieval manuscripts were used to bring emphasis on the text content and pleasant visual support, as well as enhancing the manuscript's value. It could be used to showcase the importance of the person that had commissioned the book, since highly decorated manuscripts costed more, because of the pigments, the gold and the time spent on working on the manuscript.</p>
+                 <P class="titles titles fonts_title">FONTS</p>
+                 <p class="fonts">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date.</p>
+                 <P class=" titles layout_title">LAYOUT</p>
+                 <p class="layout">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date. The reference image taken from the Burgerbibliothek in Bern illustrates it well.</p>
+                 <P class="titles colors_title">COLORS</p>
+                 <p class="colors">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date. The reference image taken from the Burgerbibliothek in Bern illustrates it well.</p>
+
+
+            </div><!-- #Etape1 -->
+            <div role="tabpanel" class="tab-pane" id="Analog">
+              <p class="titles style_title">ANALOG</p>
+                 <p class="style">To recreate the style of the 15th century manuscript, we chose to take inspiration from several manuscripts decorated with illuminations at that period in Europe. The illuminations on Medieval manuscripts were used to bring emphasis on the text content and pleasant visual support, as well as enhancing the manuscript's value. It could be used to showcase the importance of the person that had commissioned the book, since highly decorated manuscripts costed more, because of the pigments, the gold and the time spent on working on the manuscript.</p>
+                 <P class="titles fonts_title">FONTS</p>
+                 <p class="fonts">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date.</p>
+                 <P class="titles layout_title">LAYOUT</p>
+                 <p class="layout">Ut pellentesque diam sit amet efficitur tempor. Maecenas consectetur finibus imperdiet. Fusce in volutpat diam. Donec imperdiet nibh et tincidunt feugiat. Phasellus vulputate tincidunt purus, quis tempor nisl hendrerit eu. Quisque a nulla metus. Fusce hendrerit mollis quam sit amet elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet eros a quam faucibus ornare. Nam nec purus non mi aliquam feugiat. Proin ornare vestibulum convallis. Duis suscipit tristique rhoncus. Integer malesuada maximus leo, vel pretium dui semper non.</p>
+                 <P class="titles colors_title">COLORS</p>
+                 <p class="colors">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date. The reference image taken from the Burgerbibliothek in Bern illustrates it well.</p>
+
+
+            </div><!-- #Etape1 -->
+            <div role="tabpanel" class="tab-pane" id="Tabloid">
+              <p class="titles style_title">TABLOID</p>
+                 <p class="style">Ut pellentesque diam sit amet efficitur tempor. Maecenas consectetur finibus imperdiet. Fusce in volutpat diam. Donec imperdiet nibh et tincidunt feugiat. Phasellus vulputate tincidunt purus, quis tempor nisl hendrerit eu. Quisque a nulla metus. Fusce hendrerit mollis quam sit amet elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet eros a quam faucibus ornare. Nam nec purus non mi aliquam feugiat. Proin ornare vestibulum convallis. Duis suscipit tristique rhoncus. Integer malesuada maximus leo, vel pretium dui semper non.</p>
+                 <P class="titles fonts_title">FONTS</p>
+                 <p class="fonts">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date.</p>
+                 <P class="titles layout_title">LAYOUT</p>
+                 <p class="layout">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date. The reference image taken from the Burgerbibliothek in Bern illustrates it well.</p>
+                 <P class="titles colors_title">COLORS</p>
+                 <p class="colors">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date. The reference image taken from the Burgerbibliothek in Bern illustrates it well.</p>
+
+
+            </div><!-- #Etape1 -->
+            <div role="tabpanel" class="tab-pane" id="Future">
+              <p class="titles style_title">FUTURE</p>
+                 <p class="style">To recreate the style of the 15th century manuscript, we chose to take inspiration from several manuscripts decorated with illuminations at that period in Europe. The illuminations on Medieval manuscripts were used to bring emphasis on the text content and pleasant visual support, as well as enhancing the manuscript's value. It could be used to showcase the importance of the person that had commissioned the book, since highly decorated manuscripts costed more, because of the pigments, the gold and the time spent on working on the manuscript.</p>
+                 <P class="titles fonts_title">FONTS</p>
+                 <p class="fonts">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date.</p>
+                 <P class="titles layout_title">LAYOUT</p>
+                 <p class="layout">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date. The reference image taken from the Burgerbibliothek in Bern illustrates it well.</p>
+                 <P class="titles colors_title">COLORS</p>
+                 <p class="colors">Among the free medieval fonts we found, Hentimps Circlet was the one closest to our images of reference, whereas for the first letter of each paragraph as well as the headings, we used the Mayflower Antique font. Finally, for the metadata panel heading, we used Adine-Kirnberg Regular, to recreate the handwriting of an archivist. Indeed, archivists commonly wrote on the first folio of a manuscript its title, which wasn't necessarily specified in the content, or some additional information such as the estimated date. The reference image taken from the Burgerbibliothek in Bern illustrates it well.</p>
+
+
+            </div><!-- #Etape1 -->
+
+
+            </div>
+          </div>
+
+          </section>
+
+          <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <h3>The Project</h3>
+                  This project is part of the exam of Information Modeling and Web Technology for the year 2020/2021 by Professor Fabio Vitali.
+                </div>
+                <div class="col-6">
+                  <h3> Rights </h3>
+                  © 2022 Copyright: Alessandro Y. Longo, Francesca Borriello, Lorenza Pierucci
+                </div>
+              </div>
+            </div>
+          </footer>

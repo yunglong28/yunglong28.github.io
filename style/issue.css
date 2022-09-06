@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&display=swap');
+
+
+@font-face {
+    font-family: 'bodoni';
+    src: url('../fonts/bodoni-webfont.woff2') format('woff2'),
+         url('../fonts/bodoni-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nimbus';
+    src: url('../fonts/freesans-webfont.woff2') format('woff2'),
+         url('../fonts/freesans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+    /* NAVBAR */
+.navbar {
+  font-family: 'nimbus';
+  background-color: #fc4434;
+  position: fixed;
+  color:black!important;
+  text-transform: uppercase;
+  font-size: 8px;
+  margin-bottom: 20px;
+  height: 60px;
+  z-index: 2;
+}
+/* Rende la navbar orizzontale */
+.navbar ul {
+  margin: 1;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  clear: left;
+}
+
+/* Tutti gli elementi in navbar */
+.navbar li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  white-space: nowrap;
+  text-align:center !important;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  padding: 0px;
+  color:black;
+}
+
+.navbar li a {
+   color:black;
+}
+
+.navbar li:hover{
+  color:  #9fa4c4 !important;
+}
+
+.navbar li a:hover{
+  color:  #9fa4c4 !important;
+  text-decoration:none;
+}
+
+
+/* Dropdown */
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  padding: 5px 0;
+  visibility: hidden;
+  background: #fff;
+    z-index: 1;
+}
+
+/* Elementi che stanno del dropdown */
+.navbar .dropdown ul li{
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+    margin: 3px;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+
+
+.container-fluid {
+  font-family: 'nimbus';
+  width: 89% !important;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+    margin-top: -50px;
+
+
+    background-color: transparent;
+
+      border-radius: 2rem;
+}
+
+
+/* The element to apply the animation to */
+
+body {
+font-family: 'nimbus';
+    background-repeat: repeat;
+    /* Full height */
+  height: 100%;
+    background-color: #E6D8A8 !important;
+
+      background-size: repeat;
+      overflow-x: hidden!important;
+ }
+
+
+.row {
+  font-family: 'nimbus';
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-wrap: wrap;
+     flex-wrap: wrap;
+     margin-right: -15px;
+     margin-left: -15px;
+     background-color: transparent;
+     margin-top: 35px;
+     margin-bottom: 11px;
+
+ }
+
+
+
+.article_col {
+  font-family: 'nimbus';
+
+    margin: 0.0em;
+        height: 600px;
+        overflow: scroll;
+        overflow-x: hidden;
+
+
+        padding: 17px !important;
+
+        padding: 2.9em;
+        text-align: justify;
+        font-size: 12pt;
+        font-weight: bold;
+}
+
+figcaption {
+  font-size: 9px;
+}
+
+.author_and_date{
+  font-weight: lighter;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.opening_img{
+  height: 300px;
+   display: block;
+    margin: 0 auto;
+}
+
+.article_col::-webkit-scrollbar {
+    width: 0.5em;
+    margin: 2px;
+    display: none;
+}
+
+.article_col::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.article_col::-webkit-scrollbar-thumb {
+  outline: 1px solid;
+}
+
+footer {
+    color:lightgray !important;
+    background-color: #0C2414;
+    margin-top: 90px ;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    font-family: 'nimbus';
+    text-transform: uppercase;
+}
+
+footer h3 {
+    font-size: 20px;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+  margin-left: 75px!important;
+  margin-top: 7px!important;
+}
+
+#myModal {
+   font-family:'nimbus';
+
+         color:lightgrey;
+
+ }
+
+ .modal-header {
+     background-color:#0c2414;
+      color:lightgrey;
+ }
+
+ .modal-footer {
+     background-color:white;
+      color:lightgrey;
+ }
+
+
+
+.modal-footer .btn{
+   background-color: transparent;
+border: none;
+ color:black;
+ text-transform: uppercase;
+
+ }
+
+.modal-footer .btn:hover{
+   background-color:#0c2414;
+   color:lightgrey;
+
+}
+ .modal-header .firstbtn{
+    background-color: transparent;
+ border: none;
+  color:lightgrey;
+  font-size: 32px;
+
+  }
+.p-4{
+        background-color:white!important;
+        color: black;
+        font-size: 18px;
+ }
+
+.modal-title {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.cont {
+
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 14px;
+  margin-top: -27px;
+  margin-bottom: 14px;
+
+}
+
+
+
+footer{
+  color:lightgrey;
+  background-color: #0c2414;
+  margin-top: 90px;
+  font-family: 'nimbus';
+  text-transform: uppercase;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #e6d8a8;
+    /*filter: opacity(70%);*/
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+/*.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}*/
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 78px;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 100px;
+    color: black !important;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #fc4434;
+    color: black;
+    border: none;
+    font-family: nimbus;
+    text-transform: uppercase;
+}
+
+#metadata_intro{
+  font-family: 'nimbus';
+    background-color:#e6d8a8;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+.metadata_issue {
+    color: black !important;
+    margin-right: 75px !important;
+}
+
+
+.accordion-button{
+  font-family: 'nimbus'!important;
+    background-color: #e6d8a8!important;
+}
+
+.accordion-button:not(.collapsed) {
+  color:lightgrey!important;
+  background-color: #0c2414!important;
+}
+
+:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+ }
+
+.accordion-body{
+   font-family: 'nimbus';
+  background-color: #e6d8a8;
+  }
+
+.accordion-body li{
+    list-style-type: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0.5em;
+    margin: 2px;
+    display: none;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  outline: 1px solid;
+}
+
+
+.focus{
+  text-align: center;
+}
+
+
+
+.btn-10{
+font-family: nimbus;
+  background-color: transparent;
+  border: 2px solid  #fc4434;
+  color: #fc4434;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+
+.btn-10:hover {
+  font-family: nimbus;
+    background-color: #fc4434;
+    border: 2px solid  #fc4434;
+    color:#0c2414;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+
+
+.user_added_class b{
+  color:#0c2414;
+  text-transform: uppercase;
+}
+
+#buttunazzi{
+  text-align: center;
+}
+
+
+
+  @media only screen and (max-width: 1300px) {
+
+    .icons {
+      width: 30px;
+      height: 30px;
+
+    }
+
+    .icons_nav {
+      margin-left: -15px!important;
+      margin-top: 7px!important;
+
+    }
+  }
+

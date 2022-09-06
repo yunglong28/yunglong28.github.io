@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+@font-face{
+  font-family: "Metropolis-ExtraBoldItalic";
+  src:url("../fonts/Metropolis-ExtraBoldItalic.otf");
+}
+@font-face{
+  font-family:"futura";
+  src:url("../fonts/Futura Condensed Bold.otf");
+}
+
+@font-face{
+  font-family:"frutiger";
+  src:url("../fonts/FrutigerNextLT-Bold.ttf");
+}
+
+@font-face{
+  font-family:"Franklin_Gothic";
+  src:url("../fonts/Franklin Gothic Heavy Italic.ttf");
+}
+
+
+
+/* NAVBAR */
+.navbar {
+  font-family: 'Franklin_Gothic';
+  background-color: rgb(183,64,59);
+  position: fixed;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  height: 60px;
+  z-index: 100;
+
+}
+/* Rende la navbar orizzontale */
+.navbar ul {
+  margin: 1;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  clear: left;
+}
+
+/* Tutti gli elementi in navbar */
+.navbar li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  white-space: nowrap;
+  text-align:center !important;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  padding: 0px;
+  color:white;
+  text-transform: uppercase;
+}
+
+
+
+.navbar li a {
+   color:white;
+   text-decoration: none;
+}
+
+.navbar li:hover{
+  color: black;
+}
+
+.navbar li a:hover{
+  color:black;
+  text-decoration:none;
+}
+
+
+/* Dropdown */
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  padding: 10px 0;
+  visibility: hidden;
+  background: #fff;
+    z-index: 1;
+}
+
+/* Elementi che stanno del dropdown */
+.navbar .dropdown ul li{
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+.navbar .dropdown ul li a{
+  color:black;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+
+.title_issue {
+  text-align: center;
+  }
+
+.banner_issue{
+  text-align: center;
+  font-family: 'Courier Prime', monospace;
+  color: rgb(183,64,59);
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  height:45px;
+}
+
+.article_col{
+  border:solid gray;
+  border-width: thin;
+  margin: 0.5em;
+  height: 600px;
+  overflow: scroll;
+  overflow-x: hidden;
+  background: white;
+  font-family:"Hel", sans-serif;
+  color:black;
+}
+
+.article_col::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+}
+.article_col::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+.article_col::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+
+.start_line{
+border-top: 3px solid black;
+width: 80px;
+margin-top: 0;
+}
+
+
+.paragraph_header{
+  font-family: futura;
+  size: 20px;
+  text-align: center;
+}
+.author_and_date{
+  size:10px;
+}
+
+figcaption{
+   size:10px;
+}
+
+body{
+  background-color: white !important;
+  overflow-x: hidden!important;
+  /*background-image: url("https://miro.medium.com/max/630/1*CJKgA7EHcxi8wMs1_6kBqA.jpeg");*/
+}
+
+.article_col figure{
+  text-align:center;
+}
+
+.article_col .video{
+  display: block;
+  text-align:center;
+}
+
+#sep_nav{
+  display: none;
+}
+
+.opening_img{
+  display: none;
+}
+
+#col1 ul{
+    list-style: none;
+}
+
+#col1 ul li {
+    text-indent: -0.3rem;
+  }
+
+#col1 .title_and_subtitle{
+  background-image: url("../imgs/may.jpeg");
+  padding:5px;
+  height: auto;
+  width: auto;
+  text-align: left;
+  margin-top: 15px;
+  background-size: cover;
+  font-family: futura;
+  font-size: 30px;
+  color: white;
+  line-height: 1em;
+  min-height:200px;
+}
+
+ #col1 .title {
+  font-size: 30px;
+  text-decoration: underline;
+  max-width:80%;
+ }
+
+ #col1 .subtitle {
+  text-transform: uppercase;
+  max-width:70%;
+ }
+
+#col2 .title_and_subtitle{
+  text-align: left;
+  color:white;
+  font-family: futura;
+  font-size: 30px;
+  line-height: 1em;
+  background-image: url("../imgs/borisprova.jpeg");
+  background-color: black;
+  background-size: auto;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  min-height:300px;
+  width: auto;
+  margin-top: 15px;
+  padding: 6px;
+ }
+
+ #col2 .title {
+  max-width:80%;
+  word-wrap: break-word;
+  text-decoration: underline;
+
+ }
+
+  #col2 .subtitle {
+    max-width:50%;
+    text-transform: uppercase;
+  }
+
+
+#sep_container_belle{
+  display: none;
+}
+ #emphasized{
+   font-weight: bold;
+ }
+
+#col3 .title_and_subtitle{
+  text-align: left;
+  padding-top:0.1em;
+  padding-left: 5px;
+  height: auto;
+  width: auto;
+  margin-top: 15px;
+  background-image: url("../imgs/coppiaprova.jpeg");
+  background-size: cover;
+  font-size: 30px;
+  line-height: 1em;
+  color: white;
+}
+
+#col3 .title{
+  max-width:80%;
+  text-decoration: underline;
+  font-family: 'futura';
+}
+
+#col3 .subtitle{
+  max-width:50%;
+  line-height: 1em;
+  font-family: "futura";
+  margin-top: 2px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.cont {
+
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 14px;
+  margin-top: -27px;
+  margin-bottom: 14px;
+
+}
+
+.article_col{
+  font-family: 'frutiger';
+}
+
+footer{
+  color:white;
+  background-color: rgb(183,64,59);
+  margin-top: 90px;
+  font-family: 'Franklin_Gothic';
+  text-transform: uppercase;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+   margin-left: 50px!important;
+  margin-top: 7px!important;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+
+#myModal {
+   font-family: 'Franklin_Gothic', serif;
+
+
+}
+
+.modal-header {
+  font-family: 'Franklin_Gothic', serif;
+    background-color: rgb(183,64,59);
+     color:white;
+}
+
+.modal-footer {
+    background-color:white;
+     color:black;
+     font-family: 'Franklin_Gothic'
+
+}
+
+
+
+.modal-footer .btn{
+  background-color: transparent;
+border: none;
+color:black;
+text-transform: uppercase;
+
+}
+
+.modal-footer .btn:hover{
+  background-color: rgb(183,64,59);
+  color:white;
+
+}
+.modal-header .firstbtn{
+   background-color: transparent;
+border: none;
+ color:lightgrey;
+ font-size: 32px;
+
+ }
+.p-4{
+       background-color:white!important;
+       font-family: 'Franklin_Gothic';
+text-transform: uppercase;
+       color: black;
+       font-size: 18px;
+
+
+}
+
+.modal-title {
+ font-size: 32px;
+ text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: -32px!important;
+    margin-top: 7px!important;
+
+  }
+}
+
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border: 1px solid black;
+    background-color: white;
+    /*filter: opacity(70%);*/
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+/*.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}*/
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 78px;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 100px;
+    color: white !important;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+  font-family: 'Metropolis-ExtraBoldItalic';
+    text-transform: uppercase;
+}
+
+#metadata_intro{
+  font-family: 'Metropolis-ExtraBoldItalic';
+    background-color: rgb(183,64,59)!important;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+.metadata_issue {
+    color: white !important;
+    margin-right: 75px !important;
+
+}
+
+
+.accordion-button{
+  text-decoration: underline;
+  font-family: 'futura';
+    background-color: black!important;
+    color: white!important;
+}
+
+.accordion-button:not(.collapsed) {
+  color:white!important;
+  background-color: rgb(183,64,59)!important;
+    font-family: 'Metropolis-ExtraBoldItalic';
+    text-decoration: none;
+}
+
+:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+ }
+
+.accordion-body{
+font-family:"frutiger";
+  background-color: white;
+  }
+
+.accordion-body li{
+    list-style-type: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0.5em;
+    margin: 2px;
+    display: none;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  outline: 1px solid;
+}
+
+
+.focus{
+  text-align: center;
+}
+
+
+
+.btn-10{
+  font-family: "Metropolis-ExtraBoldItalic";
+  background-color: rgb(183,64,59);
+  border: none;
+  color: white;
+  padding: 7px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+
+}
+
+
+.btn-10:hover {
+  font-family: "Metropolis-ExtraBoldItalic";
+    background-color: white;
+    border: none;
+    color:rgb(183,64,59);
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+#buttunazzi{
+  text-align: center;
+}
