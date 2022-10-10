@@ -34,14 +34,22 @@
 }
 p {color: black;
 font-family: 'caslon_old_faceregular';
+padding: 40px;
+font-weight: bold;
+
+font-size: 15px;
 }
 
-#container_belle{
-  text-align: center;
-    font-size: 14px;
-    font-family: 'caslon_old_face_italic';
-    text-transform: uppercase;
+ul, ol, #container_belle  {
+  color: black;
+  font-family: 'caslon_old_faceregular';
+  padding: 40px;
+  font-weight: bold;
+
+  font-size: 15px;
+
 }
+
 
 #lo2::first-letter {
   background-image: url('../imgs/I.png');
@@ -54,7 +62,8 @@ line-height: 0.65;
 color: transparent;
 margin-right: -0.15px;
 margin-left: -0.15rem;
-margin-bottom: -4.15rem;
+margin-bottom: -4.25rem;
+
 }
 
 
@@ -69,7 +78,8 @@ line-height: 0.65;
 color: transparent;
 margin-right: -0.15px;
 margin-left: -0.15rem;
-margin-bottom: -4.15rem;
+margin-bottom: -4.25rem;
+
 
 }
 
@@ -180,6 +190,9 @@ margin-left: -0.15rem;
 margin-bottom: -4.15rem;
 }
 
+#drop {
+  text-transform: uppercase;
+}
 
 img {
 -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -307,29 +320,34 @@ font-family:  'caslon_old_faceregular';
   color: black;
   text-transform: uppercase;
   font-size: 22px;
+  font-weight: bold;
 }
 
 
 
 .subtitle {
     text-align: center;
-      font-size: 14px;
-  font-family: 'caslon_old_face_italic';
-  text-transform: uppercase;
+      font-size: 16px;
+  font-family: 'caslon_old_face_italic'!important;
+
+  font-weight: bolder;
 
 
 }
+
+
 
 #subimage {
   float: left;}
 }
 .author_and_date {
   font-family:  'caslon_old_faceregular';
+  font-weight: bold;
 
 }
 
 
-figcaption {font-family:  'caslon_old_faceregular';}
+figcaption {font-family:  'caslon_old_faceregular';font-weight: bold;}
 
 h3 {text-align: center;
 font-family: 'caslon_old_faceregular';
@@ -473,8 +491,8 @@ body {
 }
 
 #block1 {
-  margin-bottom: -60px;
-  margin-left: -9px;
+  margin-bottom: -110px;
+  margin-left: 30px;
   margin-top: 12px;
 }
 
@@ -510,7 +528,7 @@ figcaption {
 }
 
 .icons_nav {
-   margin-left: 75px!important;
+   margin-left: 2vh!important;
   margin-top: 7px!important;
 }
 
@@ -698,7 +716,7 @@ font-family: "caslon_old_face_italic";
   }
 
   .icons_nav {
-    margin-left: -15px!important;
+    margin-left: 2vh!important;
     margin-top: 7px!important;
 
   }

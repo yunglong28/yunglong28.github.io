@@ -104,14 +104,31 @@ html {
 /*Section used for centering process*/
 section {
   width: 100%;
-  height: 150vh;
+  height: 94vh;
   background-color:#0c2414;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'bodoni';
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 0px;
+  color: white;
+  overflow-x:hidden;
+  overflow-y:auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+
+section::-webkit-scrollbar {
+  display: none;
+}
+
+section a{
+  text-decoration: underline!important;
+  color: white !important;
+
 }
 
 .container{
@@ -120,8 +137,6 @@ section {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
-
-
 
 
 .btn-10{
@@ -198,27 +213,39 @@ font-family: nimbus;
 footer{
   color:black!important;
   background-color: white;
-  margin-top: 50px;
-  margin-bottom: 50px;
+   margin-top: 10px ;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
   font-family: nimbus;
   text-transform: uppercase;
-  height:30vh;
+  height:8vh;
   font-size: 20px;
 }
+
+
+
 #magazine2{
   background-color:
   #e6d8a8;
-height:  420px;
+height:  410px;
 padding-top: 4%;
 padding-left: 6%;
 padding-right: 6%;
 padding-bottom: 2%;
   color:black;
     font-family: 'bodoni';
-    font-size: 25px;
+    font-size: 23px;
     text-align: justify;
 
 }
+
+.titles{
+  color:#fc4434;
+  font-family: 'bodoni';
+  font-weight: bold; 
+}
+
 .btn_stili {
   background-color:
   #white;
@@ -238,52 +265,6 @@ text-align: center;
 
     font-family: bodoni;
     font-size: 22px;
-}
-
-section {
-  width: 100%;
-  height: 220vh;
-background-color:#0c2414;
-  display: flex;
-  align-items: center;
-  text-align: justify;
-  color: white;
-}
-
-/* unvisited link */
-a:link {
-  color: red;
-}
-
-/* visited link */
-a:visited {
-  color: red;
-}
-
-/* mouse over link */
-a:hover {
-  color: black;
-}
-
-/* selected link */
-a:active {
-  color: red;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
 }
 
 
@@ -316,7 +297,6 @@ a:active {
 
 
  }
-
 
 
 .modal-footer .btn{
@@ -366,3 +346,15 @@ border: none;
     margin-top: 7px!important;
 
   } }
+
+
+.imgs_docs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 55vh;
+}
+
+.col{
+  padding: 10px;
+}

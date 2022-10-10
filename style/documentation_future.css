@@ -43,6 +43,7 @@
 
 .navbar li a {
     color:black;
+    text-decoration: none;
 }
 
 /* Dropdown */
@@ -103,15 +104,27 @@ html {
 /*Section used for centering process*/
 section {
     width: 100%;
-    height: 150vh;
-    background-color: #73895a;
+    height: 80vh;
+    background-color: rgb(250, 247, 230);
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'bodoni';
+    color: black;
     font-size: 25px;
     margin-top: 0px;
+    text-align: justify;
+  overflow-y:auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+
+
+
+section::-webkit-scrollbar {
+  display: none;
+}
+
 
 .container{
     width: 100%;
@@ -206,18 +219,20 @@ section {
 footer{
     color:black!important;
     background-color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
+      margin-top: 10px ;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
     font-family: nimbus;
     text-transform: uppercase;
-    height:30vh;
+    height:8vh;
     font-size: 20px;
 }
 
 
 #magazine2{
     background-color:#73895a;
-    height: 370px;
+    height: 500px;
     margin-top: 10px;
     padding-top: 4%;
     padding-left: 6%;
@@ -280,15 +295,7 @@ footer{
     font-size: 22px;
 }
 
-section {
-    width: 100%;
-    height: 220vh;
-    background-color: rgb(250, 247, 230);
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    color: white;
-}
+
 
 /* unvisited link */
 a:link {
@@ -337,7 +344,12 @@ a:active {
     margin-top: 7px;
 }
 
-
+.imgs_docs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 55vh;
+}
 
 @media only screen and (max-width: 1300px) {
 
@@ -352,3 +364,5 @@ a:active {
     margin-top: 7px!important;
 
   }
+
+     }

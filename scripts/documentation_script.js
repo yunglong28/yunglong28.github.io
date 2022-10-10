@@ -13,6 +13,13 @@ function change(name) {
 
    if (name == 'illuminist') {
      $("#pagestyle").attr('href','style/documentation_illuminism.css');
+     $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazine.png'>")
+    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellohome.png'>")
+    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harphome.png'>")
+    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonehome.png'>")
+    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobohome.png'>")
+    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxhome.png'>")
+    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodhome.png'>")
    }
 
    if (name == 'hobbyhorse') {
@@ -64,6 +71,13 @@ function change(name) {
 
    if (name == 'future') {
      $("#pagestyle").attr('href','style/documentation_future.css');
+      $("#home_icon").attr('src', 'imgs/dither_it_magazine.png')
+        $("#cello").attr('src', 'imgs/dither_it_cello.png');
+        $("#harp").attr('src', 'imgs/dither_it_harp.png');
+        $("#gramophone").attr('src', 'imgs/dither_it_gramophone.png');
+        $("#disco").attr('src', 'imgs/dither_it_disco.png');
+        $("#boombox").attr('src', 'imgs/dither_it_boombox.png');
+        $("#walkman").attr('src', 'imgs/dither_it_walkman.png');
    }
 
 };

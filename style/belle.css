@@ -114,7 +114,7 @@ body{
   overflow-x: hidden;
   border-width: 10px;
   border-style: solid;
-  border-image: url(../imgs/old_paper.jpg)25% round;
+  border-image: url(../imgs/old.jpg)25% round;
 }
 
 .article_col figure{
@@ -128,22 +128,23 @@ body{
 
 #col1{
   padding:0;
-  background-color: rgb(211, 104, 65);
+  background-color: #f2623f;
   text-align: center;
   font-family: 'Franklin', cursive;
 }
 
 #col1 .title{
   font-size: 35px;
-  color:rgb(228, 217, 201);
+  color: #E4D9C5;
   padding:0.6em;
   line-height: 1em;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 #col1 .subtitle{
   font-size: 30px;
-  color:rgb(228, 217, 201);
+  color:#E4D9C5;
   line-height: 1em;
   text-align: center;
   text-transform: uppercase;
@@ -162,7 +163,7 @@ body{
   }
 
 #col1 .title_and_subtitle img{
- margin-top:-60px;
+ margin-top:-65px;
 }
 
 #col1 .subtitle{
@@ -195,6 +196,11 @@ body{
   padding-top:0.5em;
   text-transform:uppercase;
   font-size: 10px;
+}
+
+#col1 a{
+  color: #E4D9C5;
+  text-decoration: underline; 
 }
 
 
@@ -235,6 +241,11 @@ body{
      border-top: 3px solid rgb(191, 164, 4);
   }
 
+#col2 a{
+  color:rgb(191, 164, 4);
+  text-decoration: underline;
+}
+
 #amazzone{
   display: block;
   margin-left: auto;
@@ -245,7 +256,7 @@ body{
 #container_belle{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-image: url(../imgs/old_paper.jpg);
+  background-image: url(../imgs/old.jpg);
 }
 
 .emphasized{
@@ -258,6 +269,7 @@ body{
   font-size: 30px;
   padding-top: 9px;
   line-height: 30px;
+   font-style: oblique;
 }
 
 #center{
@@ -273,6 +285,7 @@ body{
   font-size: 30px;
   padding-top: 9px;
   line-height: 30px;
+   font-style: oblique;
 }
 
 #col2_txt{
@@ -284,12 +297,14 @@ body{
 
 
 #col3{
-  background-image: url(../imgs/old_paper.jpg);
+  background-image: url(../imgs/old.jpg);
   font-family:  'Golddrew', cursive;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #col3 .title_and_subtitle{
-  color: rgb(0, 53, 102);
+  color: #003566;
   font-size: 40px;
   text-align: center;
   line-height: 1em;
@@ -297,13 +312,18 @@ body{
 }
 
 #col3 .author_and_date{
-   color:rgb(0, 53, 102);
+   color:#003566;
 }
 
  #col3 .start_line{
      width: 50%;
      border-top: 3px solid rgb(0, 53, 102);
   }
+
+#col3 a {
+  color: #003566;
+  text-decoration: underline;
+}
 
 #li{
   float:left;

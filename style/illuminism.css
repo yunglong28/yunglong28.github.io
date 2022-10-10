@@ -447,7 +447,7 @@ a:hover{
 .footer_baroque {
     color: rgb(255, 255, 255);
     font-family: 'GFS Didot', serif; !important;
-    margin: 40px !important;
+    margin: 40px;
     letter-spacing: 2px !important;
     text-align: center !important;
     font-size: 20px !important;

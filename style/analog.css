@@ -281,6 +281,8 @@ body {
 
  }
 
+
+
 .author_and_date {
   font-family:  'caslon_old_faceregular';
 }
@@ -313,7 +315,6 @@ body {
         text-align: justify;
         font-size: 10pt;
 }
-
 
 
 
@@ -410,7 +411,8 @@ border-bottom: 1px solid black;
       font-family: 'joystix_monospace';
       text-transform: uppercase;
       font-size: 9px;
-      line-height: 80%;:
+      line-height: 80%;
+      text-align: left;
   }
 
   p:nth-child(9) {
@@ -418,7 +420,9 @@ border-bottom: 1px solid black;
       font-family: 'joystix_monospace';
       text-transform: uppercase;
       font-size: 9px;
-      line-height: 80%;:
+      line-height: 80%;
+        text-align: left;
+      
   }
 
   .marquee {
@@ -516,8 +520,9 @@ footer{
 }
 
 .icons_nav {
-   margin-left: 65px!important;
+  margin-right: 2px!important;
   margin-top: 7px!important;
+  margin-left: 125px!important;
 }
 
 
@@ -693,8 +698,6 @@ font-family: vcr;
 }
 
 
-
-
 #myModal {
   font-family:'joystix_monospace'!important;
 
@@ -712,9 +715,6 @@ font-family: vcr;
     background-color:white;
      color:lightgrey;
      border: 10px double black;
-
-
-
 }
 
 
@@ -766,3 +766,27 @@ border: none;
  color: white;
 
 }
+
+.ArtBody p {
+  margin-top: 19px;
+  text-indent: 1.5em;
+}
+
+.author, .publicationDate{
+  font-weight: bold;
+}
+
+/*@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: 80px!important;
+    margin-top: 7px!important;
+
+  }
+}*/

@@ -142,20 +142,31 @@ function change(name) {
   if (name == 'tabloid'){
     $(".first_img").remove();
     $("#pagestyle").attr('href','style/tabloid.css');
+    if($('.pallino_giallo').length == 0){$("#col1 .title").prepend("<img class='pallino' src='imgs/pallino.png'>")}
+    if($('.pallino_rosso').length == 0){$("#col2 .title").prepend("<img class='pallino' src='imgs/pallino_rosso.png'>")}
     if($('.title_issue').length == 0){$("<div class='title_issue'> <img id='theresonance' src='imgs/theresonance.jpeg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
     if($('#sep_banner').length == 0){$("<br id='sep_banner'>").insertAfter(".banner_issue")};
     if($("#francesca").length){
       $("#title_and_subtitle_1").css({fontSize: 50});
-      $("#title_and_subtitle_2").css({fontSize: 70});
+      $("#title_and_subtitle_1").addClass("delStyle");
+      $("#title2").css({fontSize: 80});
+      $("#title2").addClass("delStyle");
       $("#title_and_subtitle_3").css({fontSize: 40});
+      $("#title_and_subtitle_3").addClass("delStyle");
       $("#title_and_subtitle_2").css("text-transform", "uppercase");
-      $("#title1").css("text-decoration","none");
+      $("#title_and_subtitle_2").addClass("delStyle");
+      $("#title2").css("text-decoration","none");
+      $("#col2 .pallino").remove();
+      $("#title2").css("line-height", '1em');
      }
 
     if($("#alessandro").length){
       $("#title_and_subtitle_2").css({fontSize: 30});
+      $("#title_and_subtitle_2").addClass("delStyle");
       $("#title_and_subtitle_3").css({fontSize: 30});
+      $("#title_and_subtitle_3").addClass("delStyle");
       $("#subtitle3").css("column-count","2");
+      $("#subtitle3").addClass("delStyle");
       $("#subtitle3").css("max-width","100%");
      }
 
@@ -172,9 +183,9 @@ function change(name) {
     $(".banner_issue").remove();
     $(".title_issue").remove();
     $("#sep_banner").remove()
-
-  }
-
+    $(".pallino").remove();
+    $(".delStyle").removeAttr("style");
+}
 
   if (name == 'analog'){
     $("#pagestyle").attr('href','style/analog.css');
@@ -205,6 +216,7 @@ function change(name) {
        $("<img class='first_img' id='first_img_one' src='https://img1.wsimg.com/isteam/ip/d8d3ee10-86f5-4a41-aa20-fec4c8ea1c2e/Maracatu%20Coronation.png/:/cr=t:3.65%25,l:0.71%25,w:94.34%25,h:94.34%25/rs=w:1280' alt='Coronation ceremony' width='300'>").insertBefore("#title_and_subtitle_1");
        $("<img class='first_img' id='first_img_two' src='https://2104310a1da50059d9c5-d1823d6f516b5299e7df5375e9cf45d2.ssl.cf2.rackcdn.com/nmbx/2016/11/GaryIngle-475x358.jpg' width='300'>").insertBefore("#title_and_subtitle_2");
        $("<img class='first_img' id='first_img_three' src='imgs/popular_music_and_society.jpg' width='300'>").insertBefore("#title_and_subtitle_3");
+       $("<br id='title_break'>").insertBefore("#title_and_subtitle_1 .title")
      }
 
      if ($("#alessandro").length) {
@@ -229,8 +241,9 @@ function change(name) {
     else{
       $('.analog_img').remove();
       $(".finalfig1").remove()
-      $(".adv").remove()
-      $(".adv1").remove()
+      $(".adv").remove();
+      $(".adv1").remove();
+      $("#title_break").remove();
     }
 
 
@@ -291,43 +304,41 @@ function change(name) {
 function keepstyle(pagestyle){
   var style = document.getElementById(pagestyle).getAttribute("href");
   sessionStorage.setItem('currentstyle', style);
-
 }
 
 
 $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
     var style = sessionStorage.getItem("currentstyle");
-
+    
     if (style==="style/home.css"||style==="style/issue.css"){
        change('home');
     }
 
 
-    if (style==="style/home_illuminism.css"||style==="style/illuminism.css"){
+    if (style==="style/home_illuminism.css"||style==="style/illuminism.css"||style==="style/documentation_illuminism.css"){
       change('illuminist');
     }
 
-    if (style==="style/home_hobbyhorse.css"||style==="style/hobbyhorse.css"){
+    if (style==="style/home_hobbyhorse.css"||style==="style/hobbyhorse.css"||style==="style/documentation_hobbyhorse.css"){
        change('hobbyhorse');
     }
 
-    if (style==="style/home_belle.css"||style==="style/belle.css"){
+    if (style==="style/home_belle.css"||style==="style/belle.css"||style==="style/documentation_belle.css"){
       change('belle');
     }
 
-    if (style==="style/home_analog.css"||style==="style/analog.css"){
+    if (style==="style/home_analog.css"||style==="style/analog.css"||style==="style/documentation_analog.css"){
       change('analog');
     }
 
-    if (style==="style/home_tabloid.css"||style==="style/tabloid.css"){
+    if (style==="style/home_tabloid.css"||style==="style/tabloid.css"||style==="style/documentation_tabloid.css"){
       change('tabloid');
     }
 
-    if (style==="style/home_future.css"||style==="style/future.css"){
+    if (style==="style/home_future.css"||style==="style/future.css"||style==="style/documentation_future.css"){
       change('future');
     }
-
 
     sessionStorage.clear();
   }
@@ -350,6 +361,8 @@ function openNav() {
     document.getElementById("mySidebar").style.width = "350px";
     document.getElementById("articoli").style.width = "70%";
     document.getElementById("articoli").style.marginLeft = "350px";
+    document.getElementById("footer").style.width = "70%";
+    document.getElementById("footer").style.marginLeft = "350px";
     $("#metadati").removeAttr("onclick");
     $("#metadati").attr('onclick','closeNav()');
     $('.title_issue').css('paddingLeft', '350px');
@@ -362,6 +375,8 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("articoli").style.marginLeft = "auto";
     document.getElementById("articoli").style.width = "100%";
+    document.getElementById("footer").style.width = "100%";
+    document.getElementById("footer").style.marginLeft = "auto";
     $("#metadati").removeAttr("onclick");
     $("#metadati").attr('onclick','openNav()');
     $('.title_issue').css('paddingLeft', '0');
@@ -392,12 +407,12 @@ function underline_col1(item, color){
         var aboutwho = $(item).attr('about');
         $(item).css('background-color', color);
         $('#col1 [about= "' + aboutwho + '"]').css('background-color', color);
-        var elementPos = $('#col1 span[about= "' + aboutwho + '"]:first').offset().top;
-        var scrollPos = $("#col1").scrollTop();
-        var borderPixels = $(".article_col").css('borderWidth')
+        var elementPos = $('#col1 span[about= "' + aboutwho + '"]:first').offset().top; /*retrieve the current position of an element (specifically its border box, which excludes margins) relative to the document*/
+        var scrollPos = $("#col1").scrollTop();/*returns the vertical scrollbar position for the selected element*/
+        var borderPixels = $(".article_col").css('borderWidth')/*returns the width of an element's border*/
         let border = borderPixels.replace("px", "");
-        $("html").animate({scrollTop:0}, 1000)
-        $("#col1").animate({scrollTop:scrollPos + elementPos - $("#col1").offset().top - border}, 1000);
+        $("html").animate({scrollTop:0}, 1000)/*set vertical scrollbar position for the webpage to the top*/
+        $("#col1").animate({scrollTop:scrollPos + elementPos - $("#col1").offset().top - border}, 1000);/*some maths*/
         $(item).attr("clicked","true");
       }
   else{
@@ -487,10 +502,11 @@ function sortAlphabet(lista){
   }
 
   itemsArr.sort(function(a, b) {
-    return a.innerHTML == b.innerHTML
-            ? 0
-            : (a.innerHTML > b.innerHTML ? 1 : -1);
+    return a.innerHTML == b.innerHTML// if the value is the same
+            ? 0//keep the original order
+            : (a.innerHTML > b.innerHTML ? 1 : -1);//otherwhise: if a > b, sort sort a after b, else sort sort a before b
   });
+
 
   for (i = 0; i < itemsArr.length; ++i) {
     list.appendChild(itemsArr[i]);
@@ -624,41 +640,44 @@ function focus_three(elem){
 }
 
 //ADD METADATA
-// create dictionary with userclasses
+// create an object with userclasses
 var UserClasses_init = {}
-// transform it in JSON object and save it into localStorage
+// Convert the JavaScript object into a string and save it into localStorage (JSON makes it possible to store JavaScript objects as text)
 localStorage.setItem('UserClasses', JSON.stringify(UserClasses_init))
 
-function saveNewClass(){
-    user_class = $("#add_class").val().toLowerCase().toString();
-    selected_text = document.getSelection().toString();
-    if ((user_class == '') | (user_class == null) | (selected_text == '') | (selected_text == null)) {
+function saveNewClass(){  //saves new metadata classes in localStorage 
+  //variable for the class from the user input
+    key = $("#add_class").val().toLowerCase().toString();
+  //variable fo the text selected by the user
+    value = document.getSelection().toString();
+  //check whether the user specified the class name and selected the text
+    if ((key == '') | (key == null) | (value == '') | (value == null)) {
         alert("Please, have a look at the instructions above :)")
     }
     
-
     else{  
-
+      // get existing User classes
         UserClasses = JSON.parse(localStorage.getItem('UserClasses'))
-        if ((user_class in UserClasses)==0){
-            UserClasses[user_class] = []
+      //if the class is new, create an empty list of its values
+        if ((key in UserClasses)==0){
+            UserClasses[key] = []
         }
-         UserClasses[user_class].push(selected_text);
+      //add the new value to the corresponding key in UserClasses
+         UserClasses[key].push(value);
+      //save updated UserClasses to localStorage
          localStorage.setItem('UserClasses', JSON.stringify(UserClasses))
-
-       // var val1 = localStorage.getItem('UserClasses');
-      //  alert(val1)
+      //
         add_metadata(Object.keys(UserClasses));
+      //create a span with the selected text as contente
         var wrap = document.createElement('span')
-        wrap.innerHTML = selected_text;
-        //add class NewClass and "myspan" to element
-        wrap.setAttribute("about", selected_text)
-        // var range containing the starting range of the selection
+        wrap.innerHTML = value;
+        wrap.setAttribute("about", value)
+      // var range containing the starting range of the selection
         sel = document.getSelection()
         range = sel.getRangeAt(0);
-        // clear the document content at that range
+      // clear the document content at that range
         range.deleteContents();
-        // insert the new span node
+      // insert the new span node
         range.insertNode(wrap);
       }
 
@@ -669,18 +688,19 @@ function getRandomColor() {
   var letters = '0123456789ABCDEF';
   var color = '#';
   for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
+    color += letters[Math.floor(Math.random() * 16)];  //Returns a random value between the 16 elements of letters (repeated 6 times)
   }
   return color;
 }
+
 
 function add_metadata(keys_list){
   for (let key of keys_list){
     color = getRandomColor()
       if ($("#"+key+"").length == 0){
-          $("#new_metadata_list").append("<ul class='user_added_class' id='" + key + "' color='" + color + "'><b>" + key + "</b></ul>")
+          $("#new_metadata_list").append("<ul class='user_added_class' id='" + key + "' color='" + color + "'><b>" + key + "</b></ul>") //add new class
           }
-      var value = UserClasses[key]
+      var value = UserClasses[key] //populate the class
       for (let valore of value){
         nospace= valore.replace(/\s/g, "_")
         if ($("#"+nospace+"").length == 0){
@@ -691,7 +711,6 @@ function add_metadata(keys_list){
       }
 }
 }
-
 
 
 function clearAll(){

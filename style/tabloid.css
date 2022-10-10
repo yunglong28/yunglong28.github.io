@@ -111,9 +111,8 @@
   text-align: center;
   font-family: 'Courier Prime', monospace;
   color: rgb(183,64,59);
-  font-size: 45px;
-  font-weight: bold;
-  text-shadow: 2px 2px black;
+  font-size: 50px;
+  text-shadow: 1.5px 1.5px black;
   height:45px;
 }
 
@@ -125,7 +124,7 @@
   overflow: scroll;
   overflow-x: hidden;
   background: white;
-  font-family:"Hel", sans-serif;
+  font-family:"frutiger", sans-serif;
   color:black;
 }
 
@@ -142,6 +141,14 @@
     background-color: #000000;
 }
 
+.article_col a{
+  color: black;
+  text-decoration: underline;
+}
+
+.article_col a:hover{
+  color: rgb(183,64,59);
+}
 
 .start_line{
 border-top: 3px solid black;
@@ -203,14 +210,14 @@ body{
   margin-top: 15px;
   background-size: cover;
   font-family: futura;
-  font-size: 30px;
   color: white;
+  font-size: 30px;
   line-height: 1em;
   min-height:200px;
 }
 
  #col1 .title {
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: underline;
   max-width:80%;
  }
@@ -241,11 +248,11 @@ body{
   max-width:80%;
   word-wrap: break-word;
   text-decoration: underline;
-
+  font-size: 25px;
  }
 
   #col2 .subtitle {
-    max-width:50%;
+    max-width:70%;
     text-transform: uppercase;
   }
 
@@ -275,6 +282,7 @@ body{
   max-width:80%;
   text-decoration: underline;
   font-family: 'futura';
+  font-size: 30px;
 }
 
 #col3 .subtitle{
@@ -297,9 +305,6 @@ body{
 
 }
 
-.article_col{
-  font-family: 'frutiger';
-}
 
 footer{
   color:white;
@@ -315,7 +320,7 @@ footer{
 }
 
 .icons_nav {
-   margin-left: 50px!important;
+   margin-left: 70px!important;
   margin-top: 7px!important;
 }
 
@@ -451,7 +456,7 @@ text-transform: uppercase;
 
 #metadata_intro{
   font-family: 'Metropolis-ExtraBoldItalic';
-    background-color: rgb(183,64,59)!important;
+    background-color: black!important;
     text-transform: uppercase;
     font-size: 25px;
     text-align: center;
@@ -476,17 +481,19 @@ text-transform: uppercase;
 
 
 .accordion-button{
-  text-decoration: underline;
-  font-family: 'futura';
-    background-color: black!important;
-    color: white!important;
-}
-
-.accordion-button:not(.collapsed) {
   color:white!important;
   background-color: rgb(183,64,59)!important;
     font-family: 'Metropolis-ExtraBoldItalic';
     text-decoration: none;
+  
+}
+
+.accordion-button:not(.collapsed) {
+
+    text-decoration: underline;
+    font-family: 'futura';
+      background-color: black!important;
+      color: white!important;
 }
 
 :focus {
