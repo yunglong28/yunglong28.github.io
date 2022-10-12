@@ -196,7 +196,7 @@ margin-right: 3vh;
     margin-left: 12vh;
     margin-right: 12vh;
 font-weight: bold;
-line-height: 85%;
+
 }
 
 .wrapper {
@@ -216,7 +216,7 @@ line-height: 85%;
   height: 500px;
 margin-top: -30px;
 font-weight: bold;
-line-height: 85%;
+
 }
 
 .coltext {
@@ -231,9 +231,9 @@ background-color: #E9E9E9;
 margin-top: 60px;
 margin-left: 10vh;
 margin-right: 28vh;
-line-height: normal;
 font-weight: bold;
 line-height: 85%;
+
 
 
 }
@@ -249,7 +249,7 @@ line-height: 85%;
     z-index: 0;
     background-color: #E9E9E9;
     font-weight: bold;
-    line-height: 85%;
+
 }
 
 .col_button {
@@ -261,7 +261,7 @@ font-family: 'p22_operina_fiore_fiore';
     margin-left: 26vh;
     margin-right: 12vh;
     font-weight: bold;
-    line-height: 85%;
+
 }
 
 .col_issue {
@@ -278,6 +278,7 @@ font-family: 'p22_operina_fiore_fiore';
     line-height: 85%;
 
 
+
 }
 
 .wrapper_issue {
@@ -287,7 +288,7 @@ font-family: 'p22_operina_fiore_fiore';
   height: 795px;
   margin-left: -32px;
   font-weight: bold;
-  line-height: 85%;
+
 }
 
 
@@ -300,7 +301,7 @@ font-family: 'caslon_old_faceregular';
     margin-top: -19px;
   margin-left: 9vh;
     font-weight: bold;
-    line-height: 85%;}
+  }
 
 .col_us {
 
@@ -312,9 +313,14 @@ font-family: 'caslon_old_faceregular';
     margin-top: -104px;
     margin-left: 95vh;
     margin-right: -61vh;
-    line-height: normal;
+    line-height: 85%;
 
 
+
+}
+
+.issue {
+  line-height: 85%!important;
 }
 
 .wrapper_us{
@@ -337,14 +343,12 @@ font-family: 'caslon_old_faceregular';
     margin-left: 30px;
     z-index: 0;
     font-weight: bold;
-    line-height: 85%;}
-}
-.col_text_yet p:first-of-type {
-  line-height: normal;
+  }
 }
 
+
 .issue {
-  line-height: normal;
+
   font-weight: bold;
 
 
@@ -359,6 +363,7 @@ font-family: 'caslon_old_faceregular';
   margin-top: -370px;
   margin-left: 89vh;
   margin-right: -61vh;
+  line-height: 85%;
 
 }
 
