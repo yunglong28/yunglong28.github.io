@@ -322,6 +322,7 @@ font-family: 'caslon_old_faceregular';
 
 .issue {
   line-height: 85%!important;
+  font-weight: bold;
 }
 
 .wrapper_us{
