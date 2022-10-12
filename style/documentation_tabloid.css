@@ -9,6 +9,10 @@
   src:url("../fonts/Futura Condensed Bold.otf");
 }
 
+.icons {
+  cursor: pointer;
+}
+
    /* NAVBAR */
 .navbar {
   font-family: 'Metropolis-ExtraBoldItalic';
