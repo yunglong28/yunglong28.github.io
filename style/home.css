@@ -67,6 +67,10 @@
 
 }
 
+.icons {
+  cursor: pointer;
+}
+
 
 /* Dropdown */
 .navbar .dropdown ul {

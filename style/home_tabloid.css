@@ -85,7 +85,9 @@
 
 }
 
-
+.icons {
+  cursor: pointer;
+}
 /*Fine navbar*/
 
 #main_subt{

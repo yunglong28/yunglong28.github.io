@@ -11,6 +11,10 @@ body {
   overflow-x: hidden!important;
 }
 
+.icons {
+  cursor: pointer;
+}
+
 footer {
   display: block;
 }
@@ -432,4 +436,3 @@ background-color: rgb(250, 247, 230) !important;
 
   }
 }
-
