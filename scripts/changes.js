@@ -412,7 +412,7 @@ function underline_col2(item, color){
         var borderPixels = $(".article_col").css('borderWidth')
         let border = borderPixels.replace("px", "");
         $("html").animate({scrollTop:0}, 1000)
-        $("#col2").animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top - border}, 1000);
+        $("#col2").animate({scrollTop: scrollPos + elementPos - $("#col2").offset().top - border}, 1000);
         $(item).attr("clicked","true");
       }
   else{
@@ -433,7 +433,7 @@ function underline_col3(item, color){
         var borderPixels = $(".article_col").css('borderWidth')
         let border = borderPixels.replace("px", "");
         $("html").animate({scrollTop:0}, 1000)
-        $("#col3").animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top - border}, 1000);
+        $("#col3").animate({scrollTop: scrollPos + elementPos - $("#col3").offset().top - border}, 1000);
         $(item).attr("clicked","true");
       }
   else{
