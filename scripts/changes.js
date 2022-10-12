@@ -64,9 +64,12 @@ function change(name) {
   if (name =='illuminist'){
     $("#pagestyle").attr('href','style/illuminism.css');
     $(".first_img").remove();
-    $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover1.jpeg'>").insertBefore("#col1 .title");
-    $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover2.jpeg'>").insertBefore("#col2 .title");
-    $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover3.jpeg'>").insertBefore("#col3 .title");
+    if($("#carlo").length === 0){
+    $("<img class='img-fluid opening_img opening_img_illuminism' id='carlo' src='imgs/didot_cover1.jpeg'>").insertBefore("#col1 .title");}
+    if($("#giorgio").length === 0){
+    $("<img class='img-fluid opening_img opening_img_illuminism' id='giorgio' src='imgs/didot_cover2.jpeg'>").insertBefore("#col2 .title");}
+    if($("#cesare").length === 0){
+    $("<img class='img-fluid opening_img opening_img_illuminism' id='cesare' src='imgs/didot_cover3.jpeg'>").insertBefore("#col3 .title");}
     $("#home_icon").replaceWith("<img id='home_icon' src='imgs/magazine.png'>")
     $("#cello").replaceWith("<img id='cello' src='imgs/cellohome.png'>")
     $("#harp").replaceWith("<img id='harp' src='imgs/harphome.png'>")
@@ -140,8 +143,6 @@ function change(name) {
   if (name == 'tabloid'){
     $(".first_img").remove();
     $("#pagestyle").attr('href','style/tabloid.css');
-    if($('.pallino_giallo').length == 0){$("#col1 .title").prepend("<img class='pallino' src='imgs/pallino.png'>")}
-    if($('.pallino_rosso').length == 0){$("#col2 .title").prepend("<img class='pallino' src='imgs/pallino_rosso.png'>")}
     if($('.title_issue').length == 0){$("<div class='title_issue'> <img id='theresonance' src='imgs/theresonance.jpeg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
     if($('#sep_banner').length == 0){$("<br id='sep_banner'>").insertAfter(".banner_issue")};
     if($("#francesca").length){
@@ -166,7 +167,19 @@ function change(name) {
       $("#subtitle3").css("column-count","2");
       $("#subtitle3").addClass("delStyle");
       $("#subtitle3").css("max-width","100%");
+      if($('.pallino_giallo').length == 0){$("#col1 .title").prepend("<img class='pallino_giallo' src='imgs/pallino.png'>")}
+      if($('.pallino_rosso').length == 0){$("#col2 .title").prepend("<img class='pallino_rosso' src='imgs/pallino_rosso.png'>")}
      }
+
+     if($("#lorenza").length){
+      if($('.pallino_giallo').length == 0){$("#col1 .title").prepend("<img class='pallino_giallo' src='imgs/pallino.png'>")}
+      if($('.pallino_rosso').length == 0){$("#col2 .title").prepend("<img class='pallino_rosso' src='imgs/pallino_rosso.png'>")}
+     }
+
+     if($("#francesca").length){
+      if($('.pallino_giallo').length == 0){$("#col1 .title").prepend("<img class='pallino_giallo' src='imgs/pallino.png'>")}
+     }
+
 
     $("#home_icon").replaceWith("<img id='home_icon' src='imgs/magazinetabloid.png'>")
     $("#cello").replaceWith("<img id='cello' src='imgs/cellotabloid.png'>")
@@ -181,22 +194,30 @@ function change(name) {
     $(".banner_issue").remove();
     $(".title_issue").remove();
     $("#sep_banner").remove()
-    $(".pallino").remove();
+    $(".pallino_rosso").remove();
+    $(".pallino_giallo").remove();
     $(".delStyle").removeAttr("style");
 }
 
   if (name == 'analog'){
     $("#pagestyle").attr('href','style/analog.css');
     $("#sep_nav").remove();
-    $("#title_and_subtitle_1").prepend("<img class='analog_img' src='imgs/sub1.png' width='300'>");
-    $("#title_and_subtitle_2").prepend("<img  class=' analog_img micro' id='finalfig1' src='imgs/micro.png' width='300'>");
-    $("#title_and_subtitle_3").prepend("<img  class='analog_img' id='fig3' src='imgs/spartito.png' width='300'>");
+    if($("#strisce").length === 0){
+    $("#title_and_subtitle_1").prepend("<img class='analog_img' id='strisce' src='imgs/sub1.png' width='300'>")};
+    if($("#micro").length === 0){
+    $("#title_and_subtitle_2").prepend("<img  class=' analog_img' id='micro' src='imgs/micro.png' width='300'>")};
+    if($("#fig3").length === 0){
+    $("#title_and_subtitle_3").prepend("<img  class='analog_img' id='fig3' src='imgs/spartito.png' width='300'>")}
     $(".adv3").prepend("<img  class='finalfig1' src='imgs/adv3.png' width='300'>");
-    $(".adv1").prepend(" <img class='adv1'src='imgs/adv1.png' width='300'>");
-    $("#adv8000").append("<img  class='finalfig1' src='imgs/adv3.png' width='300'>")
-    $("#advnextissue").append("<img class='adv' src='imgs/adv2.png' width='300'>")
-    $("#advatari").append("<img class='adv1' src='imgs/adv1.png' width='300'>")
-      $(".adv2").prepend(" <img id='adv2'src='imgs/adv2.png' width='300'>");
+    /*$(".adv1").prepend(" <img class='adv1'src='imgs/adv1.png' width='300'>");*/
+    if($(".finalfig1").length === 0){
+    $("#adv8000").append("<img  class='finalfig1' src='imgs/adv3.png' width='300'>")};
+    if($(".adv").length === 0){
+    $("#advnextissue").append("<img class='adv' src='imgs/adv2.png' width='300'>")};
+    if($(".adv1").length === 0){
+    $("#advatari").append("<img class='adv1' src='imgs/adv1.png' width='300'>")};
+    if($("#adv2").length === 0){
+      $(".adv2").prepend(" <img id='adv2'src='imgs/adv2.png' width='300'>")};
       $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazineanalog.png'>")
       $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/celloanalog.png'>")
       $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpanalog.png'>")
@@ -214,7 +235,8 @@ function change(name) {
        $("<img class='first_img' id='first_img_one' src='https://img1.wsimg.com/isteam/ip/d8d3ee10-86f5-4a41-aa20-fec4c8ea1c2e/Maracatu%20Coronation.png/:/cr=t:3.65%25,l:0.71%25,w:94.34%25,h:94.34%25/rs=w:1280' alt='Coronation ceremony' width='300'>").insertBefore("#title_and_subtitle_1");
        $("<img class='first_img' id='first_img_two' src='https://2104310a1da50059d9c5-d1823d6f516b5299e7df5375e9cf45d2.ssl.cf2.rackcdn.com/nmbx/2016/11/GaryIngle-475x358.jpg' width='300'>").insertBefore("#title_and_subtitle_2");
        $("<img class='first_img' id='first_img_three' src='imgs/popular_music_and_society.jpg' width='300'>").insertBefore("#title_and_subtitle_3");
-       $("<br id='title_break'>").insertBefore("#title_and_subtitle_1 .title")
+       if($("#title_break").length === 0){
+       $("<br id='title_break'>").insertBefore("#title_and_subtitle_1 .title")}
      }
 
      if ($("#alessandro").length) {
@@ -242,6 +264,7 @@ function change(name) {
       $(".adv").remove();
       $(".adv1").remove();
       $("#title_break").remove();
+      $("#adv2").remove();
     }
 
 
@@ -277,9 +300,9 @@ function change(name) {
 
         if($("#lorenza").length){
           $(".first_img").remove()
-          $("<img id='fig_article1' src='imgs/dither_it_lorenza1.jpeg' class='dithered_images' width='300'>").insertAfter("#title_and_subtitle_1 .title")
-          $("<img id='fig2' src='imgs/dither_it_lorenza2.jpeg' class='dithered_images' width='300'>").insertAfter("#title_and_subtitle_2 .title")
-          $("<img id='fig_article' src='imgs/dither_it_lorenza3.jpeg' class='dithered_images' width='300'>").insertAfter("#title_and_subtitle_3 .title")
+          if($('#fig_article1').length == 0){$("<img id='fig_article1' src='imgs/dither_it_lorenza1.jpeg' class='dithered_images' width='300'>").insertAfter("#title_and_subtitle_1 .title")};
+          if($('#fig2').length == 0){$("<img id='fig2' src='imgs/dither_it_lorenza2.jpeg' class='dithered_images' width='300'>").insertAfter("#title_and_subtitle_2 .title")};
+          if($('#fig_article').length == 0){$("<img id='fig_article' src='imgs/dither_it_lorenza3.jpeg' class='dithered_images' width='300'>").insertAfter("#title_and_subtitle_3 .title")};
         }
 
       }

@@ -71,7 +71,9 @@ font-size: 13px;
      text-decoration: underline;
    }
 
-#container_belle{font-family: 'zapf_elliptical_711_regular';
+#container_belle{
+  font-family: 'zapf_elliptical_711_regular';
+  font-size: 13px;
 
 
 }
