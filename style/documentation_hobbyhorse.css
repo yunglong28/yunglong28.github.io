@@ -178,7 +178,9 @@ section::-webkit-scrollbar {
   display: none;
 }
 
-
+.icons {
+  cursor: pointer;
+}
 
 .container{
   width: 100%;

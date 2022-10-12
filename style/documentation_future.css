@@ -25,6 +25,10 @@
     clear: left;
 }
 
+.icons {
+  cursor: pointer;
+}
+
 /* Tutti gli elementi in navbar */
 .navbar li {
     position: relative;

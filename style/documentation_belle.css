@@ -91,7 +91,9 @@
 
 
 /*Fine navbar*/
-
+.icons {
+  cursor: pointer;
+}
 html {
   box-sizing: border-box;
 }
