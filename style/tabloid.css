@@ -185,6 +185,10 @@ body{
   text-align:center;
 }
 
+.icons {
+  cursor: pointer;
+}
+
 #sep_nav{
   display: none;
 }
@@ -485,7 +489,7 @@ text-transform: uppercase;
   background-color: rgb(183,64,59)!important;
     font-family: 'Metropolis-ExtraBoldItalic';
     text-decoration: none;
-  
+
 }
 
 .accordion-button:not(.collapsed) {

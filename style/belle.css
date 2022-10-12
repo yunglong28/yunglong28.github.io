@@ -95,6 +95,10 @@ body{
   overflow-x: hidden!important;
 }
 
+.icons {
+  cursor: pointer;
+}
+
 .title_issue{
   display: none;
 }
@@ -201,7 +205,7 @@ body{
 
 #col1 a{
   color: #E4D9C5;
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 

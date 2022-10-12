@@ -229,6 +229,10 @@ display: block;
 }
 
 
+.icons {
+  cursor: pointer;
+}
+
 /* NAVBAR */
 .navbar {
 

@@ -168,6 +168,9 @@ height: 600px;
 
 }
 
+.icons {
+  cursor: pointer;
+}
 .text{
   color:black;
 font-family: 'p22_operina_fiore_fiore';

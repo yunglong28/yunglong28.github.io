@@ -227,7 +227,9 @@ section {
 
 
 
-
+.icons {
+  cursor: pointer;
+}
 section::-webkit-scrollbar {
   display: none;
 }

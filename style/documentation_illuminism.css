@@ -91,7 +91,9 @@
     visibility: visible;
 }
 
-
+.icons {
+  cursor: pointer;
+}
 /*Section used for centering process*/
 #magazine2{
     background-color: #bcb19d !important;
@@ -339,5 +341,3 @@ footer{
     margin-top: 7px!important;
 
   } }
-
-
