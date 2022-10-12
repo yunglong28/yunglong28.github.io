@@ -565,6 +565,7 @@ footer{
   font-family: 'caslon_old_faceregular';
   text-transform: uppercase;
   margin-bottom: 20px;
+    padding: 1vh 3vh;
 
 }
 .sidebar {

@@ -540,6 +540,7 @@ footer{
     font-family: 'vcr'!important;
   text-transform: uppercase;
   margin-bottom: 0px;
+  padding: 1vh 3vh;
 }
 
 .icons {
