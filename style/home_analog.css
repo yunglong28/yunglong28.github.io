@@ -222,7 +222,8 @@ border: 14px solid black;
 border-radius: 50% / 10%;
 background: black center no-repeat;
 text-transform: uppercase;
-margin-left: 90px;
+margin-left: -37vh;
+margin-right: 3vh
 }
 
 html{
@@ -239,13 +240,13 @@ html{
     z-index: 100;
 
     text-align: justify;
-margin-top: 80px;
-margin-left: 136px;
+margin-top: 12vh;
+margin-left: 12vh;
 }
 
 .wrapper {
   display: grid;
-    grid-template-columns: 500px 700px ;
+    grid-template-columns: 65% 32% ;
     background-color: #f1e8b9;
   height: 600px;
   border:50px  solid #e01216;
@@ -301,7 +302,7 @@ margin-left: 70px;
     z-index: 100;
     text-align: justify;
     margin-top: 216px;
-    margin-left: 159px;
+    margin-left: 12vh;
 }
 
 .col_issue {
@@ -312,15 +313,15 @@ margin-left: 70px;
     z-index: 100;
     text-align: justify;
     margin-top: -533px;
-    margin-left: 532px;
-    margin-right: -450px;
+    margin-left: 77vh;
+    margin-right: -61vh;
       color: black;
 
 }
 
 .wrapper_issue {
   display: grid;
-    grid-template-columns: 704px 700px ;
+    grid-template-columns: 65% 32% ;
   font-family: 'vcr';
   height: 850px;
   margin-left: -0px;
@@ -340,7 +341,7 @@ margin-left: 70px;
     z-index: 100;
     text-align: justify;
     margin-top: -19px;
-    margin-left: 41px;}
+    }
 
 .col_us {
 
@@ -350,13 +351,13 @@ margin-left: 70px;
     z-index: 100;
     text-align: justify;
     margin-top: -110px;
-    margin-left: 532px;
-    margin-right: -437px;
+    margin-left: 95vh;
+    margin-right: -61vh;
 }
 
 .wrapper_us{
   display: grid;
-    grid-template-columns: 704px 700px ;
+    grid-template-columns: 65% 32% ;
   background-color: lightgrey;
   height: 580px;
 border-radius: 2rem;
@@ -373,7 +374,7 @@ border-radius: 2rem;
     z-index: 100;
     text-align: justify;
     margin-top: 110px;
-    margin-left: 90px;
+    margin-left: 12vh;
     z-index: 0;
 }
 
@@ -385,14 +386,14 @@ font-family: 'zapf_elliptical_711_regular';
   z-index: 100;
   text-align: justify;
   margin-top: -470px;
-  margin-left: 453px;
-  margin-right: -422px;
+  margin-left: 77vh;
+  margin-right: -61vh;
 
 }
 
 .wrapper_yet{
   display: grid;
-    grid-template-columns: 704px 700px ;
+    grid-template-columns: 65% 32% ;
   background-color: #f1e8b9;
   height: 700px;
   margin-left: auto;

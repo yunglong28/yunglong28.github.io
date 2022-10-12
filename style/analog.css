@@ -55,6 +55,22 @@ font-size: 13px;
 
 }
 
+
+ #col1  a {
+   color: black;
+   text-decoration: underline;
+ }
+
+  #col2 a {
+    color: black;
+    text-decoration: underline;
+  }
+
+   #col3 a {
+     color: black;
+     text-decoration: underline;
+   }
+
 #container_belle{font-family: 'zapf_elliptical_711_regular';
 
 
@@ -78,6 +94,18 @@ font-family:  'harry_fat';
   font-size: 22px;
 }
 
+.paragraph_header{
+  font-family: 'harry_fat';
+}
+.video_description{
+  font-family: 'harry_fat';
+}
+
+#first_article ul, ol {
+  font-family: 'zapf_elliptical_711_regular';
+  font-size: 13px;
+
+}
 img{
   display: block;
   margin-left: auto;

@@ -177,6 +177,8 @@ font-family: 'p22_operina_fiore_fiore';
 
     text-align: justify;
 margin-top: 80px;
+margin-left: -54vh;
+margin-right: 3vh;
 
 }
 
@@ -188,15 +190,15 @@ margin-top: 80px;
     z-index: 100;
 
     text-align: justify;
-margin-top: 80px;
-margin-left: 70px;
+    margin-left: 12vh;
+    margin-right: 12vh;
 font-weight: bold;
 line-height: 85%;
 }
 
 .wrapper {
   display: grid;
-    grid-template-columns: 500px 700px ;
+    grid-template-columns: 65% 32% ;
 
        background-color: #E9E9E9;
   height: 500px;
@@ -206,7 +208,7 @@ line-height: 85%;
 
 .wrapper_mag {
   display: grid;
-    grid-template-columns: 704px 700px ;
+    grid-template-columns: 65% 32% ;
        background-color: #E9E9E9;
   height: 500px;
 margin-top: -30px;
@@ -224,7 +226,8 @@ background-color: #E9E9E9;
 
     text-align: justify;
 margin-top: 60px;
-margin-left: 70px;
+margin-left: 10vh;
+margin-right: 28vh;
 line-height: normal;
 font-weight: bold;
 line-height: 85%;
@@ -239,7 +242,7 @@ line-height: 85%;
     z-index: 100;
     text-align: justify;
     margin-top: 49px;
-    margin-left: -28px;
+    margin-left: -29vh;
     z-index: 0;
     background-color: #E9E9E9;
     font-weight: bold;
@@ -252,8 +255,8 @@ font-family: 'p22_operina_fiore_fiore';
     font-size: 25px;
     z-index: 100;
     text-align: justify;
-    margin-top: 216px;
-    margin-left: 159px;
+    margin-left: 26vh;
+    margin-right: 12vh;
     font-weight: bold;
     line-height: 85%;
 }
@@ -266,8 +269,8 @@ font-family: 'p22_operina_fiore_fiore';
     z-index: 100;
     text-align: justify;
     margin-top: -470px;
-    margin-left: 532px;
-    margin-right: -525px;
+    margin-left:95vh;
+    margin-right: -61vh;
     font-weight: bold;
     line-height: 85%;
 
@@ -276,7 +279,7 @@ font-family: 'p22_operina_fiore_fiore';
 
 .wrapper_issue {
   display: grid;
-    grid-template-columns: 704px 700px ;
+  grid-template-columns: 65% 32% ;
      background-color: #E9E9E9;
   height: 795px;
   margin-left: -32px;
@@ -292,7 +295,7 @@ font-family: 'caslon_old_faceregular';
     z-index: 100;
     text-align: justify;
     margin-top: -19px;
-    margin-left: 41px;
+  margin-left: 9vh;
     font-weight: bold;
     line-height: 85%;}
 
@@ -304,8 +307,8 @@ font-family: 'caslon_old_faceregular';
     z-index: 100;
     text-align: justify;
     margin-top: -104px;
-    margin-left: 532px;
-    margin-right: -525px;
+    margin-left: 95vh;
+    margin-right: -61vh;
     line-height: normal;
 
 
@@ -313,7 +316,7 @@ font-family: 'caslon_old_faceregular';
 
 .wrapper_us{
   display: grid;
-    grid-template-columns: 704px 700px ;
+    grid-template-columns: 65% 32% ;
        background-color:#E9E9E9;
   height: 650px;
   margin-left: -32px;
@@ -351,14 +354,14 @@ font-family: 'caslon_old_faceregular';
   z-index: 100;
   text-align: justify;
   margin-top: -370px;
-margin-left: 494px;
-margin-right: -522px;
+  margin-left: 89vh;
+  margin-right: -61vh;
 
 }
 
 .wrapper_yet{
   display: grid;
-    grid-template-columns: 704px 700px ;
+    grid-template-columns: 65% 32% ;
      background-color: #E9E9E9;
   height: 500px;
   margin-left: -32px;

@@ -237,6 +237,8 @@ height: 700px;
 
     text-align: justify;
 margin-top: 80px;
+margin-left: -54vh;
+margin-right: 3vh
 }
 
 .colspotify{
@@ -247,20 +249,21 @@ margin-top: 80px;
     z-index: 100;
 
     text-align: justify;
-margin-top: 80px;
-margin-left: 70px;
+    margin-left: 12vh;
+    margin-right: 12vh;
+    margin-top: 91px;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: 500px 700px ;
+  grid-template-columns: 65% 32% ;
   background-color: rgb(211, 104, 65);
   height: 600px;
 }
 
 .wrapper_mag {
   display: grid;
-  grid-template-columns: 704px 700px ;
+  grid-template-columns: 65% 32% ;
   background-color: black;
   height: 600px;
   margin-left: -32px;
@@ -273,8 +276,9 @@ margin-left: 70px;
   text-transform: uppercase;
   z-index: 100;
   text-align: justify;
-  margin-top: 60px;
-  margin-left: 70px;
+  margin-top: 14vh;
+  margin-left: 16vh;
+  margin-right: 14vh;
 }
 
 .colimg {
@@ -284,7 +288,7 @@ margin-left: 70px;
     z-index: 100;
     text-align: justify;
     margin-top: 21px;
-    margin-left: 100px;
+    margin-left: -3vh;
     z-index: 0;
   background-color: black;
 }
@@ -295,8 +299,9 @@ margin-left: 70px;
     font-size: 25px;
     z-index: 100;
     text-align: justify;
-    margin-top: 216px;
-    margin-left: 159px;
+    margin-left: 22vh;
+    margin-right: 13vh;
+    margin-top: 104px;
 }
 
 .col_issue {
@@ -307,13 +312,13 @@ margin-left: 70px;
     z-index: 100;
     text-align: justify;
     margin-top: -488px;
-    margin-left: 532px;
-    margin-right: -525px;
+    margin-left:95vh;
+    margin-right: -61vh;
 }
 
 .wrapper_issue {
   display: grid;
-    grid-template-columns: 704px 700px ;
+grid-template-columns: 65% 32% ;
   background-image:url(../imgs/old_paper.jpg);
   height: 1200px;
   margin-left: -32px;
@@ -352,7 +357,7 @@ font-family: Golddrew, cursive;
     z-index: 100;
     text-align: justify;
     margin-top: -19px;
-    margin-left: 41px;}
+    margin-left: 6vh;}
 
 .col_us {
     color:rgb(191, 164, 4);
@@ -361,13 +366,13 @@ font-family: Golddrew, cursive;
     z-index: 100;
     text-align: justify;
     margin-top: -104px;
-    margin-left: 532px;
-    margin-right: -525px;
+    margin-left: 95vh;
+    margin-right: -61vh;
 }
 
 .wrapper_us{
   display: grid;
-  grid-template-columns: 704px 700px ;
+    grid-template-columns: 65% 32% ;
   background-color: black;
   height: 650px;
   margin-left: -32px;
@@ -381,8 +386,8 @@ font-family: Golddrew, cursive;
     font-size: 25px;
     z-index: 100;
     text-align: justify;
-    margin-top: 110px;
-    margin-left: 200px;
+    margin-top: 12vh;
+    margin-left: 12vh;
     z-index: 0;
 }
 
@@ -393,13 +398,13 @@ font-family: Golddrew, cursive;
   z-index: 100;
   text-align: justify;
   margin-top: -580px;
-  margin-left: 453px;
-  margin-right: -525px;
+  margin-left: 77vh;
+  margin-right: -61vh;
 }
 
 .wrapper_yet{
   display: grid;
-  grid-template-columns: 704px 800px ;
+  grid-template-columns: 65% 32% ;
   background-image: url(../imgs/old_paper.jpg);
   height: 700px;
   margin-left: -32px;

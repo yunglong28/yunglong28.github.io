@@ -112,10 +112,11 @@ body{
   height: 600px;
   overflow: scroll;
   overflow-x: hidden;
-  border-width: 10px;
+  border-width: 7px;
   border-style: solid;
   border-image: url(../imgs/old.jpg)25% round;
 }
+
 
 .article_col figure{
   text-align:center;
@@ -218,6 +219,8 @@ body{
   background-color:black;
   font-family: 'Bebas Neue', cursive;
   color:rgb(191, 164, 4);
+  /*border:3px solid rgb(47,84,161);;
+  outline: 7px solid #edd5a2;*/
 }
 
 #col2 .title{
@@ -297,7 +300,7 @@ body{
 
 
 #col3{
-  background-image: url(../imgs/old.jpg);
+  background-image: url(../imgs/old_old.jpg);
   font-family:  'Golddrew', cursive;
   background-size: cover;
   background-repeat: no-repeat;

@@ -103,7 +103,7 @@ p {
 .wrapper_mag{
     background-color: #D5BE95;
     display: grid;
-    grid-template-columns: 704px 700px ;
+    grid-template-columns: 65% 32% ;
     height: 600px;
     margin-left: -32px;
 }
@@ -114,7 +114,8 @@ p {
     z-index: 100;
     text-align: justify;
     margin-top: 60px;
-    margin-left: 70px;
+    margin-left: 14vh;
+    margin-right: 16vh;
 }
 
 .mag_text{
@@ -131,7 +132,7 @@ p {
 .wrapper_yet
 {
     display: grid;
-    grid-template-columns: 704px 700px ;
+    grid-template-columns: 65% 32% ;
     height: 700px;
     margin-left: -32px;
     background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
@@ -144,21 +145,21 @@ p {
     z-index: 100;
     text-align: justify;
     margin-top: -470px;
-    margin-left: 453px;
-    margin-right: -525px;
+    margin-left:95vh;
+    margin-right: -61vh;
 }
 
 .wrapper_issue {
     display: grid;
-    grid-template-columns: 704px 700px ;
-    height: 800px;
+      grid-template-columns: 65% 32% ;
+    height: 900px;
     background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
 }
 
 
 .wrapper {
     display: grid;
-    grid-template-columns: 500px 700px;
+  grid-template-columns: 65% 32% ;
     height: 600px;
     font-family: "Lynotype Didot Roman", serif; !important;
     color: black;
@@ -186,7 +187,8 @@ p {
     z-index: 100;
     text-align: justify;
     margin-top: 180px !important;
-    margin-left: 159px !important;
+    margin-left: 12vh;
+    margin-right: 12vh;
 }
 
 
@@ -198,8 +200,8 @@ p {
     z-index: 100;
     text-align: justify;
     margin-top: -470px;
-    margin-left: 453px;
-    margin-right: -525px;
+    margin-left: 77vh;
+    margin-right: -61vh;
 }
 
 
@@ -235,7 +237,7 @@ footer{
     font-size: 25px;
     text-align: justify;
     margin-top: 21px;
-    margin-left: -300px;
+    margin-left: -62vh;
     z-index: 0;
 }
 
@@ -316,7 +318,7 @@ footer{
 
 .wrapper_us{
     display: grid;
-    grid-template-columns: 704px 700px ;
+      grid-template-columns: 65% 32% ;
     height: 650px;
     margin-left: -32px;
     background-color: #D6D0B8;
@@ -330,7 +332,7 @@ footer{
     z-index: 100;
     text-align: justify;
     margin-top: -19px;
-    margin-left: 41px;}
+  margin-left: 8vh;}
 
 .col_us {
 
@@ -340,8 +342,8 @@ footer{
     z-index: 100;
     text-align: justify;
     margin-top: -104px;
-    margin-left: 532px;
-    margin-right: -525px;
+    margin-left: 95vh;
+    margin-right: -61vh;
 }
 #us {
     font-family: 'Lynotype Didot Roman', serif;
@@ -385,6 +387,9 @@ footer{
 .text {
     text-align: justify;
     font-size: 25px;
+    margin-top: 98px;
+    margin-left: -54vh;
+    margin-right: 3vh;
 }
 
 a {

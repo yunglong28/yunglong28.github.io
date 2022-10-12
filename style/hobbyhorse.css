@@ -39,8 +39,13 @@ font-weight: bold;
 
 font-size: 15px;
 }
+#container_belle {
+      font-family: 'caslon_old_face_italic';
+      font-weight: bolder;
+      font-size: 16px;
 
-ul, ol, #container_belle  {
+}
+ul, ol,   {
   color: black;
   font-family: 'caslon_old_faceregular';
   padding: 40px;
@@ -50,6 +55,22 @@ ul, ol, #container_belle  {
 
 }
 
+ #col1 a {
+   color: black;
+   text-decoration: underline;
+ }
+
+
+  #col2 a {
+    color: black;
+    text-decoration: underline;
+  }
+
+
+   #col3 a {
+     color: black;
+     text-decoration: underline;
+   }
 
 #lo2::first-letter {
   background-image: url('../imgs/I.png');
