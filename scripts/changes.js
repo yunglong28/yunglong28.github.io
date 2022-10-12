@@ -360,7 +360,8 @@ function openNav() {
     $("#metadati").attr('onclick','closeNav()');
     $('.title_issue').css('paddingLeft', '350px');
     $('.banner_issue').css('paddingLeft', '350px');
-
+    $('#container_belle #left').css({'font-size':'23px'});
+    $('#container_belle #right').css({'font-size':'23px'});
 }
 
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
@@ -374,8 +375,9 @@ function closeNav() {
     $("#metadati").attr('onclick','openNav()');
     $('.title_issue').css('paddingLeft', '0');
     $('.banner_issue').css('paddingLeft', '0');
+    $('#container_belle #left').css({'font-size':'28px'});
+    $('#container_belle #right').css({'font-size':'28px'});
 }
-
 /*END OF SIDEBAR SCRIPT*/
 
 /*METADATA SCRIPT: UNDERLINE*/
