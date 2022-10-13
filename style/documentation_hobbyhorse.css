@@ -312,14 +312,7 @@ text-align: center;
 
 
 /* unvisited link */
-a:link {
-  color: red;
-}
 
-/* visited link */
-a:visited {
-  color: red;
-}
 
 /* mouse over link */
 a:hover {
@@ -328,24 +321,15 @@ a:hover {
 
 /* selected link */
 a:active {
-  color: red;
+  color: black;
 }
 
-a:link {
-  text-decoration: none;
-}
 
-a:visited {
-  text-decoration: none;
-}
 
-a:hover {
-  text-decoration: none;
-}
 
-a:active {
-  text-decoration: none;
-}
+
+
+
 
 .style_title {
   text-decoration: ;
