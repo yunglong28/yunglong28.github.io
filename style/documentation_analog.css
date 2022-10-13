@@ -130,8 +130,12 @@
 
         }
 
-section a {
-  color: #9e086b;
+p a {
+  color: #9e086b!important;
+}
+
+.title {
+  font-weight: bold;
 }
 
         /* Dropdown */
