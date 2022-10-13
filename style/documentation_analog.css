@@ -130,11 +130,9 @@
 
         }
 
-p a {
-  color: #9e086b!important;
-}
 
-.title {
+
+.titles {
   font-weight: bold;
 }
 
@@ -557,3 +555,7 @@ border: none;
         margin-right: auto;
         max-height: 55vh;
     } }
+
+    p a {
+      color: #9e086b!important;
+    }
