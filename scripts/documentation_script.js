@@ -106,7 +106,7 @@ $(document).ready(function(){
     }
 
 
-    if (style==="style/hom_belle.css"||style==="style/belle.css"){
+    if (style==="style/home_belle.css"||style==="style/belle.css"){
       change('belle')
     }
 
