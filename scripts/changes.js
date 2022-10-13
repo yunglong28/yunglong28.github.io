@@ -480,7 +480,9 @@ function underline_col(item, color){
         $("html").animate({scrollTop:0}, 1000)
         var borderPixels = $(".article_col").css('borderWidth')
         let border = borderPixels.replace("px", "");
-        $('[about= "' + aboutwho + '"]').parents('.article_col').animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top - border}, 1000);
+        $('[about= "' + aboutwho + '"]').parents('.article_col').animate({scrollTop: scrollPos + elementPos - $("#col1").offset().top - border}, 1000);
+        $('[about= "' + aboutwho + '"]').parents('.article_col').animate({scrollTop: scrollPos + elementPos - $("#col2").offset().top - border}, 1000);
+        $('[about= "' + aboutwho + '"]').parents('.article_col').animate({scrollTop: scrollPos + elementPos - $("#col3").offset().top - border}, 1000);
         $(item).attr("clicked","true");
       }
   else{
