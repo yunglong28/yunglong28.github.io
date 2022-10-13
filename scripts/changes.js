@@ -651,7 +651,7 @@ function saveNewClass(){  //saves new metadata classes in localStorage
   //variable for the class from the user input
     key = $("#add_class").val().toLowerCase().toString();
   //variable fo the text selected by the user
-    value = document.getSelection().toString();
+    value = document.getSelection().toString().toLowerCase();
   //check whether the user specified the class name and selected the text
     if ((key == '') | (key == null) | (value == '') | (value == null)) {
         alert("Please, have a look at the instructions above :)")
