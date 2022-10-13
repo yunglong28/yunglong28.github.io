@@ -228,14 +228,14 @@ section::-webkit-scrollbar {
 
 
 
-a {
+p a {
   color: black !important;
   text-decoration: underline!important;
   font-weight: bold;
 }
 
 /* visited link */
-a:visited {
+p a:visited {
   text-decoration: underline;
 }
 

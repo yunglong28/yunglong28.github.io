@@ -256,18 +256,18 @@ padding-bottom: 2%;
 
 
 /* unvisited link */
-a {
+p a {
   text-decoration: underline!important;
-  color: #E4D9C5!important;
+  color: rgb(191, 164, 4)!important;
 }
 
 /* visited link */
-a:visited {
+p a:visited {
   text-decoration: underline;
 }
 
 /* mouse over link */
-a:hover {
+p a:hover {
   color: #E4D9C5;
 }
 
