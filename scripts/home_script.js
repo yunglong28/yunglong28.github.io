@@ -4,13 +4,13 @@ function change(name) {
      $("#pagestyle").attr('href','style/home.css');
      $("#mag_img").replaceWith("<img id='mag_img' src='imgs/mag.png' height='550'>")
      $("#yet_img").replaceWith("<img id='yet_img' src='imgs/records.jpg' height='450'>")
-     $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazine.png'>")
-     $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellohome.png'>")
-     $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harphome.png'>")
-     $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonehome.png'>")
-     $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobohome.png'>")
-     $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxhome.png'>")
-     $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodhome.png'>")
+     $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazine.png' alt='Resonance' title='Resonance'>")
+     $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellohome.png' alt='Illuminism' title='Illuminism'>")
+     $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harphome.png' alt='Hobby Horse' title='Hobby Horse'>")
+     $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonehome.png' alt='Belle Epoque' title='Belle Epoque'>")
+     $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobohome.png' alt='Analog Computing Magazine' title='Analog Computing Magazine'>")
+     $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxhome.png' alt='Tabloid' title='Tabloid'>")
+     $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodhome.png' alt='Future' title='Future'>")
    }
 
 
@@ -19,13 +19,13 @@ function change(name) {
    $("#mag_img").replaceWith("<img id='mag_img' src='imgs/ars.png' width='600' >")
    $("#yet_img").replaceWith("<img id='yet_img' src='imgs/flowers.png' height='370'>")
    $("#birdz").prepend('<img id="block1" src="imgs/birds3.png" width="250">')
-   $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinetabloid.png'>")
-   $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellotabloid.png'>")
-   $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harptabloid.png'>")
-   $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonetabloid.png'>")
-   $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobotabloid.png'>")
-   $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxtabloid.png'>")
-   $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodtabloid.png'>")
+   $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinetabloid.png' alt='Resonance' title='Resonance'>")
+   $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellotabloid.png' alt='Illuminism' title='Illuminism'>")
+   $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harptabloid.png' alt='Hobby Horse' title='Hobby Horse'>")
+   $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonetabloid.png' alt='Belle Epoque' title='Belle Epoque'>")
+   $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobotabloid.png' alt='Analog Computing Magazine' title='Analog Computing Magazine'>")
+   $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxtabloid.png' alt='Tabloid' title='Tabloid'>")
+   $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodtabloid.png' alt='Future' title='Future'>")
 
  }
 
@@ -39,26 +39,26 @@ function change(name) {
   /*$("#mag_img").remove()
   $(".colimg").append('<p> <img class="star_img"  src="imgs/star.png" ></p> <p> <img  class="tastiera_img" src="imgs/tastiera.png" > </p>')*/
   $("#yet_img").replaceWith("<img id='yet_img' src='imgs/records.jpg' height='450'>")
-  $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazineanalog.png'>")
-  $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/celloanalog.png'>")
-  $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpanalog.png'>")
-  $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/vynilanalog.png'>")
-  $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/stroboanalog.png'>")
-  $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxanalog.png'>")
-  $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodanalog.png'>")
+  $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazineanalog.png' alt='Resonance' title='Resonance'>")
+  $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/celloanalog.png' alt='Illuminism' title='Illuminism'>")
+  $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpanalog.png' alt='Hobby Horse' title='Hobby Horse'>")
+  $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/vynilanalog.png' alt='Belle Epoque' title='Belle Epoque'>")
+  $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/stroboanalog.png' alt='Analog Computing Magazine' title='Analog Computing Magazine'>")
+  $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxanalog.png' alt='Tabloid' title='Tabloid'>")
+  $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodanalog.png' alt='Future' title='Future'>")
   }
 
    if (name == 'belle') {
     $("#pagestyle").attr('href','style/home_belle.css');
     $("#mag_img").replaceWith("<img id='mag_img' src='imgs/amazzone.png' height='550'>")
     $("#yet_img").replaceWith("<img id='yet_img' src='imgs/pattinatrice.png' height='550'>")
-    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinebelle.png'>")
-    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellobelle.png'>")
-    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpbelle.png'>")
-    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonebelle.png'>")
-    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobobelle.png'>")
-    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxbelle.png'>")
-    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodbelle.png'>")
+    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinebelle.png'alt='Resonance' title='Resonance' >")
+    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellobelle.png' alt='Illuminism' title='Illuminism'>")
+    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpbelle.png' alt='Hobby Horse' title='Hobby Horse'>")
+    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonebelle.png' alt='Belle Epoque' title='Belle Epoque'>")
+    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobobelle.png' alt='Analog Computing Magazine' title='Analog Computing Magazine'>")
+    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxbelle.png' alt='Tabloid' title='Tabloid'>")
+    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodbelle.png' alt='Future' title='Future'>")
 
   }
 
@@ -66,26 +66,26 @@ function change(name) {
     $("#pagestyle").attr('href','style/home_tabloid.css');
     $("#mag_img").replaceWith("<img id='mag_img' src='imgs/may.png' height='550'>")
     $("#yet_img").replaceWith("<img id='yet_img' src='imgs/queen_elizabeth.png' height='550'>")
-    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinetabloid.png'>")
-    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellotabloid.png'>")
-    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harptabloid.png'>")
-    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonetabloid.png'>")
-    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobotabloid.png'>")
-    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxtabloid.png'>")
-    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodtabloid.png'>")
+    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinetabloid.png' alt='Resonance' title='Resonance'>")
+    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellotabloid.png'  alt='Illuminism' title='Illuminism'>")
+    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harptabloid.png' alt='Hobby Horse' title='Hobby Horse'>")
+    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonetabloid.png' alt='Belle Epoque' title='Belle Epoque'>")
+    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobotabloid.png' alt='Analog Computing Magazine' title='Analog Computing Magazine'>")
+    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxtabloid.png' alt='Tabloid' title='Tabloid'>")
+    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodtabloid.png' alt='Future' title='Future'>")
   }
 
   if (name == 'illuminist') {
       $("#pagestyle").attr('href','style/home_illuminism.css');
       $("#mag_img").replaceWith("<img id='mag_img' src='imgs/kendrick__illuminism.png' height='550' filter='sepia'>")
       $("#yet_img").replaceWith("<img id='yet_img' src='imgs/didot_transparent.png' height='550'>")
-      $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazine.png'>")
-      $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellohome.png'>")
-      $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harphome.png'>")
-      $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonehome.png'>")
-      $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobohome.png'>")
+      $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazine.png' alt='Resonance' title='Resonance'>")
+      $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellohome.png' alt='Illuminism' title='Illuminism'>")
+      $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harphome.png' alt='Hobby Horse' title='Hobby Horse'>")
+      $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonehome.png' alt='Belle Epoque' title='Belle Epoque'>")
+      $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobohome.png' alt='Analog Computing Magazine' title='Analog Computing Magazine'>")
       $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxhome.png'>")
-      $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodhome.png'>")
+      $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodhome.png' alt='Future' title='Future'>")
   }
 
     if (name == 'future') {
@@ -116,7 +116,7 @@ function keepstylehome(pagestyle){
 $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
     var style = sessionStorage.getItem("currentstyle");
-    
+
     if (style==="style/illuminism.css"||style==="style/documentation_illuminism.css"){
       change('illuminist')
     }
