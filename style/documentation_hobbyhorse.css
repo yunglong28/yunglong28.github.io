@@ -292,7 +292,7 @@ padding-bottom: 2%;
 }
 .btn_stili {
  background-color: #E9E9E9;
-height: 100px;
+height: 154px;
  background-color: #E9E9E9;
 
 text-align: center;
@@ -450,6 +450,7 @@ font-weight: bold!important;
 
 p {
   line-height: normal;
+  text-align: justify;
 }
 .titles {
   font-family: 'p22_operina_fiore_fiore';
