@@ -276,7 +276,8 @@ body{
   font-size: 30px;
   padding-top: 9px;
   line-height: 30px;
-   font-style: oblique;
+  font-style: oblique;
+  font-weight: bold;
 }
 
 #center{
@@ -292,7 +293,8 @@ body{
   font-size: 30px;
   padding-top: 9px;
   line-height: 30px;
-   font-style: oblique;
+  font-style: oblique;
+  font-weight: bold;
 }
 
 #col2_txt{
