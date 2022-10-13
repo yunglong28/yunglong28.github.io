@@ -300,42 +300,17 @@ footer{
 }
 
 
-
-/* unvisited link */
-a:link {
-    color: red;
+a {
+  color: black !important;
+  text-decoration: underline!important;
+  font-weight: bold;
 }
 
 /* visited link */
 a:visited {
-    color: red;
+  text-decoration: underline;
 }
 
-/* mouse over link */
-a:hover {
-    color: black;
-}
-
-/* selected link */
-a:active {
-    color: red;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-a:active {
-    text-decoration: none;
-}
 
 
 .icons {
@@ -369,4 +344,7 @@ a:active {
 
   }
 
-     }
+.titles{
+    font-weight: bold!important;
+
+}

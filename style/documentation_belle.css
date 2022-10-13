@@ -256,40 +256,21 @@ padding-bottom: 2%;
 
 
 /* unvisited link */
-a:link {
-  color: red;
+a {
+  text-decoration: underline!important;
+  color: #E4D9C5!important;
 }
 
 /* visited link */
 a:visited {
-  color: red;
+  text-decoration: underline;
 }
 
 /* mouse over link */
 a:hover {
-  color: black;
+  color: #E4D9C5;
 }
 
-/* selected link */
-a:active {
-  color: red;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-}
 
 .style_title {
   font-size: 40px;
