@@ -443,6 +443,11 @@ background-color: transparent!important;
     background-image: url('../imgs/backremoved.png');
 }
 
+p a {
+text-decoration: underline;
+font-weight: bold;
+}
+
 .titles {
   font-family: 'p22_operina_fiore_fiore';
 }
