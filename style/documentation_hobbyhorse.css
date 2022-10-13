@@ -443,12 +443,8 @@ background-color: transparent!important;
     background-image: url('../imgs/backremoved.png');
 }
 
-p a {
-text-decoration: underline!important;
-font-weight: bold!important;
-}
 
-p {
+section p {
   line-height: normal;
   text-align: justify;
 }
@@ -481,3 +477,9 @@ p {
     margin-top: 7px!important;
 
   } }
+
+  p a {
+  text-decoration: underline!important;
+  font-weight: bold!important;
+  color: black;
+  }
