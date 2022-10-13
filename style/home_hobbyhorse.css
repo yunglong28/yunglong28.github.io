@@ -49,7 +49,7 @@
     font-family: 'caslon_old_faceregular';
     font-style: bold;
     background-color: #53575c;
-    border: 5px solid #E9E9E9;
+    border: 5px solid white;
     text-decoration: none;
     }
     /* Rende la navbar orizzontale */
@@ -79,7 +79,7 @@
     }
 
     .navbar li a {
-    color: #E9E9E9;
+    color: white;
     text-decoration: none;
     }
 
@@ -131,7 +131,7 @@
     .navbar .dropdown ul a {
       padding: 0px;
       font-size: 16px;
-      color: #E9E9E9;
+      color: white;
       text-transform: uppercase;
         margin-top: 5px;
     }
@@ -179,7 +179,7 @@ font-family: 'p22_operina_fiore_fiore';
     z-index: 100;
 
     text-align: justify;
-margin-top: 80px;
+margin-top: 9px;
 margin-left: -54vh;
 margin-right: 3vh;
 
@@ -196,14 +196,14 @@ margin-right: 3vh;
     margin-left: 12vh;
     margin-right: 12vh;
 font-weight: bold;
-line-height: 85%;
+
 }
 
 .wrapper {
   display: grid;
     grid-template-columns: 65% 32% ;
 
-       background-color: #E9E9E9;
+       background-color: white;
   height: 500px;
 
 
@@ -212,11 +212,11 @@ line-height: 85%;
 .wrapper_mag {
   display: grid;
     grid-template-columns: 65% 32% ;
-       background-color: #E9E9E9;
+       background-color: white;
   height: 500px;
 margin-top: -30px;
 font-weight: bold;
-line-height: 85%;
+
 }
 
 .coltext {
@@ -224,16 +224,16 @@ line-height: 85%;
 font-family: 'caslon_old_faceregular';
     font-size: 25px;
 
-background-color: #E9E9E9;
+background-color: white;
     z-index: 100;
 
     text-align: justify;
 margin-top: 60px;
 margin-left: 10vh;
 margin-right: 28vh;
-line-height: normal;
 font-weight: bold;
 line-height: 85%;
+
 
 
 }
@@ -247,9 +247,9 @@ line-height: 85%;
     margin-top: 49px;
     margin-left: -29vh;
     z-index: 0;
-    background-color: #E9E9E9;
+    background-color: white;
     font-weight: bold;
-    line-height: 85%;
+
 }
 
 .col_button {
@@ -261,7 +261,7 @@ font-family: 'p22_operina_fiore_fiore';
     margin-left: 26vh;
     margin-right: 12vh;
     font-weight: bold;
-    line-height: 85%;
+
 }
 
 .col_issue {
@@ -278,16 +278,17 @@ font-family: 'p22_operina_fiore_fiore';
     line-height: 85%;
 
 
+
 }
 
 .wrapper_issue {
   display: grid;
   grid-template-columns: 65% 32% ;
-     background-color: #E9E9E9;
+     background-color: white;
   height: 795px;
   margin-left: -32px;
   font-weight: bold;
-  line-height: 85%;
+
 }
 
 
@@ -300,7 +301,7 @@ font-family: 'caslon_old_faceregular';
     margin-top: -19px;
   margin-left: 9vh;
     font-weight: bold;
-    line-height: 85%;}
+  }
 
 .col_us {
 
@@ -312,15 +313,22 @@ font-family: 'caslon_old_faceregular';
     margin-top: -104px;
     margin-left: 95vh;
     margin-right: -61vh;
-    line-height: normal;
+    line-height: 85%;
+    font-weight: bold;
 
 
+
+}
+
+.issue {
+  line-height: 85%!important;
+  font-weight: bold;
 }
 
 .wrapper_us{
   display: grid;
     grid-template-columns: 65% 32% ;
-       background-color:#E9E9E9;
+       background-color:white;
   height: 650px;
   margin-left: -32px;
 }
@@ -337,14 +345,12 @@ font-family: 'caslon_old_faceregular';
     margin-left: 30px;
     z-index: 0;
     font-weight: bold;
-    line-height: 85%;}
-}
-.col_text_yet p:first-of-type {
-  line-height: normal;
+  }
 }
 
+
 .issue {
-  line-height: normal;
+
   font-weight: bold;
 
 
@@ -359,13 +365,14 @@ font-family: 'caslon_old_faceregular';
   margin-top: -370px;
   margin-left: 89vh;
   margin-right: -61vh;
+  line-height: 85%;
 
 }
 
 .wrapper_yet{
   display: grid;
     grid-template-columns: 65% 32% ;
-     background-color: #E9E9E9;
+     background-color: white;
   height: 500px;
   margin-left: -32px;
 
@@ -392,7 +399,7 @@ font-family: 'caslon_old_faceregular';
     font-size: 80px;
     font-family: 'bodoni', serif;
     color:black;
-    background-color: #E9E9E9;
+    background-color: white;
     display: none;
 
 }
@@ -457,7 +464,7 @@ font-family: 'caslon_old_faceregular';
 
 footer{
   color:black!important;
-  background-color: #E9E9E9;
+  background-color: white;
   margin-top: 52px;
   font-family: 'caslon_old_face_italic'!important;
 
@@ -497,7 +504,7 @@ margin-left: -31px;
   font-family: p22_operina_fiore_fiore;
     background-color: grey;
     border: 3px solid  grey;
-    color: #E9E9E9;
+    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -602,7 +609,7 @@ div.col-6 {
  }
 
  .modal-footer {
-     background-color:#E9E9E9;
+     background-color:white;
       color:lightgrey;
 
 
@@ -633,7 +640,7 @@ border: none;
 
   }
 .p-4{
-        background-color:#E9E9E9!important;
+        background-color:white!important;
         color: black;
         font-size: 20px;
           font-family: 'caslon_old_faceregular';
