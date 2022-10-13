@@ -444,8 +444,8 @@ background-color: transparent!important;
 }
 
 p a {
-text-decoration: underline;
-font-weight: bold;
+text-decoration: underline!important;
+font-weight: bold!important;
 }
 
 .titles {
