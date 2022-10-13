@@ -448,6 +448,9 @@ text-decoration: underline!important;
 font-weight: bold!important;
 }
 
+p {
+  line-height: normal;
+}
 .titles {
   font-family: 'p22_operina_fiore_fiore';
 }
