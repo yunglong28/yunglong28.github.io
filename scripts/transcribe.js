@@ -4,7 +4,7 @@
  * Uses jsPDF for PDF generation
  */
 
-import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.1';
+import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.0.2';
 
 // Configure transformers.js
 env.allowLocalModels = false;
@@ -12,6 +12,7 @@ env.useBrowserCache = true;
 
 // Global state
 let transcriber = null;
+let currentModelId = null;
 let audioFile = null;
 let audioContext = null;
 
@@ -185,21 +186,52 @@ async function startTranscription() {
 
         // Load model if not already loaded
         const modelId = modelSelect.value;
-        if (!transcriber || transcriber.model !== modelId) {
+        if (!transcriber || currentModelId !== modelId) {
             updateProgress(25, 'Loading AI model...');
             statusText.textContent = `Downloading ${modelId.split('/')[1]} model. This may take a few minutes on first use...`;
 
-            transcriber = await pipeline('automatic-speech-recognition', modelId, {
-                progress_callback: (progress) => {
-                    if (progress.status === 'downloading') {
-                        const percent = Math.round((progress.loaded / progress.total) * 40) + 25;
-                        updateProgress(percent, `Downloading model: ${Math.round((progress.loaded / progress.total) * 100)}%`);
-                    } else if (progress.status === 'loading') {
-                        updateProgress(65, 'Loading model into memory...');
+            try {
+                transcriber = await pipeline('automatic-speech-recognition', modelId, {
+                    dtype: {
+                        encoder_model: 'fp32',
+                        decoder_model_merged: 'q4'
+                    },
+                    device: 'webgpu',
+                    progress_callback: (progress) => {
+                        if (progress.status === 'downloading' || progress.status === 'progress') {
+                            const loaded = progress.loaded || progress.progress || 0;
+                            const total = progress.total || 100;
+                            const pct = total > 0 ? (loaded / total) : 0;
+                            const percent = Math.round(pct * 40) + 25;
+                            updateProgress(percent, `Downloading model: ${Math.round(pct * 100)}%`);
+                        } else if (progress.status === 'loading' || progress.status === 'ready') {
+                            updateProgress(65, 'Loading model into memory...');
+                        }
                     }
-                }
-            });
-            transcriber.model = modelId;
+                });
+                currentModelId = modelId;
+            } catch (webgpuError) {
+                // Fallback to WASM if WebGPU not available
+                console.log('WebGPU not available, falling back to WASM...');
+                statusText.textContent = 'Using CPU fallback (WebGPU not available)...';
+
+                transcriber = await pipeline('automatic-speech-recognition', modelId, {
+                    dtype: 'fp32',
+                    device: 'wasm',
+                    progress_callback: (progress) => {
+                        if (progress.status === 'downloading' || progress.status === 'progress') {
+                            const loaded = progress.loaded || progress.progress || 0;
+                            const total = progress.total || 100;
+                            const pct = total > 0 ? (loaded / total) : 0;
+                            const percent = Math.round(pct * 40) + 25;
+                            updateProgress(percent, `Downloading model: ${Math.round(pct * 100)}%`);
+                        } else if (progress.status === 'loading' || progress.status === 'ready') {
+                            updateProgress(65, 'Loading model into memory...');
+                        }
+                    }
+                });
+                currentModelId = modelId;
+            }
         }
 
         updateProgress(70, 'Transcribing audio...');
