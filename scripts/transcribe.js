@@ -4,7 +4,7 @@
  * Uses jsPDF for PDF generation
  */
 
-import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.0.2';
+import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.6.0';
 
 // Configure transformers.js
 env.allowLocalModels = false;
@@ -190,48 +190,23 @@ async function startTranscription() {
             updateProgress(25, 'Loading AI model...');
             statusText.textContent = `Downloading ${modelId.split('/')[1]} model. This may take a few minutes on first use...`;
 
-            try {
-                transcriber = await pipeline('automatic-speech-recognition', modelId, {
-                    dtype: {
-                        encoder_model: 'fp32',
-                        decoder_model_merged: 'q4'
-                    },
-                    device: 'webgpu',
-                    progress_callback: (progress) => {
-                        if (progress.status === 'downloading' || progress.status === 'progress') {
-                            const loaded = progress.loaded || progress.progress || 0;
-                            const total = progress.total || 100;
-                            const pct = total > 0 ? (loaded / total) : 0;
-                            const percent = Math.round(pct * 40) + 25;
-                            updateProgress(percent, `Downloading model: ${Math.round(pct * 100)}%`);
-                        } else if (progress.status === 'loading' || progress.status === 'ready') {
-                            updateProgress(65, 'Loading model into memory...');
-                        }
-                    }
-                });
-                currentModelId = modelId;
-            } catch (webgpuError) {
-                // Fallback to WASM if WebGPU not available
-                console.log('WebGPU not available, falling back to WASM...');
-                statusText.textContent = 'Using CPU fallback (WebGPU not available)...';
+            const progressCallback = (progress) => {
+                if (progress.status === 'downloading' || progress.status === 'progress') {
+                    const loaded = progress.loaded || progress.progress || 0;
+                    const total = progress.total || 100;
+                    const pct = total > 0 ? (loaded / total) : 0;
+                    const percent = Math.round(pct * 40) + 25;
+                    updateProgress(percent, `Downloading model: ${Math.round(pct * 100)}%`);
+                } else if (progress.status === 'loading' || progress.status === 'ready' || progress.status === 'done') {
+                    updateProgress(65, 'Loading model into memory...');
+                }
+            };
 
-                transcriber = await pipeline('automatic-speech-recognition', modelId, {
-                    dtype: 'fp32',
-                    device: 'wasm',
-                    progress_callback: (progress) => {
-                        if (progress.status === 'downloading' || progress.status === 'progress') {
-                            const loaded = progress.loaded || progress.progress || 0;
-                            const total = progress.total || 100;
-                            const pct = total > 0 ? (loaded / total) : 0;
-                            const percent = Math.round(pct * 40) + 25;
-                            updateProgress(percent, `Downloading model: ${Math.round(pct * 100)}%`);
-                        } else if (progress.status === 'loading' || progress.status === 'ready') {
-                            updateProgress(65, 'Loading model into memory...');
-                        }
-                    }
-                });
-                currentModelId = modelId;
-            }
+            // Simple pipeline initialization - let the library choose best settings
+            transcriber = await pipeline('automatic-speech-recognition', modelId, {
+                progress_callback: progressCallback
+            });
+            currentModelId = modelId;
         }
 
         updateProgress(70, 'Transcribing audio...');
