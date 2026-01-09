@@ -1,0 +1,351 @@
+/* Audio Transcription Page Styles */
+
+:root {
+    --primary-color: #4f46e5;
+    --primary-hover: #4338ca;
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-color: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+header h1 i {
+    margin-right: 10px;
+}
+
+/* Upload Section */
+.upload-section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--shadow-md);
+}
+
+.upload-area {
+    border: 2px dashed var(--border-color);
+    border-radius: 12px;
+    padding: 60px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.upload-area:hover {
+    border-color: var(--primary-color);
+    background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+}
+
+.upload-area.dragover {
+    border-color: var(--primary-color);
+    background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+    transform: scale(1.02);
+}
+
+.upload-icon {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.upload-area h3 {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.upload-area p {
+    margin: 5px 0;
+    color: var(--text-muted);
+}
+
+/* File Info */
+.file-info {
+    padding: 15px;
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    border-radius: 8px;
+    border: 1px solid #86efac;
+}
+
+.file-info h5 {
+    color: var(--text-color);
+    word-break: break-all;
+}
+
+/* Options Section */
+.options-section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--shadow-md);
+}
+
+.options-section h4 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.options-section h4 i {
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+/* Progress Section */
+.progress-section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--shadow-md);
+}
+
+.progress-section h4 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.progress-section h4 i {
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.progress {
+    height: 12px;
+    border-radius: 6px;
+    background-color: #e2e8f0;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, var(--primary-color), #818cf8);
+    border-radius: 6px;
+}
+
+/* Result Section */
+.result-section {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--shadow-md);
+}
+
+.result-section h4 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.result-section h4 i {
+    color: var(--success-color);
+    margin-right: 8px;
+}
+
+.transcription-box textarea {
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    resize: vertical;
+    min-height: 200px;
+}
+
+.transcription-box textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    outline: none;
+}
+
+/* PDF Options */
+.pdf-options {
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.pdf-options h5 {
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.action-buttons .btn {
+    padding: 12px 24px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.action-buttons .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Primary Button */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), #6366f1);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--primary-hover), #4f46e5);
+}
+
+.btn-primary:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Success Button */
+.btn-success {
+    background: linear-gradient(135deg, var(--success-color), #34d399);
+    border: none;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #059669, #10b981);
+}
+
+/* Transcribe Button */
+#transcribeBtn {
+    padding: 16px 48px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+}
+
+#transcribeBtn i {
+    margin-right: 8px;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid var(--border-color);
+    margin-top: 40px;
+}
+
+footer .btn-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+footer .btn-link:hover {
+    text-decoration: underline;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 12px;
+    border: none;
+    box-shadow: var(--shadow-lg);
+}
+
+.modal-header.bg-danger {
+    border-radius: 12px 12px 0 0;
+}
+
+/* Spinner Animation */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .upload-area {
+        padding: 40px 15px;
+    }
+
+    .upload-icon {
+        font-size: 3rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .action-buttons .btn {
+        width: 100%;
+    }
+
+    #transcribeBtn {
+        width: 100%;
+        padding: 14px 24px;
+    }
+
+    .pdf-options .row > div {
+        margin-bottom: 15px;
+    }
+}
+
+/* Animation for processing */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.processing {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Copy success animation */
+.copy-success {
+    background-color: var(--success-color) !important;
+    color: white !important;
+    border-color: var(--success-color) !important;
+}
+
+/* Audio player customization */
+audio {
+    border-radius: 8px;
+    background: #f1f5f9;
+}
+
+audio::-webkit-media-controls-panel {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}

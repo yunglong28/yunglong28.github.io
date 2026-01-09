@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Transcription to PDF | RESONANCE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/transcribe.css">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center py-4">
+            <h1><i class="bi bi-soundwave"></i> Audio Transcription</h1>
+            <p class="lead">Convert your MP3 audio files to PDF transcripts using AI</p>
+            <p class="text-muted small">Powered by OpenAI Whisper running locally in your browser</p>
+        </header>
+
+        <main>
+            <!-- File Upload Section -->
+            <section class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <i class="bi bi-cloud-arrow-up upload-icon"></i>
+                    <h3>Drop your audio file here</h3>
+                    <p>or click to browse</p>
+                    <p class="text-muted small">Supports MP3, WAV, M4A, WEBM, OGG files (max 25MB)</p>
+                    <input type="file" id="audioInput" accept="audio/*" hidden>
+                </div>
+
+                <div class="file-info d-none" id="fileInfo">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-file-earmark-music fs-2 me-3"></i>
+                        <div class="flex-grow-1">
+                            <h5 id="fileName" class="mb-0">filename.mp3</h5>
+                            <small id="fileSize" class="text-muted">0 MB</small>
+                        </div>
+                        <button class="btn btn-outline-danger btn-sm" id="removeFile">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <audio id="audioPlayer" controls class="w-100 mt-3"></audio>
+                </div>
+            </section>
+
+            <!-- Options Section -->
+            <section class="options-section mt-4">
+                <h4><i class="bi bi-gear"></i> Options</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="form-label">Model Size</label>
+                        <select id="modelSelect" class="form-select">
+                            <option value="Xenova/whisper-tiny" selected>Tiny (~40MB) - Fastest</option>
+                            <option value="Xenova/whisper-base">Base (~75MB) - Balanced</option>
+                            <option value="Xenova/whisper-small">Small (~250MB) - Better Quality</option>
+                        </select>
+                        <small class="text-muted">Larger models are more accurate but slower to load</small>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Language</label>
+                        <select id="languageSelect" class="form-select">
+                            <option value="en" selected>English</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                            <option value="de">German</option>
+                            <option value="it">Italian</option>
+                            <option value="pt">Portuguese</option>
+                            <option value="zh">Chinese</option>
+                            <option value="ja">Japanese</option>
+                            <option value="ko">Korean</option>
+                            <option value="auto">Auto-detect</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Transcribe Button -->
+            <section class="text-center mt-4">
+                <button id="transcribeBtn" class="btn btn-primary btn-lg" disabled>
+                    <i class="bi bi-mic"></i> Transcribe Audio
+                </button>
+            </section>
+
+            <!-- Progress Section -->
+            <section class="progress-section d-none mt-4" id="progressSection">
+                <h4><i class="bi bi-hourglass-split"></i> Processing</h4>
+                <div class="progress-item">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span id="progressLabel">Loading model...</span>
+                        <span id="progressPercent">0%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated"
+                             id="progressBar" role="progressbar" style="width: 0%"></div>
+                    </div>
+                </div>
+                <p id="statusText" class="text-muted small mt-2">Initializing...</p>
+            </section>
+
+            <!-- Result Section -->
+            <section class="result-section d-none mt-4" id="resultSection">
+                <h4><i class="bi bi-file-text"></i> Transcription Result</h4>
+                <div class="transcription-box">
+                    <textarea id="transcriptionText" class="form-control" rows="10"
+                              placeholder="Transcription will appear here..."></textarea>
+                </div>
+
+                <!-- PDF Options -->
+                <div class="pdf-options mt-3">
+                    <h5>PDF Settings</h5>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="form-label">Title</label>
+                            <input type="text" id="pdfTitle" class="form-control"
+                                   placeholder="Audio Transcription">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Font Size</label>
+                            <select id="pdfFontSize" class="form-select">
+                                <option value="10">Small (10pt)</option>
+                                <option value="12" selected>Medium (12pt)</option>
+                                <option value="14">Large (14pt)</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Page Format</label>
+                            <select id="pdfFormat" class="form-select">
+                                <option value="a4" selected>A4</option>
+                                <option value="letter">Letter</option>
+                                <option value="legal">Legal</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons mt-4">
+                    <button id="copyBtn" class="btn btn-outline-secondary">
+                        <i class="bi bi-clipboard"></i> Copy Text
+                    </button>
+                    <button id="downloadPdfBtn" class="btn btn-success">
+                        <i class="bi bi-file-earmark-pdf"></i> Download PDF
+                    </button>
+                    <button id="newTranscriptionBtn" class="btn btn-outline-primary">
+                        <i class="bi bi-plus-circle"></i> New Transcription
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center py-4 mt-5">
+            <p class="text-muted small">
+                <i class="bi bi-info-circle"></i>
+                All processing happens locally in your browser. Your audio files are never uploaded to any server.
+            </p>
+            <a href="index.html" class="btn btn-link">
+                <i class="bi bi-arrow-left"></i> Back to RESONANCE
+            </a>
+        </footer>
+    </div>
+
+    <!-- Loading Modal -->
+    <div class="modal fade" id="loadingModal" data-bs-backdrop="static" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center py-5">
+                    <div class="spinner-border text-primary mb-3" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <h5 id="modalStatus">Loading AI Model...</h5>
+                    <p class="text-muted small" id="modalSubStatus">This may take a moment on first use</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div class="modal fade" id="errorModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title"><i class="bi bi-exclamation-triangle"></i> Error</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="errorMessage">An error occurred.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script type="module" src="scripts/transcribe.js"></script>
+</body>
+</html>
